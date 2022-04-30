@@ -1,0 +1,262 @@
+/* Elements */
+
+//abbr
+
+abbr[title] {
+   text-decoration: underline $ao-english;
+}
+
+address {
+   @include element('block');
+}
+
+//area audio b base bdi bdo 
+
+blockquote {
+   @include element('block');
+}
+
+button {
+   @include element('inline');
+
+   background-color: $background-color;
+   border-color: currentColor;
+   cursor: pointer;
+   font-size: 1rem;
+
+   &:disabled {
+      border-color: $light-gray;
+      color: $light-gray;
+      cursor: not-allowed;
+   }
+
+   &:hover:not(:disabled) {
+      background-color: $light-gray;
+   }
+
+   &[type='reset'] {
+      border-color: $red;
+      color: $red;
+   }
+
+   &[type='submit'] {
+      border-color: $ao-english;
+      color: $ao-english;
+   }
+}
+
+//canvas caption cite
+
+code {
+   background-color: $light-gray;
+   border-radius: $border-radius_inline;
+   font-size: 1rem;
+   padding: $padding_inline;
+}
+
+//col data datalist dd
+
+del {
+   background-color: $red;
+   border-radius: $border-radius_inline;
+   color: $white;
+   padding: $padding_inline;
+   text-decoration: none;
+}
+
+//dnf
+
+dialog {
+   @include element('block');
+
+   background-color: $white;
+}
+
+//div dl dt em embed
+
+fieldset {
+   @include element('block');
+}
+
+form {
+   @include element('block');
+
+   text-align: center;
+}
+
+//hgroup i
+
+iframe {
+   @include element('block');
+}
+
+//img
+
+input {
+   @include element('inline');
+
+   background-color: $background-color;
+   font-size: 1rem;
+   outline: 0;
+
+   &[type='button'] {
+      cursor: pointer;
+   }
+
+   &[type='checkbox'] {
+      accent-color: $azure;
+      aspect-ratio: 1 / 1;
+      box-shadow: none;
+      cursor: pointer;
+      height: 20px;
+      margin: 0;
+      position: relative;
+      top: 3px;
+   }
+
+   &[type='color'] {
+      cursor: pointer;
+      padding-bottom: 3px;
+   }
+
+   //&[type='date'] &[type='datetime-local'] &[type='email'] 
+
+   &[type='file'] {
+      padding-bottom: 2px;
+   }
+
+   //&[type='hidden'] &[type='image'] &[type='month'] &&[type='number '] &&[type='password'] 
+
+   &[type='radio'] {
+      box-shadow: none;
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+   }
+
+   &[type='range'] {
+      box-shadow: none;
+      cursor: pointer;
+   }
+
+   &[type='reset'] {
+      cursor: pointer;
+   }
+
+   &[type='reset']:hover {
+      background-color: $light-gray;
+   }
+
+   //&[type='search'] 
+
+   &[type='submit'] {
+      cursor: pointer;
+   }
+
+   &[type='submit']:hover {
+      background-color: $light-gray;
+   }
+
+   //&[type='tel'] &[type='text'] &[type='time'] &[type='url'] &[type='week']
+}
+
+//ins kbd label legend
+
+li {
+   list-style-type: disc;
+}
+
+//map
+
+meter {
+   height: 20px;
+   width: 200px;
+}
+
+//noframes object optgroup option output param picture pre
+
+progress {
+   height: 20px;
+   width: 200px;
+}
+
+//q ruby rt rc rtc s samp
+
+select {
+   @include element('inline');
+
+   cursor: pointer;
+   font-size: 1rem;
+}
+
+select:focus-visible {
+   outline: 0;
+}
+
+//slot small source span
+
+//strong sub sup 
+
+table {
+   @include element('block');
+
+   border-collapse: collapse;
+}
+
+//tbody
+
+td {
+   border: $border;
+   padding: $padding_inline;
+}
+
+//template
+
+textarea {
+   border: $border;
+   border-radius: $border-radius_inline;
+   font-size: 1rem;
+   padding: $padding_inline;
+}
+
+textarea:focus-visible {
+   outline: 0;
+}
+
+//tfoot
+
+th {
+   border: $border;
+   padding: $padding_inline;
+   text-align: center;
+}
+
+//thead time tr track u var video wbr
+
+/* Others */
+
+::-webkit-calendar-picker-indicator {
+   cursor: pointer;
+}
+
+::-webkit-file-upload-button {
+   @include element('inline');
+
+   background-color: $background-color;
+   cursor: pointer;
+   font-size: 1rem;
+   margin-bottom: 2px;
+}
+
+::-webkit-file-upload-button:hover {
+   background-color: $light-gray;
+}
+
+/* */
+
+svg {
+   fill: transparent;
+   font-size: 50px;
+   stroke: $black;
+   stroke-width: 3px;
+}

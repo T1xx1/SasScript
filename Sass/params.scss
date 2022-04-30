@@ -3,43 +3,43 @@
 table[crossed] td,
 table[crossed] th,
 table[crossed] tr {
-   border: 0;
+     border: 0;
 }
 
 table[crossed] tr:first-child {
-   border-bottom: $border;
+     border-bottom: $border;
 }
 
 table[crossed] td:first-child,
 table[crossed] th:first-child {
-   border-right: $border;
+     border-right: $border;
 }
 
 [bubble]:hover,
-[bubbles] > :hover {
-   background-color: $highlight;
-   border-radius: $border-radius_inline;
-   padding: $padding_inline;
+[bubbles]>:hover {
+     background-color: $highlight;
+     border-radius: $border-radius_inline;
+     padding: $padding_inline;
 }
 
 [button],
-[buttons] > * {
-   @include element('inline');
+[buttons]>* {
+     @include element('inline');
 
-   border-color: currentColor;
-   cursor: pointer;
-   margin: $margin;
-   margin-bottom: 7px;
-   margin-left: 0;
-   text-decoration: none;
+     border-color: currentColor;
+     cursor: pointer;
+     margin: $margin;
+     margin-bottom: 7px;
+     margin-left: 0;
+     text-decoration: none;
 }
 
 [flex] {
-   display: flex;
-   flex-wrap: wrap;
+     display: flex;
+     flex-wrap: wrap;
 }
 
 [highlight]:hover,
-[highlights] > :hover {
-   background-color: $highlight;
+[highlights]>:hover {
+     background-color: $highlight;
 }

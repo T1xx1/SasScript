@@ -7,7 +7,7 @@
 * {
    background-color: $background-color;
    box-sizing: border-box;
-   font-family: $Poppins;
+   font-family: $poppins;
    scroll-behavior: smooth;
    transition: all $time;
 }
@@ -24,14 +24,21 @@
    border: $border;
    box-shadow: $box-shadow;
 
-   @if ($type== 'inline') {
+   @if ($type=='inline') {
       border-radius: $border-radius_inline;
       padding: $padding_inline;
-   } @else if ($type== 'block') {
+   }
+
+   @else if ($type=='block') {
+      @include space;
+
       border-radius: $border-radius_block;
-      margin: $margin;
       padding: $padding_block;
    }
+}
+
+@mixin space {
+   margin: $margin;
 }
 
 /* Meta tags */
@@ -41,7 +48,8 @@
 /* Basic elements */
 
 body {
-   margin: $margin;
+   @include space;
+
    margin-bottom: 2rem;
 }
 
@@ -70,15 +78,15 @@ h3 {
 }
 
 h4 {
-   font-size: 0.9rem;
+   font-size: .9rem;
 }
 
 h5 {
-   font-size: 0.8rem;
+   font-size: .8rem;
 }
 
 h6 {
-   font-size: 0.7rem;
+   font-size: .7rem;
 }
 
 hr {
@@ -96,21 +104,22 @@ article {
 }
 
 aside {
+   @include space;
+
    float: right;
-   margin: $margin;
    width: fit-content;
 }
 
-// details
+// details 
 
-details > *:not(summary) {
+details>*:not(summary) {
    padding-left: $tab;
 }
 
 //figcaption figure footer header
 
 main {
-   margin: $margin;
+   @include space;
 }
 
 mark {
@@ -121,6 +130,7 @@ mark {
 
 nav {
    margin: $margin;
+   margin-left: 0;
 }
 
 //section
