@@ -7,7 +7,7 @@
 * {
    background-color: $background-color;
    box-sizing: border-box;
-   font-family: $poppins;
+   font-family: $Poppins;
    scroll-behavior: smooth;
    transition: all $time;
 }
@@ -30,15 +30,10 @@
    }
 
    @else if ($type=='block') {
-      @include space;
-
       border-radius: $border-radius_block;
+      margin: $margin;
       padding: $padding_block;
    }
-}
-
-@mixin space {
-   margin: $margin;
 }
 
 /* Meta tags */
@@ -48,8 +43,7 @@
 /* Basic elements */
 
 body {
-   @include space;
-
+   margin: $margin;
    margin-bottom: 2rem;
 }
 
@@ -70,7 +64,7 @@ h1 {
 }
 
 h2 {
-   font-size: 1.7rem;
+   font-size: 1.8rem;
 }
 
 h3 {
@@ -92,7 +86,7 @@ h6 {
 hr {
    @include element('inline');
 
-   height: 12px;
+   height: 15px;
 }
 
 //p
@@ -104,22 +98,35 @@ article {
 }
 
 aside {
-   @include space;
-
    float: right;
+   margin: $margin;
    width: fit-content;
 }
 
-// details 
+details {
+   @include element('inline');
 
-details>*:not(summary) {
-   padding-left: $tab;
+   &:not([open]) {
+      width: fit-content;
+   }
 }
 
-//figcaption figure footer header
+//figcaption figure
+
+footer {
+   margin: $margin;
+   margin-left: 0;
+   margin-right: 0;
+}
+
+header {
+   margin: $margin;
+   margin-left: 0;
+   margin-right: 0;
+}
 
 main {
-   @include space;
+   margin: $margin;
 }
 
 mark {
@@ -130,7 +137,6 @@ mark {
 
 nav {
    margin: $margin;
-   margin-left: 0;
 }
 
 //section
@@ -152,10 +158,18 @@ ul {
 
 ol {
    padding-left: $tab;
+
+   li {
+      list-style-type: decimal-leading-zero;
+   }
 }
 
 ul {
    padding-left: $tab;
+
+   li {
+      list-style-type: disc;
+   }
 }
 
 :any-link {
@@ -169,3 +183,6 @@ ul {
 @import 'elements.scss';
 @import 'params.scss';
 @import 'special-cases.scss';
+@import 'others.scss';
+
+/* Sasscript */

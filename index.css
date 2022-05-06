@@ -38,7 +38,7 @@ h6 {
 
 h1 {
   font-size: 2.6rem;
-  line-height: 1.2;
+  line-height: 1.3;
 }
 
 h2 {
@@ -66,26 +66,44 @@ hr {
   box-shadow: 1.3px 1.3px 0 currentColor;
   border-radius: 6px;
   padding: 0.1rem 0.5rem;
-  height: 12px;
+  height: 15px;
 }
 
 /* Semantic elements */
 article {
   border: 2.5px solid currentColor;
   box-shadow: 1.3px 1.3px 0 currentColor;
-  margin: 0.5rem 0.9rem;
   border-radius: 10px;
+  margin: 0.5rem 0.9rem;
   padding: 8px 12.5px;
 }
 
 aside {
-  margin: 0.5rem 0.9rem;
   float: right;
+  margin: 0.5rem 0.9rem;
   width: fit-content;
 }
 
-details > *:not(summary) {
-  padding-left: 30px;
+details {
+  border: 2.5px solid currentColor;
+  box-shadow: 1.3px 1.3px 0 currentColor;
+  border-radius: 6px;
+  padding: 0.1rem 0.5rem;
+}
+details:not([open]) {
+  width: fit-content;
+}
+
+footer {
+  margin: 0.5rem 0.9rem;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+header {
+  margin: 0.5rem 0.9rem;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 main {
@@ -99,8 +117,7 @@ mark {
 }
 
 nav {
-  margin: 0 0 0.5rem 0.9rem;
-  margin-left: 0;
+  margin: 0.5rem 0.9rem;
 }
 
 summary {
@@ -116,9 +133,15 @@ ul {
 ol {
   padding-left: 30px;
 }
+ol li {
+  list-style-type: decimal-leading-zero;
+}
 
 ul {
   padding-left: 30px;
+}
+ul li {
+  list-style-type: disc;
 }
 
 :any-link {
@@ -136,16 +159,16 @@ abbr[title] {
 address {
   border: 2.5px solid currentColor;
   box-shadow: 1.3px 1.3px 0 currentColor;
-  margin: 0.5rem 0.9rem;
   border-radius: 10px;
+  margin: 0.5rem 0.9rem;
   padding: 8px 12.5px;
 }
 
 blockquote {
   border: 2.5px solid currentColor;
   box-shadow: 1.3px 1.3px 0 currentColor;
-  margin: 0.5rem 0.9rem;
   border-radius: 10px;
+  margin: 0.5rem 0.9rem;
   padding: 8px 12.5px;
 }
 
@@ -194,8 +217,8 @@ del {
 dialog {
   border: 2.5px solid currentColor;
   box-shadow: 1.3px 1.3px 0 currentColor;
-  margin: 0.5rem 0.9rem;
   border-radius: 10px;
+  margin: 0.5rem 0.9rem;
   padding: 8px 12.5px;
   background-color: #ffffff;
 }
@@ -203,16 +226,16 @@ dialog {
 fieldset {
   border: 2.5px solid currentColor;
   box-shadow: 1.3px 1.3px 0 currentColor;
-  margin: 0.5rem 0.9rem;
   border-radius: 10px;
+  margin: 0.5rem 0.9rem;
   padding: 8px 12.5px;
 }
 
 form {
   border: 2.5px solid currentColor;
   box-shadow: 1.3px 1.3px 0 currentColor;
-  margin: 0.5rem 0.9rem;
   border-radius: 10px;
+  margin: 0.5rem 0.9rem;
   padding: 8px 12.5px;
   text-align: center;
 }
@@ -220,8 +243,8 @@ form {
 iframe {
   border: 2.5px solid currentColor;
   box-shadow: 1.3px 1.3px 0 currentColor;
-  margin: 0.5rem 0.9rem;
   border-radius: 10px;
+  margin: 0.5rem 0.9rem;
   padding: 8px 12.5px;
 }
 
@@ -239,13 +262,10 @@ input[type=button] {
 }
 input[type=checkbox] {
   accent-color: #0080ff;
-  aspect-ratio: 1/1;
   box-shadow: none;
   cursor: pointer;
-  height: 20px;
-  margin: 0;
-  position: relative;
-  top: 3px;
+  height: 17px;
+  width: 17px;
 }
 input[type=color] {
   cursor: pointer;
@@ -255,10 +275,11 @@ input[type=file] {
   padding-bottom: 2px;
 }
 input[type=radio] {
+  accent-color: #0080ff;
   box-shadow: none;
   cursor: pointer;
-  height: 15px;
-  width: 15px;
+  height: 17px;
+  width: 17px;
 }
 input[type=range] {
   box-shadow: none;
@@ -277,8 +298,11 @@ input[type=submit]:hover {
   background-color: #cecece;
 }
 
-li {
-  list-style-type: disc;
+kbd {
+  border: 2.5px solid currentColor;
+  box-shadow: 1.3px 1.3px 0 currentColor;
+  border-radius: 6px;
+  padding: 0.1rem 0.5rem;
 }
 
 meter {
@@ -287,7 +311,12 @@ meter {
 }
 
 progress {
+  border: 2.5px solid currentColor;
+  box-shadow: 1.3px 1.3px 0 currentColor;
+  border-radius: 6px;
+  padding: 0.1rem 0.5rem;
   height: 20px;
+  padding: 0;
   width: 200px;
 }
 
@@ -307,19 +336,19 @@ select:focus-visible {
 table {
   border: 2.5px solid currentColor;
   box-shadow: 1.3px 1.3px 0 currentColor;
-  margin: 0.5rem 0.9rem;
   border-radius: 10px;
+  margin: 0.5rem 0.9rem;
   padding: 8px 12.5px;
   border-collapse: collapse;
 }
 
 td {
-  border: 2.5px solid;
+  border: 2.5px solid currentColor;
   padding: 0.1rem 0.5rem;
 }
 
 textarea {
-  border: 2.5px solid;
+  border: 2.5px solid currentColor;
   border-radius: 6px;
   font-size: 1rem;
   padding: 0.1rem 0.5rem;
@@ -330,12 +359,16 @@ textarea:focus-visible {
 }
 
 th {
-  border: 2.5px solid;
+  border: 2.5px solid currentColor;
   padding: 0.1rem 0.5rem;
   text-align: center;
 }
 
-/* Others */
+time {
+  font-family: "Roboto";
+}
+
+/* Webkit */
 ::-webkit-calendar-picker-indicator {
   cursor: pointer;
 }
@@ -355,28 +388,37 @@ th {
   background-color: #cecece;
 }
 
-/* */
-svg {
-  fill: transparent;
-  font-size: 50px;
-  stroke: #000000;
-  stroke-width: 3px;
+::-webkit-progress-bar {
+  background-color: #ffffff;
+  border-radius: 3px;
+}
+
+::-webkit-progress-value {
+  background-color: #008000;
+  border-radius: 3px;
 }
 
 /* Params */
+dialog[fullscreen] {
+  border: 0;
+  box-shadow: none;
+  margin: 0;
+  min-height: 80vh;
+  top: 0;
+  width: 100vw;
+}
+
 table[crossed] td,
 table[crossed] th,
 table[crossed] tr {
   border: 0;
 }
-
-table[crossed] tr:first-child {
-  border-bottom: 2.5px solid;
-}
-
 table[crossed] td:first-child,
 table[crossed] th:first-child {
-  border-right: 2.5px solid;
+  border-right: 2.5px solid currentColor;
+}
+table[crossed] tr:first-child {
+  border-bottom: 2.5px solid currentColor;
 }
 
 [bubble]:hover,
@@ -392,7 +434,6 @@ table[crossed] th:first-child {
   box-shadow: 1.3px 1.3px 0 currentColor;
   border-radius: 6px;
   padding: 0.1rem 0.5rem;
-  border-color: currentColor;
   cursor: pointer;
   margin: 0.5rem 0.9rem;
   margin-bottom: 7px;
@@ -415,8 +456,16 @@ form li {
   list-style-type: none;
 }
 
-nav ~ main {
+p:first-child {
   margin-top: 0;
 }
+
+svg {
+  fill: transparent;
+  font-size: 50px;
+  stroke-width: 2px;
+}
+
+/* Sasscript */
 
 /*# sourceMappingURL=index.css.map */

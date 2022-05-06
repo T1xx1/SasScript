@@ -1,45 +1,55 @@
 /* Params */
 
-table[crossed] td,
-table[crossed] th,
-table[crossed] tr {
-     border: 0;
+dialog[fullscreen] {
+   border: 0;
+   box-shadow: none;
+   margin: 0;
+   min-height: 50vh;
+   top: 0;
+   width: 100vw;
 }
 
-table[crossed] tr:first-child {
-     border-bottom: $border;
-}
+table[crossed] {
+   td,
+   th,
+   tr {
+      border: 0;
+   }
 
-table[crossed] td:first-child,
-table[crossed] th:first-child {
-     border-right: $border;
+   td:first-child,
+   th:first-child {
+      border-right: $border;
+   }
+
+   tr:first-child {
+      border-bottom: $border;
+   }
 }
 
 [bubble]:hover,
 [bubbles]>:hover {
-     background-color: $highlight;
-     border-radius: $border-radius_inline;
-     padding: $padding_inline;
+   background-color: $highlight;
+   border-radius: $border-radius_inline;
+   padding: $padding_inline;
 }
 
 [button],
 [buttons]>* {
-     @include element('inline');
+   @include element('inline');
 
-     border-color: currentColor;
-     cursor: pointer;
-     margin: $margin;
-     margin-bottom: 7px;
-     margin-left: 0;
-     text-decoration: none;
+   cursor: pointer;
+   margin: $margin;
+   margin-bottom: 7px;
+   margin-left: 0;
+   text-decoration: none;
 }
 
 [flex] {
-     display: flex;
-     flex-wrap: wrap;
+   display: flex;
+   flex-wrap: wrap;
 }
 
 [highlight]:hover,
 [highlights]>:hover {
-     background-color: $highlight;
+   background-color: $highlight;
 }

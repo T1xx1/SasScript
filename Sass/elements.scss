@@ -105,13 +105,10 @@ input {
 
    &[type='checkbox'] {
       accent-color: $azure;
-      aspect-ratio: 1 / 1;
       box-shadow: none;
       cursor: pointer;
-      height: 20px;
-      margin: 0;
-      position: relative;
-      top: 3px;
+      height: 17px;
+      width: 17px;
    }
 
    &[type='color'] {
@@ -128,10 +125,11 @@ input {
    //&[type='hidden'] &[type='image'] &[type='month'] &&[type='number '] &&[type='password'] 
 
    &[type='radio'] {
+      accent-color: $azure;
       box-shadow: none;
       cursor: pointer;
-      height: 15px;
-      width: 15px;
+      height: 17px;
+      width: 17px;
    }
 
    &[type='range'] {
@@ -160,13 +158,13 @@ input {
    //&[type='tel'] &[type='text'] &[type='time'] &[type='url'] &[type='week']
 }
 
-//ins kbd label legend
+//ins
 
-li {
-   list-style-type: disc;
+kbd {
+   @include element('inline');
 }
 
-//map
+//label legend li map
 
 meter {
    height: 20px;
@@ -176,7 +174,10 @@ meter {
 //noframes object optgroup option output param picture pre
 
 progress {
+   @include element('inline');
+
    height: 20px;
+   padding: 0;
    width: 200px;
 }
 
@@ -231,9 +232,15 @@ th {
    text-align: center;
 }
 
-//thead time tr track u var video wbr
+//thead
 
-/* Others */
+time {
+   font-family: $Roboto;
+}
+
+//tr track u var video wbr
+
+/* Webkit */
 
 ::-webkit-calendar-picker-indicator {
    cursor: pointer;
@@ -252,11 +259,12 @@ th {
    background-color: $light-gray;
 }
 
-/* */
+::-webkit-progress-bar {
+   background-color: $white;
+   border-radius: $border-radius_inline - 3px;
+}
 
-svg {
-   fill: transparent;
-   font-size: 50px;
-   stroke: $black;
-   stroke-width: 3px;
+::-webkit-progress-value {
+   background-color: $ao-english;
+   border-radius: $border-radius_inline - 3px;
 }
