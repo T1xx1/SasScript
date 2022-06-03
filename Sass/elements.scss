@@ -1,9 +1,9 @@
-/* Elements */
+// Elements
 
 //abbr
 
 abbr[title] {
-   text-decoration: underline $ao-english;
+   text-decoration: underline dotted $ao-english;
 }
 
 address {
@@ -19,7 +19,7 @@ blockquote {
 button {
    @include element('inline');
 
-   background-color: $background-color;
+   background-color: transparent;
    border-color: currentColor;
    cursor: pointer;
    font-size: 1rem;
@@ -50,7 +50,6 @@ button {
 code {
    background-color: $light-gray;
    border-radius: $border-radius_inline;
-   font-size: 1rem;
    padding: $padding_inline;
 }
 
@@ -90,12 +89,12 @@ iframe {
    @include element('block');
 }
 
-//img
+// img
 
 input {
    @include element('inline');
 
-   background-color: $background-color;
+   background-color: transparent;
    font-size: 1rem;
    outline: 0;
 
@@ -194,9 +193,7 @@ select:focus-visible {
    outline: 0;
 }
 
-//slot small source span
-
-//strong sub sup 
+//slot small source span strong sub sup
 
 table {
    @include element('block');
@@ -215,7 +212,7 @@ td {
 
 textarea {
    border: $border;
-   border-radius: $border-radius_inline;
+   border-radius: $border-radius_block;
    font-size: 1rem;
    padding: $padding_inline;
 }
@@ -240,7 +237,7 @@ time {
 
 //tr track u var video wbr
 
-/* Webkit */
+// Webkit
 
 ::-webkit-calendar-picker-indicator {
    cursor: pointer;
@@ -249,7 +246,6 @@ time {
 ::-webkit-file-upload-button {
    @include element('inline');
 
-   background-color: $background-color;
    cursor: pointer;
    font-size: 1rem;
    margin-bottom: 2px;

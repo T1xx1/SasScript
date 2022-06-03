@@ -1,11 +1,8 @@
 /* Sasscript */
+@import 'properties.scss';
 
-@import 'fonts.sass';
-@import 'colors.sass';
-@import 'properties.sass';
-
+// Styles
 * {
-   background-color: $background-color;
    box-sizing: border-box;
    font-family: $Poppins;
    scroll-behavior: smooth;
@@ -13,38 +10,34 @@
 }
 
 :root {
-   color: $primary-color;
+   color-scheme: light dark;
    cursor: default;
-   min-height: 100%;
 }
 
-/* Common styles */
+// Meta tags
 
-@mixin element($type) {
-   border: $border;
-   box-shadow: $box-shadow;
+//head
 
-   @if ($type=='inline') {
-      border-radius: $border-radius_inline;
-      padding: $padding_inline;
-   }
+html {
+   height: 100vh;
 
-   @else if ($type=='block') {
-      border-radius: $border-radius_block;
-      margin: $margin;
-      padding: $padding_block;
+   &:before {
+      bottom: 5px;
+      content: 'Sasscript 0.1.0';
+      font-size: .45rem;
+      position: absolute;
+      right: 5px;
    }
 }
 
-/* Meta tags */
+//link meta noscript script style title
 
-//head html link meta noscript script style title
-
-/* Basic elements */
-
+// Basic elements
 body {
-   margin: $margin;
-   margin-bottom: 2rem;
+   margin: 0;
+   min-height: 100vh;
+   padding: $margin;
+   padding-bottom: 2rem;
 }
 
 //br
@@ -55,16 +48,15 @@ h3,
 h4,
 h5,
 h6 {
-   margin: 0;
+   margin: 5px;
 }
 
 h1 {
-   font-size: 2.6rem;
-   line-height: 1.3;
+   font-size: 2.2rem;
 }
 
 h2 {
-   font-size: 1.8rem;
+   font-size: 1.6rem;
 }
 
 h3 {
@@ -86,13 +78,12 @@ h6 {
 hr {
    @include element('inline');
 
-   height: 15px;
+   height: 8px;
 }
 
 //p
 
-/* Semantic elements */
-
+// Semantic elements
 article {
    @include element('block');
 }
@@ -103,15 +94,7 @@ aside {
    width: fit-content;
 }
 
-details {
-   @include element('inline');
-
-   &:not([open]) {
-      width: fit-content;
-   }
-}
-
-//figcaption figure
+//details figcaption figure
 
 footer {
    margin: $margin;
@@ -122,7 +105,6 @@ footer {
 header {
    margin: $margin;
    margin-left: 0;
-   margin-right: 0;
 }
 
 main {
@@ -147,8 +129,7 @@ summary {
 
 //time
 
-/* Other basic elements */
-
+// Other basic elements
 //a
 
 ol,
@@ -158,10 +139,6 @@ ul {
 
 ol {
    padding-left: $tab;
-
-   li {
-      list-style-type: decimal-leading-zero;
-   }
 }
 
 ul {
@@ -181,8 +158,7 @@ ul {
 }
 
 @import 'elements.scss';
-@import 'params.scss';
 @import 'special-cases.scss';
 @import 'others.scss';
 
-/* Sasscript */
+/**/

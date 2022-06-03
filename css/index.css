@@ -1,12 +1,8 @@
 /* Sasscript */
-/* Fonts */
 @import 'https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap';
 @import 'https://fonts.googleapis.com/css2?family=Poppins&display=swap';
 @import 'https://fonts.googleapis.com/css2?family=Roboto&display=swap';
-/* Colors */
-/* Properties */
 * {
-  background-color: transparent;
   box-sizing: border-box;
   font-family: "Poppins";
   scroll-behavior: smooth;
@@ -14,17 +10,26 @@
 }
 
 :root {
-  color: #000000;
+  color-scheme: light dark;
   cursor: default;
-  min-height: 100%;
 }
 
-/* Common styles */
-/* Meta tags */
-/* Basic elements */
+html {
+  height: 100vh;
+}
+html:before {
+  bottom: 5px;
+  content: "Sasscript 0.1.0";
+  font-size: 0.45rem;
+  position: absolute;
+  right: 5px;
+}
+
 body {
-  margin: 0.5rem 0.9rem;
-  margin-bottom: 2rem;
+  margin: 0;
+  min-height: 100vh;
+  padding: 0.5rem 0.9rem;
+  padding-bottom: 2rem;
 }
 
 h1,
@@ -33,16 +38,15 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0;
+  margin: 5px;
 }
 
 h1 {
-  font-size: 2.6rem;
-  line-height: 1.3;
+  font-size: 2.2rem;
 }
 
 h2 {
-  font-size: 1.7rem;
+  font-size: 1.6rem;
 }
 
 h3 {
@@ -63,17 +67,17 @@ h6 {
 
 hr {
   border: 2.5px solid currentColor;
-  box-shadow: 1.3px 1.3px 0 currentColor;
   border-radius: 6px;
-  padding: 0.1rem 0.5rem;
-  height: 15px;
+  box-shadow: 1.3px 1.3px 0 currentColor;
+  padding: 0.25rem 0.5rem;
+  height: 8px;
 }
 
-/* Semantic elements */
 article {
   border: 2.5px solid currentColor;
+  border-radius: 6px;
   box-shadow: 1.3px 1.3px 0 currentColor;
-  border-radius: 10px;
+  border-radius: 6px;
   margin: 0.5rem 0.9rem;
   padding: 8px 12.5px;
 }
@@ -81,16 +85,6 @@ article {
 aside {
   float: right;
   margin: 0.5rem 0.9rem;
-  width: fit-content;
-}
-
-details {
-  border: 2.5px solid currentColor;
-  box-shadow: 1.3px 1.3px 0 currentColor;
-  border-radius: 6px;
-  padding: 0.1rem 0.5rem;
-}
-details:not([open]) {
   width: fit-content;
 }
 
@@ -103,7 +97,6 @@ footer {
 header {
   margin: 0.5rem 0.9rem;
   margin-left: 0;
-  margin-right: 0;
 }
 
 main {
@@ -113,7 +106,7 @@ main {
 mark {
   background-color: #ffff00;
   border-radius: 6px;
-  padding: 0.1rem 0.5rem;
+  padding: 0.25rem 0.5rem;
 }
 
 nav {
@@ -124,7 +117,6 @@ summary {
   cursor: pointer;
 }
 
-/* Other basic elements */
 ol,
 ul {
   margin: 0;
@@ -132,9 +124,6 @@ ul {
 
 ol {
   padding-left: 30px;
-}
-ol li {
-  list-style-type: decimal-leading-zero;
 }
 
 ul {
@@ -151,44 +140,44 @@ ul li {
   color: #0000ff;
 }
 
-/* Elements */
 abbr[title] {
-  text-decoration: underline #008000;
+  text-decoration: underline dotted #008000;
 }
 
 address {
   border: 2.5px solid currentColor;
+  border-radius: 6px;
   box-shadow: 1.3px 1.3px 0 currentColor;
-  border-radius: 10px;
+  border-radius: 6px;
   margin: 0.5rem 0.9rem;
   padding: 8px 12.5px;
 }
 
 blockquote {
   border: 2.5px solid currentColor;
+  border-radius: 6px;
   box-shadow: 1.3px 1.3px 0 currentColor;
-  border-radius: 10px;
+  border-radius: 6px;
   margin: 0.5rem 0.9rem;
   padding: 8px 12.5px;
 }
 
 button {
   border: 2.5px solid currentColor;
-  box-shadow: 1.3px 1.3px 0 currentColor;
   border-radius: 6px;
-  padding: 0.1rem 0.5rem;
-  background-color: transparent;
+  box-shadow: 1.3px 1.3px 0 currentColor;
+  padding: 0.25rem 0.5rem;
   border-color: currentColor;
   cursor: pointer;
   font-size: 1rem;
 }
 button:disabled {
-  border-color: #cecece;
-  color: #cecece;
+  border-color: #cfcfcf;
+  color: #cfcfcf;
   cursor: not-allowed;
 }
 button:hover:not(:disabled) {
-  background-color: #cecece;
+  background-color: #cfcfcf;
 }
 button[type=reset] {
   border-color: #ff0000;
@@ -200,24 +189,24 @@ button[type=submit] {
 }
 
 code {
-  background-color: #cecece;
+  background-color: #cfcfcf;
   border-radius: 6px;
-  font-size: 1rem;
-  padding: 0.1rem 0.5rem;
+  padding: 0.25rem 0.5rem;
 }
 
 del {
   background-color: #ff0000;
   border-radius: 6px;
   color: #ffffff;
-  padding: 0.1rem 0.5rem;
+  padding: 0.25rem 0.5rem;
   text-decoration: none;
 }
 
 dialog {
   border: 2.5px solid currentColor;
+  border-radius: 6px;
   box-shadow: 1.3px 1.3px 0 currentColor;
-  border-radius: 10px;
+  border-radius: 6px;
   margin: 0.5rem 0.9rem;
   padding: 8px 12.5px;
   background-color: #ffffff;
@@ -225,16 +214,18 @@ dialog {
 
 fieldset {
   border: 2.5px solid currentColor;
+  border-radius: 6px;
   box-shadow: 1.3px 1.3px 0 currentColor;
-  border-radius: 10px;
+  border-radius: 6px;
   margin: 0.5rem 0.9rem;
   padding: 8px 12.5px;
 }
 
 form {
   border: 2.5px solid currentColor;
+  border-radius: 6px;
   box-shadow: 1.3px 1.3px 0 currentColor;
-  border-radius: 10px;
+  border-radius: 6px;
   margin: 0.5rem 0.9rem;
   padding: 8px 12.5px;
   text-align: center;
@@ -242,17 +233,18 @@ form {
 
 iframe {
   border: 2.5px solid currentColor;
+  border-radius: 6px;
   box-shadow: 1.3px 1.3px 0 currentColor;
-  border-radius: 10px;
+  border-radius: 6px;
   margin: 0.5rem 0.9rem;
   padding: 8px 12.5px;
 }
 
 input {
   border: 2.5px solid currentColor;
-  box-shadow: 1.3px 1.3px 0 currentColor;
   border-radius: 6px;
-  padding: 0.1rem 0.5rem;
+  box-shadow: 1.3px 1.3px 0 currentColor;
+  padding: 0.25rem 0.5rem;
   background-color: transparent;
   font-size: 1rem;
   outline: 0;
@@ -289,20 +281,20 @@ input[type=reset] {
   cursor: pointer;
 }
 input[type=reset]:hover {
-  background-color: #cecece;
+  background-color: #cfcfcf;
 }
 input[type=submit] {
   cursor: pointer;
 }
 input[type=submit]:hover {
-  background-color: #cecece;
+  background-color: #cfcfcf;
 }
 
 kbd {
   border: 2.5px solid currentColor;
-  box-shadow: 1.3px 1.3px 0 currentColor;
   border-radius: 6px;
-  padding: 0.1rem 0.5rem;
+  box-shadow: 1.3px 1.3px 0 currentColor;
+  padding: 0.25rem 0.5rem;
 }
 
 meter {
@@ -312,9 +304,9 @@ meter {
 
 progress {
   border: 2.5px solid currentColor;
-  box-shadow: 1.3px 1.3px 0 currentColor;
   border-radius: 6px;
-  padding: 0.1rem 0.5rem;
+  box-shadow: 1.3px 1.3px 0 currentColor;
+  padding: 0.25rem 0.5rem;
   height: 20px;
   padding: 0;
   width: 200px;
@@ -322,9 +314,9 @@ progress {
 
 select {
   border: 2.5px solid currentColor;
-  box-shadow: 1.3px 1.3px 0 currentColor;
   border-radius: 6px;
-  padding: 0.1rem 0.5rem;
+  box-shadow: 1.3px 1.3px 0 currentColor;
+  padding: 0.25rem 0.5rem;
   cursor: pointer;
   font-size: 1rem;
 }
@@ -335,8 +327,9 @@ select:focus-visible {
 
 table {
   border: 2.5px solid currentColor;
+  border-radius: 6px;
   box-shadow: 1.3px 1.3px 0 currentColor;
-  border-radius: 10px;
+  border-radius: 6px;
   margin: 0.5rem 0.9rem;
   padding: 8px 12.5px;
   border-collapse: collapse;
@@ -344,14 +337,14 @@ table {
 
 td {
   border: 2.5px solid currentColor;
-  padding: 0.1rem 0.5rem;
+  padding: 0.25rem 0.5rem;
 }
 
 textarea {
   border: 2.5px solid currentColor;
-  border-radius: 6px;
+  border-radius: 10px;
   font-size: 1rem;
-  padding: 0.1rem 0.5rem;
+  padding: 0.25rem 0.5rem;
 }
 
 textarea:focus-visible {
@@ -360,7 +353,7 @@ textarea:focus-visible {
 
 th {
   border: 2.5px solid currentColor;
-  padding: 0.1rem 0.5rem;
+  padding: 0.25rem 0.5rem;
   text-align: center;
 }
 
@@ -368,24 +361,22 @@ time {
   font-family: "Roboto";
 }
 
-/* Webkit */
 ::-webkit-calendar-picker-indicator {
   cursor: pointer;
 }
 
 ::-webkit-file-upload-button {
   border: 2.5px solid currentColor;
-  box-shadow: 1.3px 1.3px 0 currentColor;
   border-radius: 6px;
-  padding: 0.1rem 0.5rem;
-  background-color: transparent;
+  box-shadow: 1.3px 1.3px 0 currentColor;
+  padding: 0.25rem 0.5rem;
   cursor: pointer;
   font-size: 1rem;
   margin-bottom: 2px;
 }
 
 ::-webkit-file-upload-button:hover {
-  background-color: #cecece;
+  background-color: #cfcfcf;
 }
 
 ::-webkit-progress-bar {
@@ -398,14 +389,53 @@ time {
   border-radius: 3px;
 }
 
-/* Params */
-dialog[fullscreen] {
+button > img {
   border: 0;
   box-shadow: none;
   margin: 0;
-  min-height: 80vh;
+  padding: 0;
+}
+
+code pre {
+  background-color: inherit;
+  color: inherit;
+  display: inline;
+  margin: 0;
+}
+
+dialog[fullscreen],
+[fullscreens] > dialog {
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0;
+  min-height: 100vh;
+  min-width: 100vw;
   top: 0;
-  width: 100vw;
+}
+
+form fieldset:only-child {
+  border: 0;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+}
+form li {
+  list-style-type: none;
+}
+
+p:first-child {
+  margin-top: 0;
+}
+
+details[block] {
+  border: 2.5px solid currentColor;
+  border-radius: 6px;
+  box-shadow: 1.3px 1.3px 0 currentColor;
+  padding: 0.25rem 0.5rem;
+}
+details[block]:not([open]) {
+  width: fit-content;
 }
 
 table[crossed] td,
@@ -423,17 +453,17 @@ table[crossed] tr:first-child {
 
 [bubble]:hover,
 [bubbles] > :hover {
-  background-color: #cecece;
+  background-color: #cfcfcf;
   border-radius: 6px;
-  padding: 0.1rem 0.5rem;
+  padding: 0.25rem 0.5rem;
 }
 
 [button],
 [buttons] > * {
   border: 2.5px solid currentColor;
-  box-shadow: 1.3px 1.3px 0 currentColor;
   border-radius: 6px;
-  padding: 0.1rem 0.5rem;
+  box-shadow: 1.3px 1.3px 0 currentColor;
+  padding: 0.25rem 0.5rem;
   cursor: pointer;
   margin: 0.5rem 0.9rem;
   margin-bottom: 7px;
@@ -441,23 +471,9 @@ table[crossed] tr:first-child {
   text-decoration: none;
 }
 
-[flex] {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 [highlight]:hover,
 [highlights] > :hover {
-  background-color: #cecece;
-}
-
-/* Special cases */
-form li {
-  list-style-type: none;
-}
-
-p:first-child {
-  margin-top: 0;
+  background-color: #cfcfcf;
 }
 
 svg {
@@ -466,6 +482,6 @@ svg {
   stroke-width: 2px;
 }
 
-/* Sasscript */
+/**/
 
 /*# sourceMappingURL=index.css.map */
