@@ -1,0 +1,14 @@
+body {
+   @include fullscreen;
+   @include padding('inline');
+
+   padding-bottom: 1.5rem;
+}
+
+//head
+
+html {
+   @include fullscreen;
+}
+
+//link meta noscript script style title

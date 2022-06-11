@@ -1,0 +1,17 @@
+@import 'https://fonts.googleapis.com/css2?family=Montserrat&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Oxygen&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Poppins&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Roboto&display=swap';
+
+$fonts: (
+   'montserrat': 'Montserrat',
+   'oxygen': 'Oxygen',
+   'poppins': 'Poppins',
+   'roboto': 'Roboto',
+);
+
+@each $font, $value in $fonts {
+   [ss-#{$font}] {
+      font-family: $value;
+   }
+}

@@ -1,0 +1,149 @@
+// properties
+
+@mixin border($model: '', $type: '') {
+   @include border-radius($model);
+
+   @if $type =='blur' {
+      box-shadow: 0 0 5px map-get($colors, 'gray_web');
+   }
+
+   @else {
+      border: 2.5px solid currentColor;
+   }
+}
+
+@mixin border-radius($model: '') {
+   @if $model =="inline" {
+      border-radius: 6px;
+   }
+
+   @else {
+      border-radius: 10px;
+   }
+}
+
+@mixin box-shadow {
+   box-shadow: 1.5px 1.5px 0 currentColor;
+}
+
+@mixin margin {
+   margin: .6rem .9rem;
+}
+
+@mixin padding($model: '') {
+   @if $model =="inline" {
+      padding: .4rem .6rem;
+   }
+
+   @else {
+      padding: 8px 12.5px;
+   }
+}
+
+// models
+
+@mixin block($type: '') {
+   @include border('', $type);
+   @include margin;
+   @include padding;
+
+   @if $type  !='blur' {
+      @include box-shadow;
+   }
+
+   >* {
+      margin-left: 10px;
+   }
+
+   >h1,
+   >h2,
+   >h3 {
+      margin: 0;
+   }
+}
+
+@mixin input {
+   @include inline;
+
+   background-color: transparent;
+   font-size: 1rem;
+   outline: 0;
+}
+
+@mixin inline {
+   @include border('inline');
+   @include padding('inline');
+}
+
+// combined elements
+
+@mixin abutton {
+   @extend button;
+
+   display: inline-block;
+   text-decoration: none;
+
+   &:hover {
+      background-color: transparent;
+   }
+}
+
+@mixin imgbutton($dimensions: 40px, $padding: 5px) {
+   @extend button;
+
+   padding: $padding;
+   height: $dimensions;
+   width: $dimensions;
+}
+
+// others
+
+@mixin error {
+   @include inline;
+
+   color: map-get($colors, 'red');
+
+   &::before {
+      content: '❌Error: ';
+   }
+}
+
+@mixin fullscreen {
+   border: 0;
+   margin: 0;
+   min-height: 100vh;
+   min-width: 100vw;
+}
+
+@mixin flex {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+@mixin highlight($type: '') {
+   &:hover {
+      background-color: map-get($colors, 'silver');
+
+      @if $type =='bubble' {
+         @include border-radius('inline');
+         @include padding('inline');
+      }
+   }
+}
+
+@mixin reset {
+   border: 0;
+   box-shadow: none;
+   margin: 0;
+   padding: 0;
+}
+
+@mixin warn {
+   @include inline;
+
+   color: map-get($colors, 'orange');
+
+   &::before {
+      content: '⚠️Warning: ';
+   }
+}

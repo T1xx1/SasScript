@@ -1,0 +1,73 @@
+a[ss-abutton],
+[ss-abuttons]>* {
+   @include abutton;
+}
+
+code pre {
+   background-color: inherit;
+   color: inherit;
+   display: inline;
+   margin: 0;
+}
+
+fieldset>form:only-of-type {
+   @include reset;
+}
+
+form {
+   >fieldset:only-child {
+      @include reset;
+   }
+
+   li {
+      list-style-type: none;
+   }
+}
+
+header:first-child {
+   margin-top: 0;
+}
+
+p:first-child {
+   margin-top: 0;
+}
+
+details[ss-block] {
+   @include inline;
+
+   &:not([open]) {
+      width: fit-content;
+   }
+}
+
+table {
+   &[ss-crossed] {
+      td,
+      th,
+      tr {
+         border: 0;
+      }
+
+      td:first-child,
+      th:first-child,
+      tr:first-child {
+         @include border;
+
+         box-shadow: none;
+      }
+   }
+
+   &[ss-note] {
+      td,
+      th,
+      tr {
+         border: 0;
+      }
+
+      tr:first-child {
+         @include border;
+
+         box-shadow: none;
+      }
+   }
+}

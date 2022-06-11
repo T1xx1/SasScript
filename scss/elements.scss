@@ -1,0 +1,212 @@
+//abbr
+
+abbr[title] {
+   text-decoration: underline dotted map-get($colors, 'ao_english') 3px;
+}
+
+address {
+   @include block;
+}
+
+//area audio b base bdi bdo 
+
+blockquote {
+   @include block;
+}
+
+button {
+   @include border('inline');
+   @include highlight;
+   @include padding('inline');
+
+   background-color: transparent;
+   cursor: pointer;
+   font-size: 1rem;
+
+   &:disabled {
+      border-color: map-get($colors, 'cultured');
+      color: map-get($colors, 'cultured');
+      cursor: not-allowed;
+   }
+
+   &[type='reset'] {
+      border-color:  map-get($colors, 'red');
+      color:  map-get($colors, 'red');
+   }
+
+   &[type='submit'] {
+      border-color: map-get($colors, 'ao_english');
+      color: map-get($colors, 'ao_english');
+   }
+}
+
+//canvas caption cite
+
+code {
+   @include border-radius('inline');
+
+   background-color: map-get($colors, 'cultured');
+}
+
+//col data datalist dd
+
+del {
+   @include border-radius('inline');
+   @include padding('inline');
+
+   background-color: map-get($colors, 'red');
+   color: map-get($colors, 'white');
+   text-decoration: none;
+}
+
+//dnf
+
+dialog {
+   @include block;
+
+   background-color: map-get($colors, 'white');
+}
+
+//div dl dt em embed
+
+fieldset {
+   @include block;
+}
+
+form {
+   @include block;
+
+   text-align: center;
+}
+
+//hgroup i
+
+iframe {
+   @include block;
+}
+
+//img
+
+input {
+   @include input;
+
+   &[type='button'] {
+      cursor: pointer;
+   }
+
+   &[type='checkbox'] {
+      accent-color: map-get($colors, 'azure');
+      box-shadow: none;
+      cursor: pointer;
+      height: 20px;
+      width: 20px;
+   }
+
+   &[type='color'] {
+      cursor: pointer;
+      padding: 5px;
+      height: 35px;
+      width: 50px;
+   }
+
+   //&[type='date'] &[type='datetime-local'] &[type='email'] &[type='file'] &[type='hidden'] &[type='image'] &[type='month'] &&[type='number '] &&[type='password'] 
+
+   &[type='radio'] {
+      @extend [type='checkbox'];
+   }
+
+   &[type='range'] {
+      accent-color: map-get($colors, 'azure');
+      box-shadow: none;
+      cursor: pointer;
+   }
+
+   &[type='reset'] {
+      cursor: pointer;
+   }
+
+   &[type='reset'] {
+      @include highlight;
+   }
+
+   //&[type='search'] 
+
+   &[type='submit'] {
+      cursor: pointer;
+   }
+
+   &[type='submit'] {
+      @include highlight;
+   }
+
+   //&[type='tel'] &[type='text'] &[type='time'] &[type='url'] &[type='week']
+}
+
+//ins
+
+kbd {
+   @include inline;
+}
+
+//label legend li map
+
+meter {
+   height: 20px;
+   width: 200px;
+}
+
+//noframes object optgroup option output param picture pre
+
+progress {
+   @include border;
+
+   height: 20px;
+   width: 200px;
+}
+
+//q ruby rt rc rtc s samp
+
+select {
+   @include input;
+
+   cursor: pointer;
+}
+
+//slot small source span strong sub sup
+
+table {
+   @include block;
+
+   border-collapse: collapse;
+}
+
+//tbody
+
+td {
+   @include border;
+   @include padding('inline');
+
+   box-shadow: none;
+}
+
+//template
+
+textarea {
+   @include input;
+}
+
+//tfoot
+
+th {
+   @extend td;
+
+   text-align: center;
+}
+
+//thead
+
+time {
+   font-family: map-get($fonts, 'Roboto');
+}
+
+//tr track u var video wbr

@@ -1,0 +1,34 @@
+/* Sasscript */
+
+@import 'colors';
+@import 'fonts';
+@import 'mixins';
+
+* {
+   box-sizing: border-box;
+   font-family: map-get($fonts, montserrat);
+   font-size: 18px;
+   scroll-behavior: smooth;
+   transition: all .3s linear, color 0s linear;
+}
+
+:root {
+   color-scheme: light dark;
+   cursor: default;
+   background-size: 100% 100%;
+
+   &:after {
+      bottom: 0;
+      content: 'Sasscript 3.3.0';
+      font-size: .35rem;
+      right: 0;
+      position: fixed;
+   }
+}
+
+@import 'meta';
+@import 'basics';
+@import 'semantics';
+@import 'elements';
+@import 'webkit';
+@import 'special';

@@ -1,0 +1,49 @@
+$colors: (
+   'black': #000000,
+   'white': #ffffff,
+
+   'aqua': #00ffff,
+   'blue': #0000ff,
+   'green': #00ff00,
+   'magenta': #ff00ff,
+   'red': #ff0000,
+   'yellow': #ffff00,
+
+   'ao_english': #008000,
+   'azure': #0080ff,
+   'chartreuse_web': #80ff00,
+   'electric_blue': #80ffff,
+   'gray_web': #808080,
+   'laser_lemon': #ffff80,
+   'light_coral': #ff8080,
+   'maroon_web': #800000,
+   'medium_slate_blue': #8080ff,
+   'navy_blue': #000080,
+   'olive': #808000,
+   'orange': #ff8000,
+   'patriarch': #800080,
+   'pink_flamingo': #ff80ff,
+   'rose': #ff0080,
+   'screamin_green': #80ff80,
+   'spring_green': #00ff80,
+   'teal': #008080,
+   'violet_color_wheel': #8000ff,
+
+   'cultured': #f0f0f0,
+   'smoky_black': #0f0f0f,
+
+   'eerie_black': #1c1c1c,
+   'jet': #393939,
+   'davys_grey': #555555,
+   'sonic_silver': #717171,
+   'spanish_gray': #8e8e8e,
+   'silver_chalice': #aaaaaa,
+   'silver': #c6c6c6,
+   'platinum': #e3e3e3,
+);
+
+@each $color, $value in $colors {
+   [ss-#{$color}] {
+      color: $value;
+   }
+}
