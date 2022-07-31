@@ -10,8 +10,12 @@ $fonts: (
    'roboto': 'Roboto',
 );
 
+@function font($font) {
+   @return map-get($fonts, $font);
+}
+
 @each $font, $value in $fonts {
-   [ss-#{$font}] {
+   @include ss($font) {
       font-family: $value;
    }
 }

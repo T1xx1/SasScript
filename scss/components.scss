@@ -1,0 +1,26 @@
+@mixin abutton {
+   @extend button;
+
+   display: inline-block;
+   text-decoration: none;
+
+   &:hover {
+      background-color: transparent;
+   }
+}
+
+@mixin detailsfieldset {
+   @include block;
+
+   &:not([open]) {
+      width: fit-content;
+   }
+}
+
+@mixin imgbutton($dimensions: 40px, $padding: 5px) {
+   @extend button;
+
+   padding: $padding;
+   height: $dimensions;
+   width: $dimensions;
+}

@@ -9,41 +9,49 @@ $colors: (
    'red': #ff0000,
    'yellow': #ffff00,
 
-   'ao_english': #008000,
+   'ao-english': #008000,
    'azure': #0080ff,
-   'chartreuse_web': #80ff00,
-   'electric_blue': #80ffff,
-   'gray_web': #808080,
-   'laser_lemon': #ffff80,
-   'light_coral': #ff8080,
-   'maroon_web': #800000,
-   'medium_slate_blue': #8080ff,
-   'navy_blue': #000080,
+   'chartreuse-web': #80ff00,
+   'electric-blue': #80ffff,
+   'gray-web': #808080,
+   'laser-lemon': #ffff80,
+   'light-coral': #ff8080,
+   'maroon-web': #800000,
+   'medium-slate-blue': #8080ff,
+   'navy-blue': #000080,
    'olive': #808000,
    'orange': #ff8000,
    'patriarch': #800080,
-   'pink_flamingo': #ff80ff,
+   'pink-flamingo': #ff80ff,
    'rose': #ff0080,
-   'screamin_green': #80ff80,
-   'spring_green': #00ff80,
+   'screamin-green': #80ff80,
+   'spring-green': #00ff80,
    'teal': #008080,
-   'violet_color_wheel': #8000ff,
+   'violet-color-wheel': #8000ff,
 
    'cultured': #f0f0f0,
-   'smoky_black': #0f0f0f,
+   'smoky-black': #0f0f0f,
 
-   'eerie_black': #1c1c1c,
+   'eerie-black': #1c1c1c,
    'jet': #393939,
-   'davys_grey': #555555,
-   'sonic_silver': #717171,
-   'spanish_gray': #8e8e8e,
-   'silver_chalice': #aaaaaa,
+   'davys-grey': #555555,
+   'sonic-silver': #717171,
+   'spanish-gray': #8e8e8e,
+   'silver-chalice': #aaaaaa,
    'silver': #c6c6c6,
    'platinum': #e3e3e3,
 );
 
+@function color($color) {
+   @return map-get($colors, $color);
+}
+
 @each $color, $value in $colors {
-   [ss-#{$color}] {
+   @include ss($color) {
       color: $value;
+   }
+
+   @include ss('bg_#{$color}') {
+      background-color: $value;
    }
 }

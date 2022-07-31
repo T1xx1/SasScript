@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="./css/ss.css">
+<link rel="stylesheet" href="./dist/ss.css">
 
 # Sasscript
 

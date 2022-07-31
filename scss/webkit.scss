@@ -58,11 +58,11 @@
 ::-webkit-progress-bar {
    @include border-radius;
 
-   background-color: map-get($colors, 'white');
+   background-color: color('white');
 }
 
 ::-webkit-progress-value {
    @include border-radius;
 
-   background-color: map-get($colors, 'ao_english');
+   background-color: color('ao-english');
 }

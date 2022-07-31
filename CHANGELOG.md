@@ -1,4 +1,6 @@
-<link rel="stylesheet" href="./css/ss.css">
+<link rel="stylesheet" href="./dist/ss.css">
+
+[Back](README.md)
 
 # Changelog
 
@@ -20,10 +22,8 @@ The format is based on [Keep a Changelog](https://github.com/olivierlacan/keep-a
 ## 3.3.0 • Mixins
 
 ### Added
-- meta.scss
-- basics.scss
-- semantics.scss
-- Mixin input
+- Mixin input model
+- ss-html add attributes to elements to style them
 
 ### Changed
 - Variables converted in mixins
@@ -32,18 +32,14 @@ The format is based on [Keep a Changelog](https://github.com/olivierlacan/keep-a
 ### Fixed
 - ss-abutton overlapping with other elements
 
-### Removed
-- properties.scss
-- variables.scss
-
 ## 3.2.0 • SS
 
 ### Added
-- Webkit.scss
+- Webkit elements styles
+- Mixins block and inline model
 
 ### Changed
-- Index file sasscript.scss in SS.scss
-- Webkit rules from elements.scss to webkit.scss
+- Index file renamed in SS.scss
 
 ### Fixed
 - Buttonimg mixin height and padding
@@ -55,18 +51,18 @@ The format is based on [Keep a Changelog](https://github.com/olivierlacan/keep-a
 - Light dark mode
 - New fonts
 - Min version
-- variables.scss
 
 ### Fixed
 - Versions
 
 ### Changed
-- Index file index.scss in sasscript.scss
+- Index file in sasscript.scss
 - Main font in Montserrat
+- Better variables
 - Converted elements params in mixins
 
 ### Deleted
-- params.scss
+- Params
 
 ## 3.0.0 • Alpha
 

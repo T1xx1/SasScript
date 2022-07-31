@@ -1,8 +1,3 @@
-a[ss-abutton],
-[ss-abuttons]>* {
-   @include abutton;
-}
-
 code pre {
    background-color: inherit;
    color: inherit;
@@ -30,14 +25,6 @@ header:first-child {
 
 p:first-child {
    margin-top: 0;
-}
-
-details[ss-block] {
-   @include inline;
-
-   &:not([open]) {
-      width: fit-content;
-   }
 }
 
 table {

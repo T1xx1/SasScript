@@ -1,18 +1,40 @@
-//abbr
+//a abbr
 
 abbr[title] {
-   text-decoration: underline dotted map-get($colors, 'ao_english') 3px;
+   text-decoration: underline dotted color('ao-english') 3px;
 }
 
 address {
    @include block;
 }
 
-//area audio b base bdi bdo 
+//area
+
+article {
+   @include block;
+}
+
+aside {
+   @include margin;
+
+   float: right;
+   width: fit-content;
+}
+
+//audio b base bdi bdo
 
 blockquote {
    @include block;
 }
+
+body {
+   @include fullscreen;
+   @include padding('inline');
+
+   padding-bottom: 1.5rem;
+}
+
+//br
 
 button {
    @include border('inline');
@@ -24,19 +46,19 @@ button {
    font-size: 1rem;
 
    &:disabled {
-      border-color: map-get($colors, 'cultured');
-      color: map-get($colors, 'cultured');
+      border-color: color('cultured');
+      color: color('cultured');
       cursor: not-allowed;
    }
 
    &[type='reset'] {
-      border-color:  map-get($colors, 'red');
-      color:  map-get($colors, 'red');
+      border-color:  color('red');
+      color:  color('red');
    }
 
    &[type='submit'] {
-      border-color: map-get($colors, 'ao_english');
-      color: map-get($colors, 'ao_english');
+      border-color: color('ao-english');
+      color: color('ao-english');
    }
 }
 
@@ -44,18 +66,18 @@ button {
 
 code {
    @include border-radius('inline');
-
-   background-color: map-get($colors, 'cultured');
-}
-
-//col data datalist dd
-
-del {
-   @include border-radius('inline');
    @include padding('inline');
 
-   background-color: map-get($colors, 'red');
-   color: map-get($colors, 'white');
+   background-color: color('gray-web');
+}
+
+//col colgroup data datalist dd details
+
+del {
+   @extend code;
+
+   background-color: color('red');
+   color: color('white');
    text-decoration: none;
 }
 
@@ -64,7 +86,7 @@ del {
 dialog {
    @include block;
 
-   background-color: map-get($colors, 'white');
+   background-color: color('white');
 }
 
 //div dl dt em embed
@@ -73,13 +95,77 @@ fieldset {
    @include block;
 }
 
+//figcaption figure
+
+footer {
+   @include margin;
+
+   margin-left: 0;
+   margin-right: 0;
+}
+
 form {
    @include block;
 
    text-align: center;
 }
 
-//hgroup i
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   margin: 5px;
+}
+
+h1 {
+   font-size: 2rem;
+}
+
+h2 {
+   font-size: 1.4rem;
+}
+
+h3 {
+   font-size: 1.2rem;
+}
+
+h4 {
+   font-size: .9rem;
+}
+
+h5 {
+
+   font-size: .8rem;
+}
+
+h6 {
+   font-size: .7rem;
+}
+
+//head
+
+header {
+   @include margin;
+
+   margin-right: 0;
+   margin-left: 0;
+}
+
+//hgroup
+
+hr {
+   @include inline;
+
+   height: 15px;
+}
+
+html {
+   @include fullscreen;
+}
+
+//i
 
 iframe {
    @include block;
@@ -95,7 +181,7 @@ input {
    }
 
    &[type='checkbox'] {
-      accent-color: map-get($colors, 'azure');
+      accent-color: color('azure');
       box-shadow: none;
       cursor: pointer;
       height: 20px;
@@ -116,7 +202,7 @@ input {
    }
 
    &[type='range'] {
-      accent-color: map-get($colors, 'azure');
+      accent-color: color('azure');
       box-shadow: none;
       cursor: pointer;
    }
@@ -148,14 +234,45 @@ kbd {
    @include inline;
 }
 
-//label legend li map
+//label legend li link
+
+main {
+   @include margin;
+}
+
+//map
+
+mark {
+   @extend code;
+   
+   background-color: color('yellow');
+}
+
+//meta
 
 meter {
    height: 20px;
    width: 200px;
 }
 
-//noframes object optgroup option output param picture pre
+nav {
+   @include margin;
+}
+
+//noframes noscript object
+
+ol {
+   margin: 0;
+   padding-left: 25px;
+}
+
+//optgroup option output p
+
+p::first-letter {
+   text-transform: uppercase;
+}
+
+//param picture pre
 
 progress {
    @include border;
@@ -164,7 +281,7 @@ progress {
    width: 200px;
 }
 
-//q ruby rt rc rtc s samp
+//q rt rc rtc ruby s samp script section
 
 select {
    @include input;
@@ -172,7 +289,13 @@ select {
    cursor: pointer;
 }
 
-//slot small source span strong sub sup
+//slot small source span strong style sub
+
+summary {
+   cursor: pointer;
+}
+
+//sup
 
 table {
    @include block;
@@ -206,7 +329,25 @@ th {
 //thead
 
 time {
-   font-family: map-get($fonts, 'Roboto');
+   font-family: font('roboto');
 }
 
-//tr track u var video wbr
+//title tr track u
+
+ul {
+   @extend ol;
+
+   li {
+      list-style-type: disc;
+   }
+}
+
+//var video wbr
+
+:any-link {
+   color: color('azure');
+
+   &:hover {
+      color: color('blue');
+   }
+}

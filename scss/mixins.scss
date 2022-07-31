@@ -1,10 +1,39 @@
-// properties
+@mixin block($type: '') {
+   @include border('', $type);
+   @include margin;
+   @include padding;
+
+   @if ($type  !='blur') {
+      @include box-shadow;
+   }
+
+   >h1,
+   >h2,
+   >h3 {
+      margin: 0;
+   }
+}
+
+@mixin input($type: '') {
+   @include inline;
+
+   background-color: transparent;
+   font-size: 1rem;
+   outline: 0;
+}
+
+@mixin inline($type: '') {
+   @include border('inline', $type);
+   @include padding('inline');
+}
+
+//
 
 @mixin border($model: '', $type: '') {
    @include border-radius($model);
 
-   @if $type =='blur' {
-      box-shadow: 0 0 5px map-get($colors, 'gray_web');
+   @if $type=='blur' {
+      box-shadow: 0 0 5px color('gray-web');
    }
 
    @else {
@@ -13,7 +42,7 @@
 }
 
 @mixin border-radius($model: '') {
-   @if $model =="inline" {
+   @if $model=="inline" {
       border-radius: 6px;
    }
 
@@ -31,7 +60,7 @@
 }
 
 @mixin padding($model: '') {
-   @if $model =="inline" {
+   @if $model=="inline" {
       padding: .4rem .6rem;
    }
 
@@ -40,72 +69,11 @@
    }
 }
 
-// models
+//
 
-@mixin block($type: '') {
-   @include border('', $type);
-   @include margin;
-   @include padding;
-
-   @if $type  !='blur' {
-      @include box-shadow;
-   }
-
-   >* {
-      margin-left: 10px;
-   }
-
-   >h1,
-   >h2,
-   >h3 {
-      margin: 0;
-   }
-}
-
-@mixin input {
-   @include inline;
-
-   background-color: transparent;
-   font-size: 1rem;
-   outline: 0;
-}
-
-@mixin inline {
-   @include border('inline');
-   @include padding('inline');
-}
-
-// combined elements
-
-@mixin abutton {
-   @extend button;
-
-   display: inline-block;
-   text-decoration: none;
-
-   &:hover {
-      background-color: transparent;
-   }
-}
-
-@mixin imgbutton($dimensions: 40px, $padding: 5px) {
-   @extend button;
-
-   padding: $padding;
-   height: $dimensions;
-   width: $dimensions;
-}
-
-// others
-
-@mixin error {
-   @include inline;
-
-   color: map-get($colors, 'red');
-
-   &::before {
-      content: '❌Error: ';
-   }
+@mixin flex {
+   display: flex;
+   flex-wrap: wrap;
 }
 
 @mixin fullscreen {
@@ -115,14 +83,9 @@
    min-width: 100vw;
 }
 
-@mixin flex {
-   display: flex;
-   flex-wrap: wrap;
-}
-
 @mixin highlight($type: '') {
    &:hover {
-      background-color: map-get($colors, 'silver');
+      background-color: color('silver-chalice');
 
       @if $type =='bubble' {
          @include border-radius('inline');
@@ -138,12 +101,16 @@
    padding: 0;
 }
 
-@mixin warn {
-   @include inline;
+@mixin var($type) {
+   @if $type=='bool' {
+      color: color('violet-color-wheel');
+   }
 
-   color: map-get($colors, 'orange');
+   @else if $type=='number' {
+      color: color('screamin-green');
+   }
 
-   &::before {
-      content: '⚠️Warning: ';
+   @else if $type=='string' {
+      color: color('orange');
    }
 }
