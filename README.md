@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="./dist/ss.css">
-
 # Sasscript
 
-- [Changelog](CHANGELOG.md)
+Custom Sass library with default styles for HTML elements
+
+-  [Changelog](CHANGELOG.md)

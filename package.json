@@ -1,5 +1,5 @@
 {
-  "scripts": {
-      "compile": "sass ./scss/ss.scss ./dist/min.css --style compressed && sass --watch ./scss/ss.scss ./dist/ss.css"
+   "scripts": {
+      "compl": "sass ./ss.scss ./dist/min.css --style compressed && sass --watch ./ss.scss ./dist/ss.css"
    }
 }

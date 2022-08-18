@@ -52,8 +52,8 @@ button {
    }
 
    &[type='reset'] {
-      border-color:  color('red');
-      color:  color('red');
+      border-color: color('red');
+      color: color('red');
    }
 
    &[type='submit'] {
@@ -85,11 +85,9 @@ del {
 
 dialog {
    @include block;
-
-   background-color: color('white');
 }
 
-//div dl dt em embed
+// div dl dt em embed
 
 fieldset {
    @include block;
@@ -132,16 +130,15 @@ h3 {
 }
 
 h4 {
-   font-size: .9rem;
+   font-size: 0.9rem;
 }
 
 h5 {
-
-   font-size: .8rem;
+   font-size: 0.8rem;
 }
 
 h6 {
-   font-size: .7rem;
+   font-size: 0.7rem;
 }
 
 //head
@@ -177,7 +174,7 @@ input {
    @include input;
 
    &[type='button'] {
-      cursor: pointer;
+      @extend button;
    }
 
    &[type='checkbox'] {
@@ -195,7 +192,7 @@ input {
       width: 50px;
    }
 
-   //&[type='date'] &[type='datetime-local'] &[type='email'] &[type='file'] &[type='hidden'] &[type='image'] &[type='month'] &&[type='number '] &&[type='password'] 
+   //&[type='date'] &[type='datetime-local'] &[type='email'] &[type='file'] &[type='hidden'] &[type='image'] &[type='month'] &[type='number '] &[type='password']
 
    &[type='radio'] {
       @extend [type='checkbox'];
@@ -215,7 +212,7 @@ input {
       @include highlight;
    }
 
-   //&[type='search'] 
+   //&[type='search']
 
    &[type='submit'] {
       cursor: pointer;
@@ -244,14 +241,14 @@ main {
 
 mark {
    @extend code;
-   
+
    background-color: color('yellow');
 }
 
 //meta
 
 meter {
-   height: 20px;
+   height: 40px;
    width: 200px;
 }
 
@@ -275,10 +272,7 @@ p::first-letter {
 //param picture pre
 
 progress {
-   @include border;
-
-   height: 20px;
-   width: 200px;
+   @extend meter;
 }
 
 //q rt rc rtc ruby s samp script section

@@ -1,0 +1,15 @@
+@mixin abutton {
+   @extend button;
+
+   @include inline-block;
+
+   text-decoration: none;
+
+   &:hover {
+      background-color: transparent;
+   }
+}
+
+@include ss('abutton', 'a') {
+   @include abutton;
+}

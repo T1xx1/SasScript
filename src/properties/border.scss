@@ -1,0 +1,25 @@
+@mixin border($model: '', $type: '') {
+   @include border-radius($model);
+
+   @if $type == 'blur' {
+      box-shadow: 0 0 5px color('gray-web');
+   } @else {
+      border: 2.5px solid currentColor;
+   }
+}
+
+@include ss('border') {
+   @include border;
+}
+
+@include ss('border_inline') {
+   @include border('inline');
+}
+
+@include ss('border_blur') {
+   @include border('', 'blur');
+}
+
+@include ss('border_inline_blur') {
+   @include border('inline', 'blur');
+}

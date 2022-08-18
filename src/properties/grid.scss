@@ -1,0 +1,28 @@
+@mixin grid(
+   $align-content: normal,
+   $justify-content: normal,
+   $align-items: normal,
+   $justify-items: normal
+) {
+   display: grid;
+
+   @if $align-content != normal and $align-content != '' {
+      align-content: $align-content;
+   }
+
+   @if $align-items != normal and $align-items != '' {
+      align-items: $align-items;
+   }
+
+   @if $justify-content != normal and $justify-content != '' {
+      justify-content: $justify-content;
+   }
+
+   @if $justify-items != normal and $justify-items != '' {
+      justify-items: $justify-items;
+   }
+}
+
+@include ss('grid') {
+   @include grid;
+}

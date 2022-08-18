@@ -1,0 +1,15 @@
+@mixin padding($model: '') {
+   @if $model == 'inline' {
+      padding: 0.4rem 0.6rem;
+   } @else {
+      padding: 8px 13px;
+   }
+}
+
+@include ss('padding') {
+   @include padding;
+}
+
+@include ss('padding_inline') {
+   @include padding('inline');
+}

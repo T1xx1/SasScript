@@ -1,0 +1,11 @@
+@mixin input {
+   @include inline;
+
+   background-color: transparent;
+   font-size: 1rem;
+   outline: 0;
+}
+
+@include ss('input') {
+   @include input;
+}

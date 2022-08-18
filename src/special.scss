@@ -1,0 +1,54 @@
+code pre {
+   display: inline;
+}
+
+fieldset > form:only-child {
+   @include reset;
+}
+
+form {
+   > fieldset:only-child {
+      @include reset;
+   }
+
+   li {
+      list-style-type: none;
+   }
+}
+
+header,
+p {
+   &:first-child {
+      margin-top: 0;
+   }
+}
+
+@include ss('crossed', 'table') {
+   td,
+   th,
+   tr {
+      border: 0;
+   }
+
+   td:first-child,
+   th:first-child,
+   tr:first-child {
+      @include border;
+
+      box-shadow: none;
+   }
+}
+
+@include ss('note', 'table') {
+   td,
+   th,
+   tr {
+      border: 0;
+   }
+
+   tr:first-child {
+      @include border;
+
+      box-shadow: none;
+   }
+}

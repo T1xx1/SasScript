@@ -1,0 +1,17 @@
+@mixin reset($type: '') {
+   border: 0;
+   box-shadow: none;
+
+   @if $type != 'border' {
+      margin: 0;
+      padding: 0;
+   }
+}
+
+@include ss('reset') {
+   @include reset;
+}
+
+@include ss('reset_border') {
+   @include reset('border');
+}

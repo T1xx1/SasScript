@@ -1,0 +1,7 @@
+@mixin box-shadow {
+   box-shadow: 1.5px 1.5px 0 currentColor;
+}
+
+@include ss('box-shadow') {
+   @include box-shadow;
+}

@@ -1,0 +1,18 @@
+@mixin highlight($type: '') {
+   &:hover {
+      background-color: color('silver-chalice');
+
+      @if $type == 'bubble' {
+         @include border-radius('inline');
+         @include padding('inline');
+      }
+   }
+}
+
+@include ss('highlight') {
+   @include highlight;
+}
+
+@include ss('highlight_bubble') {
+   @include highlight('bubble');
+}

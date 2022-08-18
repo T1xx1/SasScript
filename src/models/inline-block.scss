@@ -1,0 +1,7 @@
+@mixin inline-block {
+   display: inline-block;
+}
+
+@include ss('inline-block') {
+   @include inline-block;
+}

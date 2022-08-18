@@ -1,0 +1,13 @@
+@mixin error {
+   @include inline;
+
+   color: color('red');
+
+   &::before {
+      content: '❌Error: ';
+   }
+}
+
+@include ss('error') {
+   @include error;
+}

@@ -1,0 +1,7 @@
+@mixin margin {
+   margin: 10px 15px;
+}
+
+@include ss('margin') {
+   @include margin;
+}

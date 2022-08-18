@@ -1,0 +1,43 @@
+::-webkit-file-upload-button {
+   @extend button;
+}
+
+::-webkit-inner-spin-button {
+   @extend button;
+}
+
+::-webkit-input-placeholder {
+   color: currentColor;
+}
+
+//::-webkit-media-controls ::-webkit-media-controls-current-time-display ::-webkit-media-controls-enclosure ::-webkit-media-controls-fullscreen-button ::-webkit-media-controls-mute-button ::-webkit-media-controls-overlay-enclosure ::-webkit-media-controls-panel ::-webkit-media-controls-play-button ::-webkit-media-controls-timeline ::-webkit-media-controls-time-remaining-display ::-webkit-media-controls-toggle-closed-captions-button ::-webkit-media-controls-volume-control-container ::-webkit-media-controls-volume-control-hover-background ::-webkit-media-controls-volume-slider ::-webkit-meter-bar ::-webkit-meter-even-less-good-value ::-webkit-meter-inner-element
+
+::-webkit-meter-optimum-value {
+   @include border-radius;
+}
+
+//::-webkit-meter-suboptimum-value ::-webkit-media-text-track-container
+
+::-webkit-outer-spin-button {
+   @extend button;
+}
+
+//::-webkit-progress-bar ::-webkit-progress-inner-element ::-webkit-progress-value
+
+::-webkit-search-cancel-button {
+   @extend button;
+
+   @include reset;
+}
+
+::-webkit-search-results-button {
+   @extend button;
+}
+
+//::-webkit-slider-runnable-track
+
+::-webkit-slider-thumb {
+   @extend button;
+}
+
+// ::-webkit-textfield-decoration-container ::-webkit-validation-bubble ::-webkit-validation-bubble-arrow ::-webkit-validation-bubble-arrow-clipper ::-webkit-validation-bubble-heading ::-webkit-validation-bubble-message ::-webkit-validation-bubble-text-block 

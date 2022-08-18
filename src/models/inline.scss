@@ -1,0 +1,14 @@
+@mixin inline($type: '') {
+   @include border('inline', $type);
+   @include padding('inline');
+
+   display: inline;
+}
+
+@include ss('inline') {
+   @include inline;
+}
+
+@include ss('inline_blur') {
+   @include inline('blur');
+}

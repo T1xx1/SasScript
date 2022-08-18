@@ -1,0 +1,13 @@
+@mixin warn {
+   @include inline;
+
+   color: color('orange');
+
+   &::before {
+      content: '⚠️Warning: ';
+   }
+}
+
+@include ss('warn') {
+   @include warn;
+}
