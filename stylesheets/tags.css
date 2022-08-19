@@ -48,6 +48,7 @@ button {
    border-radius: var(--border-radius_inline);
    color: var(--black);
    cursor: pointer;
+   font-size: 1rem;
    padding: var(--padding_inline);
 }
 
@@ -163,7 +164,7 @@ hr {
    border: var(--border);
    border-radius: var(--border-radius_block);
    height: .3rem;
-   margin: var(--margin) calc(var(--margin) / 2);
+   margin: var(--margin) 0;
 }
 
 /* html i */
@@ -176,10 +177,11 @@ iframe {
 /* img */
 
 input {
-   color: var(--black);
    background-color: var(--white);
    border: var(--border);
    border-radius: var(--border-radius_inline);
+   color: var(--black);
+   font-size: 1rem;
    min-width: 30px;
    padding: var(--padding_inline);
 }

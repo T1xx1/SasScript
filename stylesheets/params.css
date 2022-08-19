@@ -2,13 +2,18 @@
    font-size: 3rem;
 }
 
+[buttons] a {
+   background-color: var(--white);
+   border: var(--border);
+   border-radius: var(--border-radius_inline);
+   cursor: pointer;
+   padding: var(--padding_inline);
+   text-decoration: none;
+}
+
 [flex] {
    display: flex;
    flex-wrap: wrap;
-}
-
-[flex] * {
-   margin: calc(var(--margin) / 2);
 }
 
 [small] {

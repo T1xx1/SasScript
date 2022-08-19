@@ -16,28 +16,28 @@
 }
 
 :root {
-   --black: #000000;
-   --blue: #0000ff;
-   --cyan: #00ffff;
-   --gray: #777777;
-   --green: #00bb00;
-   --light-gray: #cccccc;
-   --lime: #00ff00;
-   --orange: #ff8000;
-   --pink: #ff00ff;
-   --purple: #aa00ff;
-   --red: #ff0000;
-   --white: #ffffff;
-   --yellow: #ffff00;
+   --black: #000;
+   --blue: #00f;
+   --cyan: #0ff;
+   --gray: #777;
+   --green: #0b0;
+   --light-gray: #ccc;
+   --lime: #0f0;
+   --orange: #f80;
+   --pink: #f0f;
+   --purple: #a0f;
+   --red: #f00;
+   --white: #fff;
+   --yellow: #ff0;
 }
 
 * {
    font-family: var(--font-family);
-   font-size: var(--font-size)
 }
 
 :root {
    cursor: default;
+   font-size: var(--font-size);
    font-weight: 400;
    height: 100%;
    scroll-behavior: smooth;
