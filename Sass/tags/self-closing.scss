@@ -1,0 +1,75 @@
+//base col embed
+
+//img
+
+input {
+   background-color: $background-color;
+   border: $border;
+   border-radius: $border-radius_inline;
+   box-shadow: $box-shadow_block;
+   font-size: 1rem;
+   outline: 0;
+   padding: $padding_inline;
+
+   &[type='button'] {
+      cursor: pointer;
+   }
+
+   &[type='checkbox'] {
+      accent-color: $azure;
+      aspect-ratio: 1 / 1;
+      box-shadow: none;
+      cursor: pointer;
+      height: 20px;
+      margin: 0;
+      position: relative;
+      top: 3px;
+   }
+
+   &[type='color'] {
+      cursor: pointer;
+      padding-bottom: 3px;
+   }
+
+   //&[type='date'] &[type='datetime-local'] &[type='email']
+
+   &[type='file'] {
+      padding-bottom: 2px;
+   }
+
+   //&[type='hidden'] &[type='image'] &[type='month'] &[type='number '] &[type='password']
+
+   &[type='radio'] {
+      box-shadow: none;
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+   }
+
+   &[type='range'] {
+      box-shadow: none;
+      cursor: pointer;
+   }
+
+   &[type='reset'] {
+      cursor: pointer;
+   }
+
+   &[type='reset']:hover {
+      background-color: $light-gray;
+   }
+
+   //&[type='search']
+
+   &[type='submit'] {
+      cursor: pointer;
+   }
+
+   &[type='submit']:hover {
+      background-color: $light-gray;
+   }
+
+   //&[type='tel'] &[type='text'] &[type='time'] &[type='url'] &[type='week']
+}
+
+//param source track

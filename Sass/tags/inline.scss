@@ -1,0 +1,71 @@
+//abbr
+
+abbr[title] {
+   text-decoration: underline $ao-english;
+}
+
+//area b bdi bdo
+
+button {
+   background-color: $background-color;
+   border: $border;
+   border-radius: $border-radius_inline;
+   box-shadow: $box-shadow_block;
+   cursor: pointer;
+   font-size: 1rem;
+   padding: $padding_inline;
+
+   &:disabled {
+      border-color: $light-gray;
+      color: $light-gray;
+      cursor: not-allowed;
+   }
+
+   &:hover:not(:disabled) {
+      background-color: $light-gray;
+   }
+
+   &[type='reset'] {
+      border-color: $red;
+      color: $red;
+   }
+
+   &[type='submit'] {
+      border-color: $ao-english;
+      color: $ao-english;
+   }
+}
+
+//cite
+
+code {
+   background-color: $light-gray;
+   border-radius: $border-radius_inline;
+   font-size: 1rem;
+   padding: $padding_inline;
+}
+
+//data dd
+
+del {
+   background-color: $red;
+   border-radius: $border-radius_inline;
+   color: $white;
+   padding: $padding_inline;
+   text-decoration: none;
+}
+
+//dnf em i ins kbd label output q rt rc rtc s samp slot small span strong sub sup
+
+textarea {
+   border: $border;
+   border-radius: $border-radius_inline;
+   font-size: 1rem;
+   padding: $padding_inline;
+}
+
+textarea:focus-visible {
+   outline: 0;
+}
+
+//time u var wbr

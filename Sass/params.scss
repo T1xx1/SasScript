@@ -5,12 +5,12 @@ table[crossed] tr {
 }
 
 table[crossed] tr:first-child {
-   border-bottom: var(--border);
+   border-bottom: $border;
 }
 
 table[crossed] td:first-child,
 table[crossed] th:first-child {
-   border-right: var(--border);
+   border-right: $border;
 }
 
 table[disabled],
@@ -21,21 +21,23 @@ table[disabled] tr {
 }
 
 [bubble]:hover,
-[bubbles]> :hover {
-   background-color: var(--highlight);
-   border-radius: var(--border-radius_inline);
-   padding: var(--padding_inline);
+[bubbles] > :hover {
+   background-color: $highlight;
+   border-radius: $border-radius_inline;
+   padding: $padding_inline;
 }
 
 [button],
-[buttons]>* {
+[buttons] > * {
    background-color: transparent;
-   border: var(--border);
+   border: $border;
    border-color: inherit;
-   border-radius: var(--border-radius_inline);
-   box-shadow: var(--box-shadow);
+   border-radius: $border-radius_inline;
    cursor: pointer;
-   padding: var(--padding_inline);
+   margin: $margin;
+   margin-bottom: 0;
+   margin-left: 0;
+   padding: $padding_inline;
    text-decoration: none;
 }
 
@@ -44,6 +46,7 @@ table[disabled] tr {
    flex-wrap: wrap;
 }
 
-[highlight]:hover {
-   background-color: var(--highlight);
+[highlight]:hover,
+[highlights] > :hover {
+   background-color: $highlight;
 }

@@ -1,0 +1,83 @@
+address {
+   @extend .block;
+}
+
+//audio
+
+blockquote {
+   @extend .block;
+}
+
+//canvas caption datalist
+
+dialog {
+   background-color: $white;
+   border: $border;
+   border-radius: $border-radius_block;
+   padding: $padding_block;
+}
+
+//div dl
+
+fieldset {
+   @extend .block;
+
+   border: $border;
+   border-radius: $border-radius_block;
+   padding: $padding_block;
+}
+
+form {
+   @extend .block;
+
+   border: $border;
+   border-radius: $border-radius_block;
+   padding: $padding_block;
+   text-align: center;
+}
+
+//hgroup
+
+iframe {
+   @extend .block;
+
+   border: $border;
+   border-radius: $border-radius_block;
+}
+
+//legend map
+
+meter {
+   height: 20px;
+   width: 200px;
+}
+
+//noframes object optgroup pre
+
+progress {
+   height: 20px;
+   width: 200px;
+}
+
+//ruby
+
+select {
+   border: $border;
+   border-radius: $border-radius_inline;
+   cursor: pointer;
+   font-size: 1rem;
+   padding: $padding_inline;
+}
+
+select:focus-visible {
+   outline: 0;
+}
+
+table {
+   @extend .block;
+
+   border: $border;
+   border-collapse: collapse;
+}
+
+//tbody template tfoot thead video

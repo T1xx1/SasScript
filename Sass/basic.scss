@@ -1,0 +1,152 @@
+@import 'colors.sass';
+@import 'fonts.sass';
+@import 'properties.sass';
+
+* {
+   background-color: $background-color;
+   box-sizing: border-box;
+   font-family: $poppins;
+   scroll-behavior: smooth;
+   transition: all $time;
+   user-select: none;
+}
+
+:root {
+   color: $primary-color;
+   cursor: default;
+   min-height: 100%;
+}
+
+/* Common styles */
+
+.block {
+   margin: $margin;
+}
+
+//.inline {}
+
+/* Meta tags */
+
+//head html link meta noscript script style title
+
+/* Basic elements */
+
+body {
+   @extend .block;
+
+   margin-bottom: 2rem;
+}
+
+//br
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   margin: 0;
+}
+
+h1 {
+   font-size: 2.6rem;
+}
+
+h2 {
+   font-size: 1.7rem;
+}
+
+h3 {
+   font-size: 1.2rem;
+}
+
+h4 {
+   font-size: 0.9rem;
+}
+
+h5 {
+   font-size: 0.8rem;
+}
+
+h6 {
+   font-size: 0.7rem;
+}
+
+hr {
+   border: $border;
+   border-radius: $border-radius_block;
+   height: 13px;
+   margin: $margin 0;
+}
+
+//p
+
+/* Semantic elements */
+
+article {
+   @extend .block;
+
+   padding: $padding_block;
+}
+
+aside {
+   @extend .block;
+
+   float: right;
+   width: fit-content;
+}
+
+// details
+
+details > *:not(summary) {
+   padding-left: $tab;
+}
+
+//figcaption figure footer header
+
+main {
+   @extend .block;
+}
+
+mark {
+   background-color: $yellow;
+   border-radius: $border-radius_inline;
+   padding: $padding_inline;
+}
+
+nav {
+   margin-bottom: $margin;
+}
+
+//section
+
+summary {
+   cursor: pointer;
+}
+
+//time
+
+/* Other basic elements */
+
+//a
+
+ol,
+ul {
+   margin: 0;
+}
+
+ol {
+   padding-left: $tab;
+}
+
+ul {
+   padding-left: $tab;
+}
+
+:any-link {
+   color: $azure;
+
+   &:hover {
+      color: $blue;
+   }
+}

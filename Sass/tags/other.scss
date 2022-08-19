@@ -1,0 +1,39 @@
+//dt
+
+li {
+   list-style-type: disc;
+}
+
+//option picture
+
+td {
+   border: $border;
+   padding: $padding_inline;
+}
+
+th {
+   border: $border;
+   padding: $padding_inline;
+   text-align: center;
+}
+
+//tr
+
+::-webkit-calendar-picker-indicator {
+   cursor: pointer;
+}
+
+::-webkit-file-upload-button {
+   background-color: $background-color;
+   border: $border;
+   border-radius: $border-radius_inline;
+   box-shadow: $box-shadow_block;
+   cursor: pointer;
+   font-size: 1rem;
+   margin-bottom: 2px;
+   padding: $padding_inline;
+}
+
+::-webkit-file-upload-button:hover {
+   background-color: $light-gray;
+}
