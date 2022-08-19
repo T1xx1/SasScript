@@ -43,10 +43,10 @@ body {
 /* br */
 
 button {
-   background-color: var(--white);
+   background-color: transparent;
    border: var(--border);
    border-radius: var(--border-radius_inline);
-   color: var(--black);
+   color: var(--color);
    cursor: pointer;
    font-size: 1rem;
    padding: var(--padding_inline);
@@ -161,14 +161,13 @@ h6 {
    font-size: .7rem;
 }
 
-hr,
-hr:not([size]) {
-   background-color: var(--white);
+hr {
+   background-color: transparent;
    border: var(--border);
-   border-color: var(--black);
    border-radius: var(--border-radius_block);
    height: .3rem;
    margin: var(--margin) 0;
+   opacity: 1;
 }
 
 /* html i */
@@ -181,10 +180,9 @@ iframe {
 /* img */
 
 input {
-   background-color: var(--white);
+   background-color: transparent;
    border: var(--border);
    border-radius: var(--border-radius_inline);
-   color: var(--black);
    font-size: 1rem;
    min-width: 30px;
    padding: var(--padding_inline);
@@ -225,7 +223,7 @@ input[type="file"] {
 }
 
 input[type="file"]::-webkit-file-upload-button {
-   background-color: var(--white);
+   background-color: var(--background-color);
    border: var(--border);
    border-radius: calc(var(--border-radius_inline) - 1px);
    color: var(--black);
@@ -315,11 +313,17 @@ progress {
 /* q rp rt ruby s samp script section */
 
 select {
+   background-color: transparent;
    border: var(--border);
    border-radius: var(--border-radius_inline);
    cursor: pointer;
    font-size: 1rem;
+   outline: 0;
    padding: var(--padding_inline);
+}
+
+select>* {
+   color: var(--background-color);
 }
 
 /* source span strong style sub */
@@ -340,13 +344,14 @@ table {
 /* tbody */
 
 td {
-   border: var(--border) var(--black);
+   border: var(--border);
    min-width: .4rem;
    padding: var(--padding_inline);
 }
 
 textarea {
-   border: var(--border) var(--black);
+   background-color: transparent;
+   border: var(--border);
    border-radius: var(--border-radius_inline);
    font-size: 1rem;
    outline: 0;
@@ -356,7 +361,7 @@ textarea {
 /* tfoot */
 
 th {
-   border: var(--border) var(--black);
+   border: var(--border);
    min-width: .4rem;
    padding: var(--padding_inline);
    text-align: center;

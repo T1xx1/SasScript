@@ -9,6 +9,7 @@
    --cyan: #0ff;
    --gray: #777;
    --green: #0b0;
+   --light-black: #1c1c1c;
    --light-gray: #ccc;
    --lime: #0f0;
    --orange: #f80;
@@ -19,22 +20,34 @@
    --white: #fff;
    --yellow: #ff0;
 
-   --border: .15rem solid;
-   --border-radius_block: 10px;
-   --border-radius_inline: 6px;
+   --background-color: var(--white);
+   --border: .15rem solid var(--color);
+   --border-radius_block: 9px;
+   --border-radius_inline: 5px;
+   --color: var(--black);
    --font-family: "Courier Prime", monospace;
    --font-size: 18px;
-   --font-weight: 400;
+   --font-weight: 300;
    --line-height: 1.2rem;
    --margin: .4rem;
-   --padding_block: .5rem .7rem .2rem .7rem;
+   --padding_block: .47rem .7rem .25rem .7rem;
    --padding_inline: .1rem .35rem 0 .35rem;
-   --shadow: 0 0 4px var(--black);
+   --shadow: 0 0 3px var(--color);
    --tab: 1.6rem;
 }
 
+/*dark mode*/
+@media (prefers-color-scheme: dark) {
+   :root {
+      --background-color: var(--light-black);
+      --color: var(--white);
+   }
+}
+
 * {
+   background-color: transparent;
    box-sizing: content-box;
+   color: var(--color);
    font-family: var(--font-family);
    line-height: var(--line-height);
    scroll-behavior: smooth;
@@ -42,10 +55,10 @@
 }
 
 :root {
+   background-color: var(--background-color);
    cursor: default;
    font-size: var(--font-size);
    font-weight: var(--font-weight);
    height: 100%;
-   overflow-x: hidden;
    user-select: none;
 }

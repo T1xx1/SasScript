@@ -1,10 +1,37 @@
-[big] {
-   font-size: 3rem;
+table[crossed] td,
+table[crossed] th,
+table[crossed] tr {
+   border: 0;
 }
 
-[buttons] a {
-   background-color: var(--white);
+table[crossed] tr:first-child {
+   border-bottom: var(--border);
+}
+
+table[crossed] td:first-child,
+table[crossed] th:first-child {
+   border-right: var(--border);
+}
+
+table[disabled],
+table[disabled] td,
+table[disabled] th,
+table[disabled] tr {
+   border: 0;
+}
+
+[bubble]:hover,
+[bubbles]> :hover {
+   background-color: var(--gray);
+   border-radius: var(--border-radius_inline);
+   padding: var(--padding_inline);
+}
+
+[button],
+[buttons]>* {
+   background-color: transparent;
    border: var(--border);
+   border-color: inherit;
    border-radius: var(--border-radius_inline);
    cursor: pointer;
    padding: var(--padding_inline);
@@ -14,29 +41,4 @@
 [flex] {
    display: flex;
    flex-wrap: wrap;
-}
-
-[small] {
-   font-size: .5rem;
-}
-
-a[button] {
-   background-color: var(--white);
-   border: var(--border);
-   border-radius: var(--border-radius_inline);
-   cursor: pointer;
-   padding: var(--padding_inline);
-   text-decoration: none;
-}
-
-table[crossed],
-table[crossed] td,
-table[crossed] th,
-table[crossed] tr {}
-
-table[disabled],
-table[disabled] td,
-table[disabled] th,
-table[disabled] tr {
-   border: 0;
 }
