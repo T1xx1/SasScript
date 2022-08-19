@@ -9,7 +9,7 @@
 * {
    background-color: transparent;
    box-sizing: border-box;
-   font-family: "Poppins";
+   font-family: 'Poppins';
    scroll-behavior: smooth;
    transition: all 0.2s;
 }
