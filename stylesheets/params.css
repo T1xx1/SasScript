@@ -22,7 +22,7 @@ table[disabled] tr {
 
 [bubble]:hover,
 [bubbles]> :hover {
-   background-color: var(--light-gray);
+   background-color: var(--highlight);
    border-radius: var(--border-radius_inline);
    padding: var(--padding_inline);
 }

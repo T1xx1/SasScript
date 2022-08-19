@@ -9,25 +9,6 @@
 @import url(stylesheets/params.css);
 
 :root {
-   --black: #000000;
-   --blue: #0000ff;
-   --cyan: #00ffff;
-   --gray: #555555;
-   --green: #00aa00;
-   --indigo: #d500ff;
-   --light-black: #101010;
-   --light-blue: #0080ff;
-   --light-gray: #bbbbbb;
-   --light-green: #00d500;
-   --lime: #00ff00;
-   --orange: #ff8800;
-   --pink: #ff00ff;
-   --purple: #aa00ff;
-   --red: #ff0000;
-   --transcripter: #00bbff;
-   --white: #ffffff;
-   --yellow: #fff000;
-
    --background-color: var(--white);
    --border: .15rem solid var(--color);
    --border-radius_block: 9px;
@@ -41,7 +22,29 @@
    --padding_block: .47rem .7rem .25rem .7rem;
    --padding_inline: .13rem .35rem 0 .35rem;
    --shadow: 0 0 3px var(--color);
+
+   --highlight: var(--light-gray);
    --tab: 1.6rem;
+   --time: .1s;
+
+   --black: #000000;
+   --blue: #0000ff;
+   --cyan: #00ffff;
+   --gray: #555555;
+   --green: #00cc00;
+   --indigo: #d500ff;
+   --light-black: #101010;
+   --light-blue: #0080ff;
+   --light-gray: #bbbbbb;
+   --light-green: #00e600;
+   --lime: #00ff00;
+   --orange: #ff8800;
+   --pink: #ff00ff;
+   --purple: #aa00ff;
+   --red: #ff0000;
+   --transcripter: #00bbff;
+   --white: #ffffff;
+   --yellow: #fff000;
 }
 
 /*@media (prefers-color-scheme: dark) {
@@ -52,17 +55,16 @@
 }*/
 
 * {
-   background-color: transparent;
    box-sizing: content-box;
-   color: var(--color);
    font-family: var(--font-family);
    line-height: var(--line-height);
    scroll-behavior: smooth;
-   transition: all .1s;
+   transition: all var(--time);
 }
 
 :root {
    background-color: var(--background-color);
+   color: var(--color);
    cursor: default;
    font-size: var(--font-size);
    font-weight: var(--font-weight);

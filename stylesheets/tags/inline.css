@@ -15,6 +15,7 @@ abbr[title] {
 /* area b bdi bdo */
 
 button {
+   background-color: var(--white);
    border: var(--border);
    border-radius: var(--border-radius_inline);
    cursor: pointer;
