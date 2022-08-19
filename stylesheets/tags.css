@@ -133,6 +133,7 @@ h4,
 h5,
 h6 {
    font-weight: normal;
+   line-height: initial;
    margin: 0;
 }
 
@@ -160,8 +161,11 @@ h6 {
    font-size: .7rem;
 }
 
-hr {
+hr,
+hr:not([size]) {
+   background-color: var(--white);
    border: var(--border);
+   border-color: var(--black);
    border-radius: var(--border-radius_block);
    height: .3rem;
    margin: var(--margin) 0;

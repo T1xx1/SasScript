@@ -17,29 +17,33 @@
    --red: #f00;
    --white: #fff;
    --yellow: #ff0;
-}
 
-:root {
    --border: .15rem solid;
    --border-radius_block: 10px;
    --border-radius_inline: 6px;
    --font-family: "Courier Prime", monospace;
    --font-size: 18px;
+   --font-weight: 400;
+   --line-height: 1.2rem;
    --margin: .4rem;
-   --padding_block: .5rem .7rem;
+   --padding_block: .5rem .7rem .2rem .7rem;
    --padding_inline: .1rem .35rem 0 .35rem;
+   --shadow: 0 0 5px var(--black);
    --tab: 1.6rem;
 }
 
 * {
+   box-sizing: content-box;
    font-family: var(--font-family);
+   line-height: var(--line-height);
+   scroll-behavior: smooth;
+   transition: all .1s;
 }
 
 :root {
    cursor: default;
    font-size: var(--font-size);
-   font-weight: 400;
+   font-weight: var(--font-weight);
    height: 100%;
-   scroll-behavior: smooth;
    user-select: none;
 }

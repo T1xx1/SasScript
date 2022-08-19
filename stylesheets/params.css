@@ -29,14 +29,6 @@ a[button] {
    text-decoration: none;
 }
 
-a[inverted] {
-   color: var(--red);
-}
-
-a[inverted]:hover {
-   color: var(--cyan);
-}
-
 table[crossed],
 table[crossed] td,
 table[crossed] th,
