@@ -1,3 +1,5 @@
+/* Params */
+
 table[crossed] td,
 table[crossed] th,
 table[crossed] tr {
@@ -13,13 +15,6 @@ table[crossed] th:first-child {
    border-right: $border;
 }
 
-table[disabled],
-table[disabled] td,
-table[disabled] th,
-table[disabled] tr {
-   border: 0;
-}
-
 [bubble]:hover,
 [bubbles] > :hover {
    background-color: $highlight;
@@ -29,15 +24,13 @@ table[disabled] tr {
 
 [button],
 [buttons] > * {
-   background-color: transparent;
-   border: $border;
-   border-color: inherit;
-   border-radius: $border-radius_inline;
+   @include element('inline');
+
+   border-color: currentColor;
    cursor: pointer;
    margin: $margin;
-   margin-bottom: 0;
+   margin-bottom: 7px;
    margin-left: 0;
-   padding: $padding_inline;
    text-decoration: none;
 }
 

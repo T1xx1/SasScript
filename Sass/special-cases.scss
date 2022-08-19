@@ -1,7 +1,9 @@
-body > h1:first-child {
-   margin-top: -3px;
-}
+/* Special cases */
 
 form li {
    list-style-type: none;
+}
+
+nav ~ main {
+   margin-top: 0;
 }

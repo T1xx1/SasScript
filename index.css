@@ -1,14 +1,17 @@
+/* Sasscript */
+/* Fonts */
 @import 'https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap';
 @import 'https://fonts.googleapis.com/css2?family=Poppins&display=swap';
 @import 'https://fonts.googleapis.com/css2?family=Roboto&display=swap';
 
+/* Colors */
+/* Properties */
 * {
    background-color: transparent;
    box-sizing: border-box;
    font-family: "Poppins";
    scroll-behavior: smooth;
    transition: all 0.2s;
-   user-select: none;
 }
 
 :root {
@@ -18,23 +21,10 @@
 }
 
 /* Common styles */
-.block,
-table,
-iframe,
-form,
-fieldset,
-blockquote,
-address,
-main,
-aside,
-article,
-body {
-   margin: 0.5rem 0.7rem;
-}
-
 /* Meta tags */
 /* Basic elements */
 body {
+   margin: 0.5rem 0.9rem;
    margin-bottom: 2rem;
 }
 
@@ -49,6 +39,7 @@ h6 {
 
 h1 {
    font-size: 2.6rem;
+   line-height: 1.2;
 }
 
 h2 {
@@ -72,24 +63,34 @@ h6 {
 }
 
 hr {
-   border: 2.5px solid #000000;
-   border-radius: 10px;
-   height: 13px;
-   margin: 0.5rem 0.7rem 0;
+   border: 2.5px solid currentColor;
+   box-shadow: 1.3px 1.3px 0 currentColor;
+   border-radius: 6px;
+   padding: 0.1rem 0.5rem;
+   height: 12px;
 }
 
 /* Semantic elements */
 article {
+   border: 2.5px solid currentColor;
+   box-shadow: 1.3px 1.3px 0 currentColor;
+   margin: 0.5rem 0.9rem;
+   border-radius: 10px;
    padding: 8px 12.5px;
 }
 
 aside {
+   margin: 0.5rem 0.9rem;
    float: right;
    width: fit-content;
 }
 
 details>*:not(summary) {
    padding-left: 30px;
+}
+
+main {
+   margin: 0.5rem 0.9rem;
 }
 
 mark {
@@ -99,7 +100,8 @@ mark {
 }
 
 nav {
-   margin-bottom: 0.5rem 0.7rem;
+   margin: 0 0 0.5rem 0.9rem;
+   margin-left: 0;
 }
 
 summary {
@@ -133,14 +135,31 @@ abbr[title] {
    text-decoration: underline #008000;
 }
 
+address {
+   border: 2.5px solid currentColor;
+   box-shadow: 1.3px 1.3px 0 currentColor;
+   margin: 0.5rem 0.9rem;
+   border-radius: 10px;
+   padding: 8px 12.5px;
+}
+
+blockquote {
+   border: 2.5px solid currentColor;
+   box-shadow: 1.3px 1.3px 0 currentColor;
+   margin: 0.5rem 0.9rem;
+   border-radius: 10px;
+   padding: 8px 12.5px;
+}
+
 button {
-   background-color: transparent;
-   border: 2.5px solid #000000;
+   border: 2.5px solid currentColor;
+   box-shadow: 1.3px 1.3px 0 currentColor;
    border-radius: 6px;
-   box-shadow: 1.2px 1.2px 0 #000000;
+   padding: 0.1rem 0.5rem;
+   background-color: transparent;
+   border-color: currentColor;
    cursor: pointer;
    font-size: 1rem;
-   padding: 0.1rem 0.5rem;
 }
 
 button:disabled {
@@ -178,77 +197,48 @@ del {
    text-decoration: none;
 }
 
-textarea {
-   border: 2.5px solid #000000;
-   border-radius: 6px;
-   font-size: 1rem;
-   padding: 0.1rem 0.5rem;
-}
-
-textarea:focus-visible {
-   outline: 0;
-}
-
 dialog {
-   background-color: #ffffff;
-   border: 2.5px solid #000000;
+   border: 2.5px solid currentColor;
+   box-shadow: 1.3px 1.3px 0 currentColor;
+   margin: 0.5rem 0.9rem;
    border-radius: 10px;
    padding: 8px 12.5px;
+   background-color: #ffffff;
 }
 
 fieldset {
-   border: 2.5px solid #000000;
+   border: 2.5px solid currentColor;
+   box-shadow: 1.3px 1.3px 0 currentColor;
+   margin: 0.5rem 0.9rem;
    border-radius: 10px;
    padding: 8px 12.5px;
 }
 
 form {
-   border: 2.5px solid #000000;
+   border: 2.5px solid currentColor;
+   box-shadow: 1.3px 1.3px 0 currentColor;
+   margin: 0.5rem 0.9rem;
    border-radius: 10px;
    padding: 8px 12.5px;
    text-align: center;
 }
 
 iframe {
-   border: 2.5px solid #000000;
+   border: 2.5px solid currentColor;
+   box-shadow: 1.3px 1.3px 0 currentColor;
+   margin: 0.5rem 0.9rem;
    border-radius: 10px;
-}
-
-meter {
-   height: 20px;
-   width: 200px;
-}
-
-progress {
-   height: 20px;
-   width: 200px;
-}
-
-select {
-   border: 2.5px solid #000000;
-   border-radius: 6px;
-   cursor: pointer;
-   font-size: 1rem;
-   padding: 0.1rem 0.5rem;
-}
-
-select:focus-visible {
-   outline: 0;
-}
-
-table {
-   border: 2.5px solid #000000;
-   border-collapse: collapse;
+   padding: 8px 12.5px;
 }
 
 input {
-   background-color: transparent;
-   border: 2.5px solid #000000;
+   border: 2.5px solid currentColor;
+   box-shadow: 1.3px 1.3px 0 currentColor;
    border-radius: 6px;
-   box-shadow: 1.2px 1.2px 0 #000000;
+   padding: 0.1rem 0.5rem;
+   background-color: transparent;
    font-size: 1rem;
    outline: 0;
-   padding: 0.1rem 0.5rem;
 }
 
 input[type=button] {
@@ -307,34 +297,86 @@ li {
    list-style-type: disc;
 }
 
+meter {
+   height: 20px;
+   width: 200px;
+}
+
+progress {
+   height: 20px;
+   width: 200px;
+}
+
+select {
+   border: 2.5px solid currentColor;
+   box-shadow: 1.3px 1.3px 0 currentColor;
+   border-radius: 6px;
+   padding: 0.1rem 0.5rem;
+   cursor: pointer;
+   font-size: 1rem;
+}
+
+select:focus-visible {
+   outline: 0;
+}
+
+table {
+   border: 2.5px solid currentColor;
+   box-shadow: 1.3px 1.3px 0 currentColor;
+   margin: 0.5rem 0.9rem;
+   border-radius: 10px;
+   padding: 8px 12.5px;
+   border-collapse: collapse;
+}
+
 td {
-   border: 2.5px solid #000000;
+   border: 2.5px solid;
    padding: 0.1rem 0.5rem;
 }
 
+textarea {
+   border: 2.5px solid;
+   border-radius: 6px;
+   font-size: 1rem;
+   padding: 0.1rem 0.5rem;
+}
+
+textarea:focus-visible {
+   outline: 0;
+}
+
 th {
-   border: 2.5px solid #000000;
+   border: 2.5px solid;
    padding: 0.1rem 0.5rem;
    text-align: center;
 }
 
+/* Others */
 ::-webkit-calendar-picker-indicator {
    cursor: pointer;
 }
 
 ::-webkit-file-upload-button {
-   background-color: transparent;
-   border: 2.5px solid #000000;
+   border: 2.5px solid currentColor;
+   box-shadow: 1.3px 1.3px 0 currentColor;
    border-radius: 6px;
-   box-shadow: 1.2px 1.2px 0 #000000;
+   padding: 0.1rem 0.5rem;
+   background-color: transparent;
    cursor: pointer;
    font-size: 1rem;
    margin-bottom: 2px;
-   padding: 0.1rem 0.5rem;
 }
 
 ::-webkit-file-upload-button:hover {
    background-color: #cecece;
+}
+
+/* */
+svg {
+   fill: transparent;
+   font-size: 50px;
+   stroke: #000000;
+   stroke-width: 3px;
 }
 
 /* Params */
@@ -345,19 +387,12 @@ table[crossed] tr {
 }
 
 table[crossed] tr:first-child {
-   border-bottom: 2.5px solid #000000;
+   border-bottom: 2.5px solid;
 }
 
 table[crossed] td:first-child,
 table[crossed] th:first-child {
-   border-right: 2.5px solid #000000;
-}
-
-table[disabled],
-table[disabled] td,
-table[disabled] th,
-table[disabled] tr {
-   border: 0;
+   border-right: 2.5px solid;
 }
 
 [bubble]:hover,
@@ -369,15 +404,15 @@ table[disabled] tr {
 
 [button],
 [buttons]>* {
-   background-color: transparent;
-   border: 2.5px solid #000000;
-   border-color: inherit;
+   border: 2.5px solid currentColor;
+   box-shadow: 1.3px 1.3px 0 currentColor;
    border-radius: 6px;
-   cursor: pointer;
-   margin: 0.5rem 0.7rem;
-   margin-bottom: 0;
-   margin-left: 0;
    padding: 0.1rem 0.5rem;
+   border-color: currentColor;
+   cursor: pointer;
+   margin: 0.5rem 0.9rem;
+   margin-bottom: 7px;
+   margin-left: 0;
    text-decoration: none;
 }
 
@@ -392,12 +427,12 @@ table[disabled] tr {
 }
 
 /* Special cases */
-body>h1:first-child {
-   margin-top: -3px;
-}
-
 form li {
    list-style-type: none;
+}
+
+nav~main {
+   margin-top: 0;
 }
 
 /*# sourceMappingURL=index.css.map */

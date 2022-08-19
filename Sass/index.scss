@@ -1,16 +1,169 @@
-@import 'basic.scss';
+/* Sasscript */
 
-/* Elements */
+@import 'fonts.sass';
+@import 'colors.sass';
+@import 'properties.sass';
 
-@import 'tags/inline.scss';
-@import 'tags/block.scss';
-@import 'tags/self-closing.scss';
-@import 'tags/other.scss';
+* {
+   background-color: $background-color;
+   box-sizing: border-box;
+   font-family: $poppins;
+   scroll-behavior: smooth;
+   transition: all $time;
+}
 
-/* Params */
+:root {
+   color: $primary-color;
+   cursor: default;
+   min-height: 100%;
+}
 
+/* Common styles */
+
+@mixin element($type) {
+   border: $border currentColor;
+   box-shadow: $box-shadow currentColor;
+
+   @if ($type== 'inline') {
+      border-radius: $border-radius_inline;
+      padding: $padding_inline;
+   } @else if ($type== 'block') {
+      @include space;
+
+      border-radius: $border-radius_block;
+      padding: $padding_block;
+   }
+}
+
+@mixin space {
+   margin: $margin;
+}
+
+/* Meta tags */
+
+//head html link meta noscript script style title
+
+/* Basic elements */
+
+body {
+   @include space;
+
+   margin-bottom: 2rem;
+}
+
+//br
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   margin: 0;
+}
+
+h1 {
+   font-size: 2.6rem;
+   line-height: 1.2;
+}
+
+h2 {
+   font-size: 1.7rem;
+}
+
+h3 {
+   font-size: 1.2rem;
+}
+
+h4 {
+   font-size: 0.9rem;
+}
+
+h5 {
+   font-size: 0.8rem;
+}
+
+h6 {
+   font-size: 0.7rem;
+}
+
+hr {
+   @include element('inline');
+
+   height: 12px;
+}
+
+//p
+
+/* Semantic elements */
+
+article {
+   @include element('block');
+}
+
+aside {
+   @include space;
+
+   float: right;
+   width: fit-content;
+}
+
+// details
+
+details > *:not(summary) {
+   padding-left: $tab;
+}
+
+//figcaption figure footer header
+
+main {
+   @include space;
+}
+
+mark {
+   background-color: $yellow;
+   border-radius: $border-radius_inline;
+   padding: $padding_inline;
+}
+
+nav {
+   margin: 0 0 $margin;
+   margin-left: 0;
+}
+
+//section
+
+summary {
+   cursor: pointer;
+}
+
+//time
+
+/* Other basic elements */
+
+//a
+
+ol,
+ul {
+   margin: 0;
+}
+
+ol {
+   padding-left: $tab;
+}
+
+ul {
+   padding-left: $tab;
+}
+
+:any-link {
+   color: $azure;
+
+   &:hover {
+      color: $blue;
+   }
+}
+
+@import 'elements.scss';
 @import 'params.scss';
-
-/* Special cases */
-
 @import 'special-cases.scss';
