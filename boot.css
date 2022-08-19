@@ -4,18 +4,6 @@
 @import url(stylesheets/params.css);
 
 :root {
-   --border: .15rem solid;
-   --border-radius_block: 10px;
-   --border-radius_inline: 6px;
-   --font-family: "Courier Prime", monospace;
-   --font-size: 18px;
-   --margin: .35rem;
-   --padding_block: .5rem .7rem;
-   --padding_inline: .1rem .35rem 0 .35rem;
-   --tab: 1.5rem;
-}
-
-:root {
    --black: #000;
    --blue: #00f;
    --cyan: #0ff;
@@ -29,6 +17,18 @@
    --red: #f00;
    --white: #fff;
    --yellow: #ff0;
+}
+
+:root {
+   --border: .15rem solid;
+   --border-radius_block: 10px;
+   --border-radius_inline: 6px;
+   --font-family: "Courier Prime", monospace;
+   --font-size: 18px;
+   --margin: .4rem;
+   --padding_block: .5rem .7rem;
+   --padding_inline: .1rem .35rem 0 .35rem;
+   --tab: 1.6rem;
 }
 
 * {
