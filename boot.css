@@ -15,6 +15,7 @@
    --pink: #f0f;
    --purple: #a0f;
    --red: #f00;
+   /*--transcripter: #0bf;*/
    --white: #fff;
    --yellow: #ff0;
 
@@ -28,7 +29,7 @@
    --margin: .4rem;
    --padding_block: .5rem .7rem .2rem .7rem;
    --padding_inline: .1rem .35rem 0 .35rem;
-   --shadow: 0 0 5px var(--black);
+   --shadow: 0 0 4px var(--black);
    --tab: 1.6rem;
 }
 
@@ -45,5 +46,6 @@
    font-size: var(--font-size);
    font-weight: var(--font-weight);
    height: 100%;
+   overflow-x: hidden;
    user-select: none;
 }
