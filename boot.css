@@ -1,15 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap");
 
-@import url(tags.css);
-@import url(attributes.css);
-
-@import url(old.css);
-@import url(other.css);
+@import url(stylesheets/tags.css);
+@import url(stylesheets/params.css);
 
 :root {
    --border: .15rem solid;
-   --border-radius_block: 8px;
-   --border-radius_inline: 5px;
+   --border-radius_block: 10px;
+   --border-radius_inline: 6px;
    --font-family: "Courier Prime", monospace;
    --font-size: 18px;
    --margin: .35rem;
@@ -28,7 +25,7 @@
    --lime: #00ff00;
    --orange: #ff8000;
    --pink: #ff00ff;
-   --purple: #8f00ff;
+   --purple: #aa00ff;
    --red: #ff0000;
    --white: #ffffff;
    --yellow: #ffff00;
