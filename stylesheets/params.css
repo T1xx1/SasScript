@@ -42,3 +42,7 @@ table[disabled] tr {
    display: flex;
    flex-wrap: wrap;
 }
+
+[highlight]:hover {
+   background-color: var(--highlight);
+}

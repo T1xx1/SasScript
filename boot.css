@@ -1,28 +1,25 @@
-@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap");
+@import url("font/Courier\ Prime.css");
 
-@import url(stylesheets/tags/meta.css);
 @import url(stylesheets/tags/blocks.css);
 @import url(stylesheets/tags/inline.css);
 @import url(stylesheets/tags/self-closings.css);
 @import url(stylesheets/tags/others.css);
-
 @import url(stylesheets/params.css);
 
 :root {
    --background-color: var(--white);
    --border: .15rem solid var(--color);
-   --border-radius_block: 9px;
+   --border-radius_block: 10px;
    --border-radius_inline: 5px;
+   --box-shadow: 0 0 3px var(--color);
    --color: var(--black);
    --font-family: "Courier Prime", monospace;
-   --font-size: 18px;
    --font-weight: 300;
-   --line-height: 1.2rem;
    --margin: .4rem;
-   --padding_block: .47rem .7rem .25rem .7rem;
-   --padding_inline: .13rem .35rem 0 .35rem;
-   --shadow: 0 0 3px var(--color);
+   --padding_block: .45rem .7rem .25rem .7rem;
+   --padding_inline: .1rem .35rem .05rem .35rem;
 
+   --bold: 500;
    --highlight: var(--light-gray);
    --tab: 1.6rem;
    --time: .1s;
@@ -31,7 +28,7 @@
    --blue: #0000ff;
    --cyan: #00ffff;
    --gray: #555555;
-   --green: #00cc00;
+   --green: #00ee00;
    --indigo: #d500ff;
    --light-black: #101010;
    --light-blue: #0080ff;
@@ -47,17 +44,16 @@
    --yellow: #fff000;
 }
 
-/*@media (prefers-color-scheme: dark) {
-     :root {
-          --background-color: var(--light-black);
-          --color: var(--white);
-     }
-}*/
+@media (prefers-color-scheme: dark) {
+   :root {
+      --background-color: var(--light-black);
+      --color: var(--white);
+   }
+}
 
 * {
    box-sizing: content-box;
    font-family: var(--font-family);
-   line-height: var(--line-height);
    scroll-behavior: smooth;
    transition: all var(--time);
 }
@@ -66,8 +62,9 @@
    background-color: var(--background-color);
    color: var(--color);
    cursor: default;
-   font-size: var(--font-size);
    font-weight: var(--font-weight);
    height: 100%;
    user-select: none;
 }
+
+/* head html link meta noscript script style title */

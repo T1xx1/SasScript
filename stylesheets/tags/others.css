@@ -21,6 +21,14 @@ th {
 
 /* tr */
 
+:any-link {
+   color: var(--blue);
+}
+
+:any-link:hover {
+   color: var(--light-blue);
+}
+
 ::-webkit-calendar-picker-indicator {
    cursor: pointer;
 }

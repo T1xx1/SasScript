@@ -1,13 +1,5 @@
 /* a */
 
-a[href] {
-   color: var(--blue);
-}
-
-a[href]:hover {
-   color: var(--orange);
-}
-
 abbr[title] {
    text-decoration: underline var(--green);
 }
@@ -44,7 +36,10 @@ code {
    background-color: var(--light-gray);
    border-radius: var(--border-radius_inline);
    color: var(--gray);
+   font-size: 1rem;
    padding: var(--padding_inline);
+   padding-top: 0;
+   padding-bottom: .15rem;
 }
 
 /* data dd */
@@ -60,6 +55,7 @@ del {
 /* dnf em i ins kbd label */
 
 mark {
+   background-color: var(--yellow);
    border-radius: var(--border-radius_inline);
    padding: var(--padding_inline);
 }
