@@ -1,0 +1,97 @@
+/* base br col embed */
+
+hr {
+   background-color: initial;
+   border: var(--border);
+   border-radius: var(--border-radius_block);
+   height: .3rem;
+   margin: var(--margin) 0;
+}
+
+/* img */
+
+input {
+   border: var(--border);
+   border-radius: var(--border-radius_inline);
+   font-size: 1rem;
+   padding: var(--padding_inline);
+}
+
+input:focus-visible {
+   outline: 0;
+}
+
+/*input[type="button"] {
+     cursor: pointer;
+}
+
+input[type="button"]:hover {
+     background-color: var(--light-gray);
+}
+
+input[type="checkbox"] {
+     aspect-ratio: 1 / 1;
+     cursor: pointer;
+     height: 16px;
+     margin: 0;
+     position: relative;
+     top: 3px;
+}
+
+input[type="color"] {
+     cursor: pointer;
+     height: 50px;
+     padding: var(--padding_block);
+     width: 70px;
+}*/
+
+/* input[type="date"] input[type="datetime-local"] input[type="email"] */
+
+/*input[type="file"] {
+     padding-bottom: 2px;
+}
+ 
+input[type="file"]::-webkit-file-upload-button {
+     background-color: var(--background-color);
+     border: var(--border);
+     border-radius: calc(var(--border-radius_inline) - 1px);
+     color: var(--black);
+     cursor: pointer;
+     padding: var(--padding_inline);
+}
+
+input[type="file"]::-webkit-file-upload-button:hover {
+     background-color: var(--light-gray);
+}*/
+
+/* input[type="hidden"] input[type="image"] input[type="month"] input[type="number "] input[type="password"] */
+
+/*input[type="radio"] {
+     cursor: pointer;
+     height: 15px;
+     width: 15px;
+}
+ 
+input[type="range"] {
+     cursor: pointer
+}
+ 
+input[type="reset"] {
+     cursor: pointer
+}
+
+input[type="reset"]:hover {
+     background-color: var(--light-gray);
+}*/
+
+/* input[type="search"] */
+
+/*input[type="submit"] {
+     cursor: pointer
+}
+
+input[type="submit"]:hover {
+     background-color: var(--light-gray);
+}*/
+
+/* input[type="tel"] input[type="text"] input[type="time"] input[type="url"] input[type="week"] param source track */

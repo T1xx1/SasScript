@@ -1,0 +1,26 @@
+/* dt */
+
+li {
+   list-style-type: disc
+}
+
+/* option picture */
+
+td {
+   border: var(--border);
+   min-width: .4rem;
+   padding: var(--padding_inline);
+}
+
+th {
+   border: var(--border);
+   min-width: .4rem;
+   padding: var(--padding_inline);
+   text-align: center;
+}
+
+/* tr */
+
+::-webkit-calendar-picker-indicator {
+   cursor: pointer;
+}

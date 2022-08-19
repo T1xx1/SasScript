@@ -1,24 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap");
 
-@import url(stylesheets/tags.css);
+@import url(stylesheets/tags/meta.css);
+@import url(stylesheets/tags/blocks.css);
+@import url(stylesheets/tags/inline.css);
+@import url(stylesheets/tags/self-closings.css);
+@import url(stylesheets/tags/others.css);
+
 @import url(stylesheets/params.css);
 
 :root {
-   --black: #000;
-   --blue: #00f;
-   --cyan: #0ff;
-   --gray: #777;
-   --green: #0b0;
-   --light-black: #1c1c1c;
-   --light-gray: #ccc;
-   --lime: #0f0;
-   --orange: #f80;
-   --pink: #f0f;
-   --purple: #a0f;
-   --red: #f00;
-   /*--transcripter: #0bf;*/
-   --white: #fff;
-   --yellow: #ff0;
+   --black: #000000;
+   --blue: #0000ff;
+   --cyan: #00ffff;
+   --gray: #555555;
+   --green: #00aa00;
+   --indigo: #d500ff;
+   --light-black: #101010;
+   --light-blue: #0080ff;
+   --light-gray: #bbbbbb;
+   --light-green: #00d500;
+   --lime: #00ff00;
+   --orange: #ff8800;
+   --pink: #ff00ff;
+   --purple: #aa00ff;
+   --red: #ff0000;
+   --transcripter: #00bbff;
+   --white: #ffffff;
+   --yellow: #fff000;
 
    --background-color: var(--white);
    --border: .15rem solid var(--color);
@@ -31,18 +39,17 @@
    --line-height: 1.2rem;
    --margin: .4rem;
    --padding_block: .47rem .7rem .25rem .7rem;
-   --padding_inline: .1rem .35rem 0 .35rem;
+   --padding_inline: .13rem .35rem 0 .35rem;
    --shadow: 0 0 3px var(--color);
    --tab: 1.6rem;
 }
 
-/*dark mode*/
-@media (prefers-color-scheme: dark) {
-   :root {
-      --background-color: var(--light-black);
-      --color: var(--white);
-   }
-}
+/*@media (prefers-color-scheme: dark) {
+     :root {
+          --background-color: var(--light-black);
+          --color: var(--white);
+     }
+}*/
 
 * {
    background-color: transparent;
