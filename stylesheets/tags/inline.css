@@ -10,19 +10,25 @@ button {
    background-color: var(--white);
    border: var(--border);
    border-radius: var(--border-radius_inline);
+   box-shadow: var(--box-shadow);
    cursor: pointer;
    font-size: 1rem;
    padding: var(--padding_inline);
 }
 
-button:hover:not(button:disabled):not(button[type="reset"]) {
-   background-color: var(--light-gray);
+button:active {
+   box-shadow: none;
+   transform: translate3d(var(--box-shadow_dimension), var(--box-shadow_dimension), 0);
 }
 
 button:disabled {
    border-color: var(--light-gray);
    color: var(--light-gray);
    cursor: not-allowed;
+}
+
+button:hover:not(button:disabled):not(button[type="reset"]) {
+   background-color: var(--light-gray);
 }
 
 button[type="reset"] {

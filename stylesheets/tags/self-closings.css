@@ -13,6 +13,7 @@ hr {
 input {
    border: var(--border);
    border-radius: var(--border-radius_inline);
+   box-shadow: var(--box-shadow);
    font-size: 1rem;
    padding: var(--padding_inline);
 }

@@ -33,6 +33,7 @@ table[disabled] tr {
    border: var(--border);
    border-color: inherit;
    border-radius: var(--border-radius_inline);
+   box-shadow: var(--box-shadow);
    cursor: pointer;
    padding: var(--padding_inline);
    text-decoration: none;
