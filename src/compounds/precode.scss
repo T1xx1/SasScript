@@ -1,0 +1,7 @@
+@mixin precode {
+   @extend code;
+}
+
+@include ss('precode', 'pre') {
+   @include precode;
+}

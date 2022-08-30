@@ -1,10 +1,10 @@
 @charset "UTF-8";
 /* Sasscript */
-@import 'https://fonts.googleapis.com/css2?family=Comfortaa&display=swap';
-@import 'https://fonts.googleapis.com/css2?family=Montserrat&display=swap';
-@import 'https://fonts.googleapis.com/css2?family=Oxygen&display=swap';
-@import 'https://fonts.googleapis.com/css2?family=Poppins&display=swap';
-@import 'https://fonts.googleapis.com/css2?family=Roboto&display=swap';
+@import "https://fonts.googleapis.com/css2?family=Comfortaa&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Montserrat&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Oxygen&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Poppins&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
 *[ss-black],
 [ss-black-s] > * {
   color: #000000;
@@ -685,9 +685,18 @@ body {
   padding-bottom: 1.5rem;
 }
 
-button, ::-webkit-slider-thumb, ::-webkit-search-results-button, ::-webkit-search-cancel-button, ::-webkit-outer-spin-button, ::-webkit-inner-spin-button, ::-webkit-file-upload-button, img[ss-imgbutton],
-[ss-imgbutton-s] > img, a[ss-abutton],
-[ss-abutton-s] > a, input[type=button] {
+button,
+::-webkit-slider-thumb,
+::-webkit-search-results-button,
+::-webkit-search-cancel-button,
+::-webkit-outer-spin-button,
+::-webkit-inner-spin-button,
+::-webkit-file-upload-button,
+img[ss-imgbutton],
+[ss-imgbutton-s] > img,
+a[ss-abutton],
+[ss-abutton-s] > a,
+input[type="button"] {
   border-radius: 5px;
   border: 2.5px solid currentColor;
   padding: 0.4rem 0.6rem;
@@ -695,32 +704,70 @@ button, ::-webkit-slider-thumb, ::-webkit-search-results-button, ::-webkit-searc
   cursor: pointer;
   font-size: 1rem;
 }
-button:hover, :hover::-webkit-slider-thumb, :hover::-webkit-search-results-button, :hover::-webkit-search-cancel-button, :hover::-webkit-outer-spin-button, :hover::-webkit-inner-spin-button, :hover::-webkit-file-upload-button, img[ss-imgbutton]:hover,
-[ss-imgbutton-s] > img:hover, a[ss-abutton]:hover,
-[ss-abutton-s] > a:hover, input[type=button]:hover {
+button:hover,
+:hover::-webkit-slider-thumb,
+:hover::-webkit-search-results-button,
+:hover::-webkit-search-cancel-button,
+:hover::-webkit-outer-spin-button,
+:hover::-webkit-inner-spin-button,
+:hover::-webkit-file-upload-button,
+img[ss-imgbutton]:hover,
+[ss-imgbutton-s] > img:hover,
+a[ss-abutton]:hover,
+[ss-abutton-s] > a:hover,
+input[type="button"]:hover {
   background-color: #aaaaaa;
 }
-button:disabled, :disabled::-webkit-slider-thumb, :disabled::-webkit-search-results-button, :disabled::-webkit-search-cancel-button, :disabled::-webkit-outer-spin-button, :disabled::-webkit-inner-spin-button, :disabled::-webkit-file-upload-button, img[ss-imgbutton]:disabled,
-[ss-imgbutton-s] > img:disabled, a[ss-abutton]:disabled,
-[ss-abutton-s] > a:disabled, input[type=button]:disabled {
+button:disabled,
+:disabled::-webkit-slider-thumb,
+:disabled::-webkit-search-results-button,
+:disabled::-webkit-search-cancel-button,
+:disabled::-webkit-outer-spin-button,
+:disabled::-webkit-inner-spin-button,
+:disabled::-webkit-file-upload-button,
+img[ss-imgbutton]:disabled,
+[ss-imgbutton-s] > img:disabled,
+a[ss-abutton]:disabled,
+[ss-abutton-s] > a:disabled,
+input[type="button"]:disabled {
   border-color: #f0f0f0;
   color: #f0f0f0;
   cursor: not-allowed;
 }
-button[type=reset], [type=reset]::-webkit-slider-thumb, [type=reset]::-webkit-search-results-button, [type=reset]::-webkit-search-cancel-button, [type=reset]::-webkit-outer-spin-button, [type=reset]::-webkit-inner-spin-button, [type=reset]::-webkit-file-upload-button, img[type=reset][ss-imgbutton],
-[ss-imgbutton-s] > img[type=reset], a[type=reset][ss-abutton],
-[ss-abutton-s] > a[type=reset], input[type=reset][type=button] {
+button[type="reset"],
+[type="reset"]::-webkit-slider-thumb,
+[type="reset"]::-webkit-search-results-button,
+[type="reset"]::-webkit-search-cancel-button,
+[type="reset"]::-webkit-outer-spin-button,
+[type="reset"]::-webkit-inner-spin-button,
+[type="reset"]::-webkit-file-upload-button,
+img[type="reset"][ss-imgbutton],
+[ss-imgbutton-s] > img[type="reset"],
+a[type="reset"][ss-abutton],
+[ss-abutton-s] > a[type="reset"],
+input[type="reset"][type="button"] {
   border-color: #ff0000;
   color: #ff0000;
 }
-button[type=submit], [type=submit]::-webkit-slider-thumb, [type=submit]::-webkit-search-results-button, [type=submit]::-webkit-search-cancel-button, [type=submit]::-webkit-outer-spin-button, [type=submit]::-webkit-inner-spin-button, [type=submit]::-webkit-file-upload-button, img[type=submit][ss-imgbutton],
-[ss-imgbutton-s] > img[type=submit], a[type=submit][ss-abutton],
-[ss-abutton-s] > a[type=submit], input[type=submit][type=button] {
+button[type="submit"],
+[type="submit"]::-webkit-slider-thumb,
+[type="submit"]::-webkit-search-results-button,
+[type="submit"]::-webkit-search-cancel-button,
+[type="submit"]::-webkit-outer-spin-button,
+[type="submit"]::-webkit-inner-spin-button,
+[type="submit"]::-webkit-file-upload-button,
+img[type="submit"][ss-imgbutton],
+[ss-imgbutton-s] > img[type="submit"],
+a[type="submit"][ss-abutton],
+[ss-abutton-s] > a[type="submit"],
+input[type="submit"][type="button"] {
   border-color: #008000;
   color: #008000;
 }
 
-code, mark, del {
+code,
+mark,
+del {
   border-radius: 5px;
   padding: 0.4rem 0.6rem;
   background-color: #808080;
@@ -854,34 +901,35 @@ input {
   font-size: 1rem;
   outline: 0;
 }
-input[type=checkbox], input[type=radio] {
+input[type="checkbox"],
+input[type="radio"] {
   accent-color: #0080ff;
   box-shadow: none;
   cursor: pointer;
   height: 20px;
   width: 20px;
 }
-input[type=color] {
+input[type="color"] {
   cursor: pointer;
   padding: 5px;
   height: 35px;
   width: 50px;
 }
-input[type=range] {
+input[type="range"] {
   accent-color: #0080ff;
   box-shadow: none;
   cursor: pointer;
 }
-input[type=reset] {
+input[type="reset"] {
   cursor: pointer;
 }
-input[type=reset]:hover {
+input[type="reset"]:hover {
   background-color: #aaaaaa;
 }
-input[type=submit] {
+input[type="submit"] {
   cursor: pointer;
 }
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: #aaaaaa;
 }
 
@@ -900,7 +948,8 @@ mark {
   background-color: #ffff00;
 }
 
-meter, progress {
+meter,
+progress {
   height: 40px;
   width: 200px;
 }
@@ -909,7 +958,8 @@ nav {
   margin: 10px 15px;
 }
 
-ol, ul {
+ol,
+ul {
   margin: 0;
   padding-left: 25px;
 }
@@ -947,7 +997,8 @@ table > h3 {
   margin: 0;
 }
 
-td, th {
+td,
+th {
   border-radius: 10px;
   border: 2.5px solid currentColor;
   padding: 0.4rem 0.6rem;
@@ -1000,7 +1051,9 @@ img[ss-imgbutton],
   width: 40px;
 }
 
-code pre, del pre, mark pre {
+code pre,
+del pre,
+mark pre {
   display: inline;
 }
 

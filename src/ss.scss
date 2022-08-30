@@ -9,10 +9,11 @@ $ss-signature: 'true' !default;
    }
 }
 
-@import 'src/colors';
-@import 'src/fonts';
+@import 'colors';
+@import 'fonts';
+@import 'breakpoints';
 
-@import 'src/_properties';
+@import '_properties';
 
 * {
    box-sizing: border-box;
@@ -35,20 +36,20 @@ $ss-signature: 'true' !default;
       }
    }
 
-   @media (max-width: 1500px) {
+   @include breakpoint('laptop') {
       background-size: 100% 100%;
    }
 }
 
-@import 'src/_models';
+@import '_models';
 
-@import 'src/_components';
+@import '_components';
 
-@import 'src/elements';
+@import 'elements';
 
-@import 'src/_compounds';
+@import '_compounds';
 
-@import 'src/special';
-@import 'src/webkit';
+@import 'special';
+@import 'webkit';
 
 /* Sasscript */

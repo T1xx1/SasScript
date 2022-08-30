@@ -1,5 +1,9 @@
 {
    "scripts": {
-      "compl": "sass ./ss.scss ./dist/min.css --style compressed && sass --watch ./ss.scss ./dist/ss.css"
+      "compl": "sass ./ss.scss ./dist/min.css --style compressed && sass --watch ./ss.scss ./dist/ss.css",
+      "format": "prettier --write \"**/*.+(md|sass|scss)\""
+   },
+   "devDependencies": {
+      "prettier": "^2.7.1"
    }
 }
