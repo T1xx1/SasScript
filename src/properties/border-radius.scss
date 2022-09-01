@@ -1,15 +1,7 @@
-@mixin border-radius($model: '') {
+@mixin border-radius($model: 'block') {
    @if $model == 'inline' {
-      border-radius: 5px;
+      border-radius: 6px;
    } @else {
-      border-radius: 10px;
+      border-radius: 12px;
    }
-}
-
-@include ss('border-radius') {
-   @include border-radius;
-}
-
-@include ss('border-radius_inline') {
-   @include border-radius('inline');
 }

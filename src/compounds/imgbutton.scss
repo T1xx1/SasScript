@@ -1,11 +1,7 @@
-@mixin imgbutton($dimensions: 40px, $padding: 5px) {
+@mixin imgbutton($dimensions: 45px, $padding: 2.5px) {
    @extend button;
 
    height: $dimensions;
    padding: $padding;
    width: $dimensions;
-}
-
-@include ss('imgbutton', 'img') {
-   @include imgbutton;
 }

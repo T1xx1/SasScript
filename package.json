@@ -1,6 +1,6 @@
 {
    "scripts": {
-      "compl": "sass ./ss.scss ./dist/min.css --style compressed && sass --watch ./ss.scss ./dist/ss.css",
+      "compile": "sass ./src/ss.scss ./dist/min.css --style compressed && sass --watch ./src/ss.scss ./dist/ss.css",
       "format": "prettier --write \"**/*.+(md|sass|scss)\""
    },
    "devDependencies": {

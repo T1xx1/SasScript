@@ -1,21 +1,11 @@
 @mixin var($type) {
    @if $type == 'bool' {
       color: color('violet-color-wheel');
-   } @else if $type == 'number' {
+   }
+   @if $type == 'number' {
       color: color('screamin-green');
-   } @else if $type == 'string' {
+   }
+   @if $type == 'string' {
       color: color('orange');
    }
-}
-
-@include ss('var_boolean') {
-   @include var('boolean');
-}
-
-@include ss('var_number') {
-   @include var('number');
-}
-
-@include ss('var_string') {
-   @include var('string');
 }

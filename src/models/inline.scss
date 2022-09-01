@@ -4,11 +4,3 @@
 
    display: inline;
 }
-
-@include ss('inline') {
-   @include inline;
-}
-
-@include ss('inline_blur') {
-   @include inline('blur');
-}

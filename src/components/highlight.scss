@@ -8,11 +8,3 @@
       }
    }
 }
-
-@include ss('highlight') {
-   @include highlight;
-}
-
-@include ss('highlight_bubble') {
-   @include highlight('bubble');
-}

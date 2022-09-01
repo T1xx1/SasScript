@@ -1,4 +1,4 @@
-//a abbr
+// a abbr
 
 abbr[title] {
    text-decoration: underline dotted color('ao-english') 3px;
@@ -8,7 +8,7 @@ address {
    @include block;
 }
 
-//area
+// area
 
 article {
    @include block;
@@ -21,7 +21,7 @@ aside {
    width: fit-content;
 }
 
-//audio b base bdi bdo
+// audio b base bdi bdo
 
 blockquote {
    @include block;
@@ -31,38 +31,31 @@ body {
    @include fullscreen;
    @include padding('inline');
 
-   padding-bottom: 1.5rem;
+   padding-bottom: 30px;
 }
 
-//br
+// br
 
 button {
-   @include border('inline');
+   @include input;
    @include highlight;
-   @include padding('inline');
 
-   background-color: transparent;
    cursor: pointer;
-   font-size: 1rem;
 
    &:disabled {
-      border-color: color('cultured');
       color: color('cultured');
       cursor: not-allowed;
    }
 
    &[type='reset'] {
-      border-color: color('red');
       color: color('red');
    }
-
    &[type='submit'] {
-      border-color: color('ao-english');
       color: color('ao-english');
    }
 }
 
-//canvas caption cite
+// canvas caption cite
 
 code {
    @include border-radius('inline');
@@ -71,7 +64,7 @@ code {
    background-color: color('gray-web');
 }
 
-//col colgroup data datalist dd details
+// col colgroup data datalist dd details
 
 del {
    @extend code;
@@ -81,19 +74,19 @@ del {
    text-decoration: none;
 }
 
-//dnf
+// dnf
 
 dialog {
    @include block;
 }
 
-// div dl dt em embed
+//  div dl dt em embed
 
 fieldset {
    @include block;
 }
 
-//figcaption figure
+// figcaption figure
 
 footer {
    @include margin;
@@ -114,7 +107,9 @@ h3,
 h4,
 h5,
 h6 {
-   margin: 5px;
+   @include margin;
+
+   color: $ss-theme-color;
 }
 
 h1 {
@@ -141,7 +136,7 @@ h6 {
    font-size: 0.7rem;
 }
 
-//head
+// head
 
 header {
    @include margin;
@@ -150,7 +145,7 @@ header {
    margin-left: 0;
 }
 
-//hgroup
+// hgroup
 
 hr {
    @include inline;
@@ -162,13 +157,13 @@ html {
    @include fullscreen;
 }
 
-//i
+// i
 
 iframe {
    @include block;
 }
 
-//img
+// img
 
 input {
    @include input;
@@ -176,15 +171,13 @@ input {
    &[type='button'] {
       @extend button;
    }
-
    &[type='checkbox'] {
       accent-color: color('azure');
       box-shadow: none;
       cursor: pointer;
-      height: 20px;
-      width: 20px;
+      height: 22px;
+      width: 22px;
    }
-
    &[type='color'] {
       cursor: pointer;
       padding: 5px;
@@ -192,52 +185,48 @@ input {
       width: 50px;
    }
 
-   //&[type='date'] &[type='datetime-local'] &[type='email'] &[type='file'] &[type='hidden'] &[type='image'] &[type='month'] &[type='number '] &[type='password']
+   // [type='date'] [type='datetime-local'] [type='email'] [type='file'] [type='hidden'] [type='image'] [type='month'] [type='number '] [type='password']
 
    &[type='radio'] {
       @extend [type='checkbox'];
    }
-
    &[type='range'] {
       accent-color: color('azure');
       box-shadow: none;
       cursor: pointer;
    }
-
    &[type='reset'] {
       cursor: pointer;
    }
-
    &[type='reset'] {
-      @include highlight;
+      @extend [type='button'];
    }
 
-   //&[type='search']
+   // [type='search']
 
    &[type='submit'] {
       cursor: pointer;
    }
-
    &[type='submit'] {
-      @include highlight;
+      @extend [type='button'];
    }
 
-   //&[type='tel'] &[type='text'] &[type='time'] &[type='url'] &[type='week']
+   // [type='tel'] [type='text'] [type='time'] [type='url'] [type='week']
 }
 
-//ins
+// ins
 
 kbd {
    @include inline;
 }
 
-//label legend li link
+// label legend li link
 
 main {
    @include margin;
 }
 
-//map
+// map
 
 mark {
    @extend code;
@@ -245,7 +234,7 @@ mark {
    background-color: color('yellow');
 }
 
-//meta
+// meta
 
 meter {
    height: 40px;
@@ -256,26 +245,20 @@ nav {
    @include margin;
 }
 
-//noframes noscript object
+// noframes noscript object
 
 ol {
    margin: 0;
    padding-left: 25px;
 }
 
-//optgroup option output p
-
-p::first-letter {
-   text-transform: uppercase;
-}
-
-//param picture pre
+// optgroup option output p param picture pre
 
 progress {
    @extend meter;
 }
 
-//q rt rc rtc ruby s samp script section
+// q rt rc rtc ruby s samp script section
 
 select {
    @include input;
@@ -283,13 +266,13 @@ select {
    cursor: pointer;
 }
 
-//slot small source span strong style sub
+// slot small source span strong style sub
 
 summary {
    cursor: pointer;
 }
 
-//sup
+// sup
 
 table {
    @include block;
@@ -297,7 +280,7 @@ table {
    border-collapse: collapse;
 }
 
-//tbody
+// tbody
 
 td {
    @include border;
@@ -306,13 +289,13 @@ td {
    box-shadow: none;
 }
 
-//template
+// template
 
 textarea {
    @include input;
 }
 
-//tfoot
+// tfoot
 
 th {
    @extend td;
@@ -320,23 +303,23 @@ th {
    text-align: center;
 }
 
-//thead
+// thead
 
 time {
    font-family: font('roboto');
 }
 
-//title tr track u
+// title tr track u
 
 ul {
    @extend ol;
 
-   li {
+   > li {
       list-style-type: disc;
    }
 }
 
-//var video wbr
+// var video wbr
 
 :any-link {
    color: color('azure');
@@ -344,4 +327,16 @@ ul {
    &:hover {
       color: color('blue');
    }
+}
+
+::file-selector-button {
+   @extend button;
+}
+
+::first-letter {
+   text-transform: uppercase;
+}
+
+::placeholder {
+   color: $ss-theme-color;
 }

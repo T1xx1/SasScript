@@ -1,15 +1,7 @@
-@mixin padding($model: '') {
+@mixin padding($model: 'block') {
    @if $model == 'inline' {
-      padding: 0.4rem 0.6rem;
+      padding: 0.4rem 0.8rem;
    } @else {
-      padding: 8px 13px;
+      padding: 0.5em 1em;
    }
-}
-
-@include ss('padding') {
-   @include padding;
-}
-
-@include ss('padding_inline') {
-   @include padding('inline');
 }

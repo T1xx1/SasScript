@@ -1,5 +1,5 @@
 @mixin block($type: '') {
-   @include border('', $type);
+   @include border('block', $type);
    @include margin;
    @include padding;
 
@@ -12,12 +12,4 @@
    > h3 {
       margin: 0;
    }
-}
-
-@include ss('block') {
-   @include block;
-}
-
-@include ss('block_blur') {
-   @include block('blur');
 }

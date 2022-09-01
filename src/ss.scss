@@ -1,19 +1,17 @@
 /* Sasscript */
 
 $ss-signature: 'true' !default;
+$ss-theme-color: currentColor !default;
 
-@mixin ss($property, $element: '*') {
-   #{$element}[ss-#{$property}],
-   [ss-#{$property}-s] > #{$element} {
-      @content;
-   }
-}
+@import './colors';
+@import './fonts';
+@import './breakpoints';
 
-@import 'colors';
-@import 'fonts';
-@import 'breakpoints';
+@import './properties';
 
-@import '_properties';
+@import './models';
+
+@import './components';
 
 * {
    box-sizing: border-box;
@@ -28,11 +26,11 @@ $ss-signature: 'true' !default;
 
    @if $ss-signature == 'true' {
       &:after {
-         bottom: 0;
-         content: 'Sasscript 3.4.0';
-         font-size: 0.4rem;
-         right: 0;
-         position: fixed;
+         @include position(fixed, '', 0, 0);
+
+         color: $ss-theme-color;
+         content: 'SasScript 3.5.0';
+         font-size: 0.5rem;
       }
    }
 
@@ -41,15 +39,12 @@ $ss-signature: 'true' !default;
    }
 }
 
-@import '_models';
+@import './elements';
 
-@import '_components';
+@import './compounds';
 
-@import 'elements';
+@import './special';
 
-@import '_compounds';
-
-@import 'special';
-@import 'webkit';
+@import './browsers';
 
 /* Sasscript */

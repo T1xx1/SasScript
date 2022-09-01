@@ -45,13 +45,3 @@ $colors: (
 @function color($color) {
    @return map-get($colors, $color);
 }
-
-@each $color, $value in $colors {
-   @include ss($color) {
-      color: $value;
-   }
-
-   @include ss('bg_#{$color}') {
-      background-color: $value;
-   }
-}

@@ -5,6 +5,7 @@
 <details>
    <summary>Versions</summary>
 
+-  [3.5.0](#350)
 -  [3.4.0](#340)
 -  [3.3.0](#330)
 -  [3.2.0](#320)
@@ -21,20 +22,33 @@
 
 ## Unreleased
 
+### Added
+
 -  Breakpoint mixin
--  Precode compound
+-  Dimension mixin
+-  Responsive units
+-  Theme color parameter
+
+### Changed
+
+-  Inline model spacing
+-  Input's outline
+-  Toggle signature parameter
+
+### Removed
+
+-  Inline styling
 
 ## 3.4.0
 
 ### Added
 
--  Models
+-  Elements' models
 -  Webkit styles
 
 ### Fixed
 
--  Element's styles
--  Versions
+-  Default styles
 -  Hover in dark mode
 -  Abutton overlapping with other elements
 -  Imgbutton compound height and padding
@@ -51,7 +65,7 @@
 
 ### Added
 
--  Min version
+-  Css min version
 
 ## 3.1.0
 
@@ -65,7 +79,7 @@
 
 ## Added
 
--  Block and inline model
+-  Block and inline models
 
 ## Removed
 
@@ -95,7 +109,6 @@
 ### Added
 
 -  Fonts
--  Other colors
 -  Smooth behaviour
 -  Special cases
 
@@ -104,6 +117,6 @@
 ### Added
 
 -  Colors
--  Default styles
+-  Default styles for elements
 
 [Go up](#changelog)

@@ -1,5 +1,13 @@
-# Sasscript
+# SasScript
 
-Custom Sass library with default styles for HTML elements
+SasScript or SS is a Sass library with default styles and custom HTML elements styles with Sass
 
 -  [Changelog](CHANGELOG.md)
+
+## Authors
+
+-  [@t1xx1](https://www.github.com/t1xx1)
+
+## License
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
