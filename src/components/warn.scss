@@ -1,7 +1,7 @@
 @mixin warn {
    @include inline;
 
-   color: color('orange');
+   color: $orange;
 
    &::before {
       content: '⚠️Warning: ';

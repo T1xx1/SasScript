@@ -24,6 +24,14 @@
 
 ### Added
 
+-  Light dark mixins
+-  Spacing component
+-  Hidden
+
+## 3.5.0 • SasScript • 2022-09-01
+
+### Added
+
 -  Breakpoint mixin
 -  Dimension mixin
 -  Responsive units

@@ -1,7 +1,7 @@
 @mixin error {
    @include inline;
 
-   color: color('red');
+   color: $red;
 
    &::before {
       content: '❌Error: ';

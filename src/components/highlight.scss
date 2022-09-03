@@ -1,6 +1,6 @@
 @mixin highlight($type: '') {
    &:hover {
-      background-color: color('silver-chalice');
+      background-color: $silver-chalice;
 
       @if $type == 'bubble' {
          @include border-radius('inline');

@@ -1,7 +1,7 @@
 // a abbr
 
 abbr[title] {
-   text-decoration: underline dotted color('ao-english') 3px;
+   text-decoration: underline dotted $ao-english 3px;
 }
 
 address {
@@ -43,15 +43,15 @@ button {
    cursor: pointer;
 
    &:disabled {
-      color: color('cultured');
+      color: $cultured;
       cursor: not-allowed;
    }
 
    &[type='reset'] {
-      color: color('red');
+      color: $red;
    }
    &[type='submit'] {
-      color: color('ao-english');
+      color: $ao-english;
    }
 }
 
@@ -61,7 +61,11 @@ code {
    @include border-radius('inline');
    @include padding('inline');
 
-   background-color: color('gray-web');
+   background-color: $gray-web;
+
+   > pre {
+      display: inline;
+   }
 }
 
 // col colgroup data datalist dd details
@@ -69,8 +73,8 @@ code {
 del {
    @extend code;
 
-   background-color: color('red');
-   color: color('white');
+   background-color: $red;
+   color: $white;
    text-decoration: none;
 }
 
@@ -84,6 +88,10 @@ dialog {
 
 fieldset {
    @include block;
+
+   > form:only-child {
+      @include reset;
+   }
 }
 
 // figcaption figure
@@ -99,6 +107,14 @@ form {
    @include block;
 
    text-align: center;
+
+   li {
+      list-style-type: none;
+   }
+
+   > fieldset:only-child {
+      @include reset;
+   }
 }
 
 h1,
@@ -107,7 +123,7 @@ h3,
 h4,
 h5,
 h6 {
-   @include margin;
+   @include margin('inline');
 
    color: $ss-theme-color;
 }
@@ -141,8 +157,11 @@ h6 {
 header {
    @include margin;
 
-   margin-right: 0;
-   margin-left: 0;
+   > h1,
+   > h2,
+   > h3 {
+      margin: 0;
+   }
 }
 
 // hgroup
@@ -172,7 +191,7 @@ input {
       @extend button;
    }
    &[type='checkbox'] {
-      accent-color: color('azure');
+      accent-color: $azure;
       box-shadow: none;
       cursor: pointer;
       height: 22px;
@@ -191,7 +210,7 @@ input {
       @extend [type='checkbox'];
    }
    &[type='range'] {
-      accent-color: color('azure');
+      accent-color: $azure;
       box-shadow: none;
       cursor: pointer;
    }
@@ -231,7 +250,7 @@ main {
 mark {
    @extend code;
 
-   background-color: color('yellow');
+   background-color: $yellow;
 }
 
 // meta
@@ -306,7 +325,7 @@ th {
 // thead
 
 time {
-   font-family: font('roboto');
+   font-family: $roboto;
 }
 
 // title tr track u
@@ -322,19 +341,15 @@ ul {
 // var video wbr
 
 :any-link {
-   color: color('azure');
+   color: $azure;
 
    &:hover {
-      color: color('blue');
+      color: $blue;
    }
 }
 
 ::file-selector-button {
    @extend button;
-}
-
-::first-letter {
-   text-transform: uppercase;
 }
 
 ::placeholder {

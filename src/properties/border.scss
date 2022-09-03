@@ -2,8 +2,8 @@
    @include border-radius($model);
 
    @if $type == 'blur' {
-      box-shadow: 0 0 5px color('gray-web');
+      box-shadow: 0 0 5px $gray-web;
    } @else {
-      border: 2.5px solid $ss-theme-color;
+      border: 2.5px solid;
    }
 }

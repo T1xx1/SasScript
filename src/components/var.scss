@@ -1,11 +1,11 @@
 @mixin var($type) {
    @if $type == 'bool' {
-      color: color('violet-color-wheel');
+      color: $violet-color-wheel;
    }
    @if $type == 'number' {
-      color: color('screamin-green');
+      color: $screamin-green;
    }
    @if $type == 'string' {
-      color: color('orange');
+      color: $orange;
    }
 }

@@ -15,9 +15,13 @@ $ss-theme-color: currentColor !default;
 
 * {
    box-sizing: border-box;
-   font-family: font('montserrat');
+   font-family: $montserrat;
    scroll-behavior: smooth;
    transition: all 0.3s, background 0s, color 0s;
+
+   &[hidden] {
+      display: none !important;
+   }
 }
 
 :root {
@@ -29,12 +33,12 @@ $ss-theme-color: currentColor !default;
          @include position(fixed, '', 0, 0);
 
          color: $ss-theme-color;
-         content: 'SasScript 3.5.0';
+         content: 'SasScript 3.5.1';
          font-size: 0.5rem;
       }
    }
 
-   @include breakpoint('laptop') {
+   @include laptop {
       background-size: 100% 100%;
    }
 }
@@ -42,8 +46,6 @@ $ss-theme-color: currentColor !default;
 @import './elements';
 
 @import './compounds';
-
-@import './special';
 
 @import './browsers';
 

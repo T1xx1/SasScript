@@ -1,7 +1,11 @@
 @mixin abutton {
    @extend button;
 
-   @include inline-block;
+   @include models.inline-block;
 
    text-decoration: none;
+
+   &:hover {
+      background-color: transparent;
+   }
 }

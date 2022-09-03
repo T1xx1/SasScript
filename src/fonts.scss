@@ -4,14 +4,8 @@
 @import 'https://fonts.googleapis.com/css2?family=Poppins&display=swap';
 @import 'https://fonts.googleapis.com/css2?family=Roboto&display=swap';
 
-$fonts: (
-   'comfortaa': 'Comfortaa',
-   'montserrat': 'Montserrat',
-   'oxygen': 'Oxygen',
-   'poppins': 'Poppins',
-   'roboto': 'Roboto',
-);
-
-@function font($font) {
-   @return map-get($fonts, $font);
-}
+$comfortaa: 'Comfortaa';
+$montserrat: 'Montserrat';
+$oxygen: 'Oxygen';
+$poppins: 'Poppins';
+$roboto: 'Roboto';
