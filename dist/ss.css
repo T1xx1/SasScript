@@ -10,6 +10,9 @@
   scroll-behavior: smooth;
   transition: all 0.3s, background 0s, color 0s;
 }
+*[hidden] {
+  display: none !important;
+}
 
 :root {
   color-scheme: light dark;
@@ -17,10 +20,10 @@
 }
 :root:after {
   position: fixed;
-  bottom: 0;
+  left: 0;
   right: 0;
-  color: currentColor;
-  content: "SasScript 3.5.0";
+  color: #1c1c1c;
+  content: "SasScript 3.6.0";
   font-size: 0.5rem;
 }
 @media (min-width: 768px) and (max-width: 1440px) {
@@ -194,7 +197,7 @@ h4,
 h5,
 h6 {
   margin: 10px;
-  color: currentColor;
+  color: #1c1c1c;
 }
 
 h1 {
@@ -268,11 +271,8 @@ input {
   font-size: 1rem;
 }
 input[type=checkbox], input[type=radio] {
-  accent-color: #0080ff;
-  box-shadow: none;
-  cursor: pointer;
-  height: 22px;
-  width: 22px;
+  height: 25px;
+  width: 25px;
 }
 input[type=color] {
   cursor: pointer;
@@ -280,8 +280,8 @@ input[type=color] {
   height: 35px;
   width: 50px;
 }
-input[type=range] {
-  accent-color: #0080ff;
+input[type=range], input[type=checkbox], input[type=radio] {
+  accent-color: #1c1c1c;
   box-shadow: none;
   cursor: pointer;
 }
@@ -291,6 +291,7 @@ input[type=reset] {
 input[type=submit] {
   cursor: pointer;
 }
+
 kbd {
   border-radius: 6px;
   border: 2.5px solid;
@@ -384,7 +385,7 @@ ul > li {
 }
 
 ::placeholder {
-  color: currentColor;
+  color: #424242;
 }
 
 ::-webkit-search-cancel-button {

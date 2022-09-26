@@ -1,7 +1,7 @@
-@mixin imgbutton($dimensions: 45px, $padding: 2.5px) {
+@mixin imgbutton($dimension: 45px, $padding: 2.5px) {
    @extend button;
 
-   height: $dimensions;
+   height: $dimension;
    padding: $padding;
-   width: $dimensions;
+   width: $dimension;
 }

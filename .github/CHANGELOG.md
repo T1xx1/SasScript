@@ -24,9 +24,19 @@
 
 ### Added
 
--  Light dark mixins
+-  Light and dark theme mixins
 -  Spacing component
--  Hidden
+-  Lighter input placeholder
+-  Checkbox accent color based on theme
+-  Box mixin
+
+### Deprecated
+
+-  Dimensions mixin use box instead
+
+### Fixed
+
+-  Hidden rule
 
 ## 3.5.0 • SasScript • 2022-09-01
 

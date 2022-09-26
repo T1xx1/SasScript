@@ -5,6 +5,8 @@ $ss-theme-color: currentColor !default;
 
 @import './colors';
 @import './fonts';
+@import './theme';
+@import './box';
 @import './breakpoints';
 
 @import './properties';
@@ -30,10 +32,10 @@ $ss-theme-color: currentColor !default;
 
    @if $ss-signature == 'true' {
       &:after {
-         @include position(fixed, '', 0, 0);
+         @include position(fixed, $right: 0, $bottom: 0);
 
          color: $ss-theme-color;
-         content: 'SasScript 3.5.1';
+         content: 'SasScript 3.6.0';
          font-size: 0.5rem;
       }
    }

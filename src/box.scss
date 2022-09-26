@@ -1,0 +1,17 @@
+@mixin box($height: '', $width: '', $padding: '', $border: '', $margin: '') {
+   @if $height != '' {
+      height: $height;
+   }
+   @if $width != '' {
+      width: $width;
+   }
+   @if $padding != '' {
+      padding: $padding;
+   }
+   @if $border != '' {
+      border: $border;
+   }
+   @if $margin != '' {
+      margin: $margin;
+   }
+}

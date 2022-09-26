@@ -1,11 +1,6 @@
 {
    "scripts": {
       "compile": "sass src/ss.scss:dist/min.css --style compressed && sass src/ss.scss:dist/ss.css",
-      "format": "prettier --write \"**/*.+(md|json|sass|scss)\"",
-      "test": "sass --watch src/ss.scss:dist/ss.css test/style.scss:test/style.css",
-      "commit": "npm run compile && npm run format"
-   },
-   "devDependencies": {
-      "prettier": "^2.7.1"
+      "test": "sass --watch src/ss.scss:dist/ss.css test/style.scss:test/style.css"
    }
 }

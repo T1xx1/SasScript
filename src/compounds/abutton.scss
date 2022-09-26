@@ -1,7 +1,7 @@
 @mixin abutton {
    @extend button;
 
-   @include models.inline-block;
+   @include inline-block;
 
    text-decoration: none;
 

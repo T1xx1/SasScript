@@ -191,11 +191,10 @@ input {
       @extend button;
    }
    &[type='checkbox'] {
-      accent-color: $azure;
-      box-shadow: none;
-      cursor: pointer;
-      height: 22px;
-      width: 22px;
+      @extend [type='range'];
+
+      height: 25px;
+      width: 25px;
    }
    &[type='color'] {
       cursor: pointer;
@@ -210,24 +209,22 @@ input {
       @extend [type='checkbox'];
    }
    &[type='range'] {
-      accent-color: $azure;
+      accent-color: $ss-theme-color;
       box-shadow: none;
       cursor: pointer;
    }
    &[type='reset'] {
-      cursor: pointer;
-   }
-   &[type='reset'] {
       @extend [type='button'];
+
+      cursor: pointer;
    }
 
    // [type='search']
 
    &[type='submit'] {
-      cursor: pointer;
-   }
-   &[type='submit'] {
       @extend [type='button'];
+
+      cursor: pointer;
    }
 
    // [type='tel'] [type='text'] [type='time'] [type='url'] [type='week']
@@ -353,5 +350,5 @@ ul {
 }
 
 ::placeholder {
-   color: $ss-theme-color;
+   color: lighten($ss-theme-color, 15)
 }
