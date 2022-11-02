@@ -1,0 +1,9 @@
+@use './ol';
+
+ul {
+   @extend ol;
+
+   > li {
+      list-style-type: disc;
+   }
+}

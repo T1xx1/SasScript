@@ -1,0 +1,5 @@
+@use '../properties/displays/inline' as *;
+
+kbd {
+   @include inline;
+}

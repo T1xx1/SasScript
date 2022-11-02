@@ -1,9 +1,9 @@
-@mixin warn {
-   @include inline;
+@use '../var/colors';
 
-   color: $orange;
+@mixin warn {
+   color: colors.$yellow;
 
    &::before {
-      content: '⚠️Warning: ';
+      content: '🟡 Warning: ';
    }
 }

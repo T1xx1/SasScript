@@ -1,0 +1,56 @@
+@use '../var/colors';
+@use '../box';
+@use '../components/input' as *;
+
+@use './button';
+
+input {
+   @include input;
+
+   &[type='button'] {
+      @extend button;
+   }
+   &[type='checkbox'] {
+      @extend [type='range'];
+
+      @include box.model(25px);
+   }
+   &[type='color'] {
+      @include box.model(35px, 50px);
+
+      cursor: pointer;
+      padding: 0;
+   }
+
+   // [type='date'] [type='datetime-local'] [type='email'] 
+   
+   &[type='file'] {
+      padding-left: 0.4rem;
+   }
+   
+   // [type='hidden'] [type='image'] [type='month'] [type='number '] [type='password']
+
+   &[type='radio'] {
+      @extend [type='checkbox'];
+   }
+   &[type='range'] {
+      accent-color: colors.$azure;
+      box-shadow: none;
+      cursor: pointer;
+   }
+   &[type='reset'] {
+      @extend [type='button'];
+
+      cursor: pointer;
+   }
+
+   // [type='search']
+
+   &[type='submit'] {
+      @extend [type='button'];
+
+      cursor: pointer;
+   }
+
+   // [type='tel'] [type='text'] [type='time'] [type='url'] [type='week']
+}

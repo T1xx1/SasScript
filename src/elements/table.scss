@@ -1,0 +1,16 @@
+@use '../var/colors';
+@use '../properties/displays/block' as *;
+
+table {
+   @include block;
+
+   border-collapse: collapse;
+
+   tr:nth-child(odd) {
+      background-color: lighten(colors.$gray-web, 25);
+   }
+
+   tr:first-child {
+      background-color: colors.$gray-web;
+   }
+}

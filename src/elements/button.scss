@@ -1,0 +1,22 @@
+@use '../var/colors';
+@use '../components/input' as *;
+@use '../components/highlight' as *;
+
+button {
+   @include input;
+   @include highlight;
+
+   cursor: pointer;
+
+   &:disabled {
+      color: colors.$cultured;
+      cursor: not-allowed;
+   }
+
+   &[type='reset'] {
+      color: colors.$red;
+   }
+   &[type='submit'] {
+      color: colors.$ao-english;
+   }
+}

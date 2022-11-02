@@ -1,0 +1,7 @@
+@use '../properties/displays/inline' as *;
+
+hr {
+   @include inline;
+
+   height: 15px;
+}

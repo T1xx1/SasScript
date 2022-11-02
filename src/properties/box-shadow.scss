@@ -1,3 +1,9 @@
-@mixin box-shadow {
-   box-shadow: 1.5px 1.5px 0 currentColor;
+@use '../var/colors';
+
+@mixin box-shadow($type: '') {
+   @if $type == 'blur' {
+      box-shadow: 0 0 5px colors.$gray-web;
+   } @else {
+      box-shadow: 1.5px 1.5px 0 currentColor;
+   }
 }

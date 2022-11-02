@@ -1,6 +1,0 @@
-@mixin inline($type: '') {
-   @include border('inline', $type);
-   @include padding('inline');
-
-   display: inline;
-}

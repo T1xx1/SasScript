@@ -1,0 +1,7 @@
+@use '../components/input' as *;
+
+select {
+   @include input;
+
+   cursor: pointer;
+}

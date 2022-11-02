@@ -1,0 +1,5 @@
+@use '../box';
+
+meter {
+   @include box.model(40px, 200px);
+}

@@ -1,0 +1,13 @@
+@mixin color($color, $border-color: '', $bg-color: '', $accent-color: '') {
+   color: $color;
+
+   @if $accent-color != '' {
+      accent-color: $accent-color;
+   }
+   @if $bg-color != '' {
+      background-color: $bg-color;
+   }
+   @if $border-color != '' {
+      border-color: $border-color;
+   }
+}

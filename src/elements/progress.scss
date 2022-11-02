@@ -1,0 +1,5 @@
+@use './meter';
+
+progress {
+   @extend meter;
+}

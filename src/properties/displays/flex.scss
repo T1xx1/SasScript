@@ -1,0 +1,19 @@
+@mixin flex($flex-direction: row, $flex-wrap: nowrap, $align-content: normal, $justify-content: normal, $align-items: normal) {
+   display: flex;
+
+   @if $align-content != normal {
+      align-content: $align-content;
+   }
+   @if $align-items != normal {
+      align-items: $align-items;
+   }
+   @if $flex-direction != row {
+      flex-direction: $flex-direction;
+   }
+   @if $flex-wrap != nowrap {
+      flex-wrap: $flex-wrap;
+   }
+   @if $justify-content != normal {
+      justify-content: $justify-content;
+   }
+}

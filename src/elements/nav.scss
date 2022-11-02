@@ -1,0 +1,5 @@
+@use '../properties/margin' as *;
+
+nav {
+   @include margin;
+}

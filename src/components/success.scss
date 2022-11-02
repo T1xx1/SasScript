@@ -1,0 +1,9 @@
+@use '../var/colors';
+
+@mixin warn {
+   color: colors.$green;
+
+   &::before {
+      content: '🟢 Success: ';
+   }
+}
