@@ -1,9 +1,9 @@
-@mixin error {
-   @include inline;
+@use '../var/colors';
 
-   color: $red;
+@mixin error {
+   color: colors.$red;
 
    &::before {
-      content: '❌Error: ';
+      content: '🔴 Error: ';
    }
 }

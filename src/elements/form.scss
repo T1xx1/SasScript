@@ -1,0 +1,16 @@
+@use '../properties/displays/block' as *;
+@use '../components/reset' as *;
+
+form {
+   @include block;
+
+   text-align: center;
+
+   li {
+      list-style-type: none;
+   }
+
+   > fieldset:only-child {
+      @include reset;
+   }
+}

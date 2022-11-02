@@ -1,6 +1,6 @@
 @mixin border-radius($model: 'block') {
    @if $model == 'inline' {
-      border-radius: 6px;
+      border-radius: 7px;
    } @else {
       border-radius: 12px;
    }

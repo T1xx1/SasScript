@@ -1,0 +1,5 @@
+@use '../components/fullscreen' as *;
+
+html {
+   @include fullscreen;
+}

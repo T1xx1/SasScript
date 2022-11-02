@@ -1,8 +1,15 @@
-@import './dimensions';
-@import './error';
-@import './fullscreen';
-@import './highlight';
-@import './reset';
-@import './spacing';
-@import './var';
-@import './warn';
+@forward './error';
+@forward './fullscreen';
+@forward './highlight';
+@forward './input';
+@forward './reset';
+@forward './spacing';
+@forward './title';
+@forward './var';
+@forward './warn';
+
+// deprecated v4.0.0 -> content
+@mixin dimensions($height, $width) {
+   height: $height;
+   width: $width;
+}

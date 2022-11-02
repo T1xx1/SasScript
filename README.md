@@ -1,5 +1,5 @@
 # SasScript
 
-SasScript or SS is a Sass library with default styles and custom HTML elements styles
+SasScript is a Sass library with default and custom styles
 
--  [Changelog](./.github/CHANGELOG.md)
+-  [Changelog](./CHANGELOG.md)

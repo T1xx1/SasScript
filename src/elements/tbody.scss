@@ -1,0 +1,5 @@
+@use '../properties/border' as *;
+
+tbody {
+   @include border;
+}

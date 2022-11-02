@@ -1,0 +1,7 @@
+@use '../padding' as *;
+
+@mixin inline {
+   @include padding('inline');
+
+   display: inline;
+}

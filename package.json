@@ -1,6 +1,26 @@
 {
-   "scripts": {
-      "compile": "sass src/ss.scss:dist/min.css --style compressed && sass src/ss.scss:dist/ss.css",
-      "test": "sass --watch src/ss.scss:dist/ss.css test/style.scss:test/style.css"
+   "name": "sasscript",
+   "version": "4.0.0",
+   "description": "SasScript is a Sass library with default and custom styles",
+   "main": "style.scss",
+   "scripts": {},
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/T1xx1/Sasscript.git"
+   },
+   "author": "T1xx1",
+   "license": "MIT",
+   "bugs": {
+      "url": "https://github.com/T1xx1/Sasscript/issues"
+   },
+   "homepage": "https://github.com/T1xx1/Sasscript#readme",
+   "keywords": [
+      "library",
+      "sass",
+      "scss",
+      "styles"
+   ],
+   "dependencies": {
+      "purify-css": "^1.2.5"
    }
 }

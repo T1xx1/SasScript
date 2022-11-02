@@ -1,7 +1,11 @@
-@mixin imgbutton($dimension: 45px, $padding: 2.5px) {
+@use '../box';
+
+@use '../elements/button';
+
+@mixin imgbutton($content: 45px, $padding: 2.5px) {
    @extend button;
 
-   height: $dimension;
+   @include box.model($content);
+
    padding: $padding;
-   width: $dimension;
 }

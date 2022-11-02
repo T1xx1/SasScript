@@ -1,0 +1,10 @@
+@use '../properties/border' as *;
+@use '../properties/padding' as *;
+
+td {
+   @include border;
+   @include padding('inline');
+
+   box-shadow: none;
+   border-radius: 0;
+}

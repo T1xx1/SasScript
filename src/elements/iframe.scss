@@ -1,0 +1,5 @@
+@use '../properties/displays/block' as *;
+
+iframe {
+   @include block;
+}

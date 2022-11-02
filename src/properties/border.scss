@@ -1,8 +1,11 @@
+@use './border-radius' as *;
+@use './box-shadow' as *;
+
 @mixin border($model: 'block', $type: '') {
    @include border-radius($model);
 
    @if $type == 'blur' {
-      box-shadow: 0 0 5px $gray-web;
+      @include box-shadow('blur');
    } @else {
       border: 2.5px solid;
    }

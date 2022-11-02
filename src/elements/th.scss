@@ -1,0 +1,7 @@
+@use './td';
+
+th {
+   @extend td;
+
+   text-align: center;
+}

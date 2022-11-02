@@ -1,0 +1,9 @@
+@use '../properties/padding' as *;
+@use '../components/fullscreen' as *;
+
+body {
+   @include fullscreen;
+   @include padding('inline');
+
+   padding-bottom: 30px;
+}

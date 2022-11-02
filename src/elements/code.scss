@@ -1,0 +1,15 @@
+@use '../var/colors';
+@use '../properties/border-radius' as *;
+@use '../properties/padding' as *;
+@use '../properties/displays/inline' as *;
+
+code {
+   @include border-radius('inline');
+   @include padding('inline');
+
+   background-color: colors.$gray-web;
+
+   > pre {
+      @include inline;
+   }
+}

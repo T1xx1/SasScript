@@ -1,11 +1,27 @@
+@use '../var/colors';
+
 @mixin var($type) {
    @if $type == 'bool' {
-      color: $violet-color-wheel;
+      color: colors.$violet-color-wheel;
    }
-   @if $type == 'number' {
-      color: $screamin-green;
+   @if $type == 'char' {
+      color: colors.$yellow;
+   }
+   @if $type == 'double' {
+      color: colors.$ao-english;
+   }
+   @if $type == 'float' {
+      color: colors.$chartreuse-web;
+   }
+   @if $type == 'int' {
+      color: colors.$green;
    }
    @if $type == 'string' {
-      color: $orange;
+      color: colors.$orange;
+   }
+
+   //deprecated v4.0.0 -> int/double/float
+   @if $type == 'number' {
+      color: colors.$green;
    }
 }

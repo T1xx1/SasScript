@@ -1,7 +1,7 @@
 @mixin margin($model: 'block') {
-   @if $model == 'block' {
-      margin: clamp(3px, 0.5em, 15px);
-   } @else if $model == 'inline' {
-      margin: 10px;
+   @if $model == 'inline' {
+      margin: 10px 15px;
+   } @else {
+      margin: clamp(5px, 0.5em, 15px);
    }
 }

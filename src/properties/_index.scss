@@ -1,6 +1,8 @@
-@import './border-radius';
-@import './border';
-@import './box-shadow';
-@import './margin';
-@import './padding';
-@import './position';
+@forward './border-radius';
+@forward './border';
+@forward './box-shadow';
+@forward './color';
+@forward './displays';
+@forward './margin';
+@forward './padding';
+@forward './position';

@@ -1,0 +1,5 @@
+@use './button';
+
+::file-selector-button {
+   @extend button;
+}
