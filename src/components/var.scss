@@ -20,8 +20,12 @@
       color: colors.$orange;
    }
 
-   //deprecated v4.0.0 -> int/double/float
+   //! deprecated 4.0.0
    @if $type == 'number' {
       color: colors.$green;
+
+      ::before {
+         content: '$number is deprecated since v4.0.0 use $int, $double or $float instead';
+      }
    }
 }

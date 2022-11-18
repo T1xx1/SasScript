@@ -8,13 +8,3 @@
       color: colors.$blue;
    }
 }
-
-::placeholder {
-   @include themes.dark {
-      color: lighten(colors.$white, 15);
-   }
-
-   @include themes.light {
-      color: lighten(colors.$white, 15);
-   }
-}

@@ -1,6 +1,4 @@
-@mixin color($color, $border-color: '', $bg-color: '', $accent-color: '') {
-   color: $color;
-
+@mixin color($color: '', $border-color: '', $bg-color: '', $accent-color: '') {
    @if $accent-color != '' {
       accent-color: $accent-color;
    }
@@ -9,5 +7,8 @@
    }
    @if $border-color != '' {
       border-color: $border-color;
+   }
+   @if $color != '' {
+      color: $color;
    }
 }

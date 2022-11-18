@@ -1,5 +1,6 @@
 @use '../var/colors';
 @use '../box';
+@use '../properties/border' as *;
 @use '../components/input' as *;
 
 @use './button';
@@ -28,7 +29,15 @@ input {
       padding-left: 0.4rem;
    }
    
-   // [type='hidden'] [type='image'] [type='month'] [type='number '] [type='password']
+   // [type='hidden'] [type='image'] [type='month']
+   
+   &[type='number']:out-of-range {
+      @include border;
+
+      border-color: colors.$red; 
+   }
+   
+   // [type='password']
 
    &[type='radio'] {
       @extend [type='checkbox'];
@@ -47,9 +56,7 @@ input {
    // [type='search']
 
    &[type='submit'] {
-      @extend [type='button'];
-
-      cursor: pointer;
+      @extend [type='reset'];
    }
 
    // [type='tel'] [type='text'] [type='time'] [type='url'] [type='week']

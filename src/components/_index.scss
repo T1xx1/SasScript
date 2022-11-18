@@ -8,8 +8,5 @@
 @forward './var';
 @forward './warn';
 
-// deprecated v4.0.0 -> content
-@mixin dimensions($height, $width) {
-   height: $height;
-   width: $width;
-}
+//! deprecated 4.0.0
+@forward './dimensions';

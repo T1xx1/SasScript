@@ -5,6 +5,7 @@
 <details>
    <summary>Versions</summary>
 
+-  [4.0.0](#400-•-use-•-2022-11-02)
 -  [3.5.0](#350-•-sasscript-•-2022-09-01)
 -  [3.0.0](#300-•-sasscript)
 -  [2.0.0](#200-•-csscript)
@@ -13,14 +14,20 @@
 
 <br>
 
-## 4.0.0 • @ • 2022-11-02
+## 4.0.1 • 2022-11-18
+
+### Fixed
+
+-  White input placeholder with color scheme
+
+## 4.0.0 • @use • 2022-11-02
 
 ### Added
 
 -  @light and @dark
 -  @spacing
 -  Lighter input placeholder
--  @box
+-  @model
 -  @hidden
 -  @colors
 -  Svg styles
@@ -28,16 +35,15 @@
 
 ### Changed
 
--  @import -> @use
 -  Table style
 -  Offline fonts
 -  Themed b
 -  Themed checkbox accent color
--  @theme instead of scss parameter
+-  @theme instead of parameter
 
 ### Removed
 
--  scss parameters
+-  Scss parameters
 
 ### Deprecated
 
@@ -67,12 +73,11 @@
 
 ### Added
 
--  Elements' models
+-  Elements displays
 -  Webkit styles
 
 ### Fixed
 
--  Default styles
 -  Hover in dark mode
 -  @abutton overlapping with other elements
 -  @imgbutton height and padding
