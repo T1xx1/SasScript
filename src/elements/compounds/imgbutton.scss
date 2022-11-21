@@ -1,6 +1,6 @@
-@use '../box';
+@use '../../box.scss';
 
-@use '../elements/button';
+@use '../../elements/button';
 
 @mixin imgbutton($content: 45px, $padding: 2.5px) {
    @extend button;

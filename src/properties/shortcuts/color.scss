@@ -1,4 +1,4 @@
-@mixin color($color: '', $border-color: '', $bg-color: '', $accent-color: '') {
+@mixin color($color: '', $border-color: '', $box-shadow: $border-color, $bg-color: '', $accent-color: '') {
    @if $accent-color != '' {
       accent-color: $accent-color;
    }
@@ -7,6 +7,9 @@
    }
    @if $border-color != '' {
       border-color: $border-color;
+   }
+   @if $box-shadow != '' {
+      box-shadow: 1.5px 1.5px 0 $box-shadow;
    }
    @if $color != '' {
       color: $color;

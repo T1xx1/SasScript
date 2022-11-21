@@ -1,6 +1,6 @@
 @use './var/fonts';
 @use './breakpoints';
-@use './properties/position' as *;
+@use './properties/shortcuts/position' as *;
 
 * {
    box-sizing: border-box;
@@ -16,7 +16,7 @@
    &:after {
       @include position(fixed, $right: 0, $bottom: 0);
 
-      content: 'SasScript 4.0.1';
+      content: 'SasScript 4.1.0';
       font-size: 0.5rem;
    }
 

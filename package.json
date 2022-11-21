@@ -1,6 +1,6 @@
 {
    "name": "sasscript",
-   "version": "4.0.1",
+   "version": "4.1.0",
    "description": "SasScript is a Sass library with default and custom styles",
    "main": "style.scss",
    "scripts": {},
@@ -19,8 +19,5 @@
       "sass",
       "scss",
       "styles"
-   ],
-   "dependencies": {
-      "purify-css": "^1.2.5"
-   }
+   ]
 }
