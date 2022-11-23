@@ -16,7 +16,7 @@
    &:after {
       @include position(fixed, $right: 0, $bottom: 0);
 
-      content: 'SasScript 4.1.0';
+      content: 'SasScript 4.0.2';
       font-size: 0.5rem;
    }
 

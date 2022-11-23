@@ -1,5 +1,7 @@
-@mixin inline-block($type: '') {
-   @include inline($type);
+@use '../displays/inline' as *;
+
+@mixin inline-block {
+   @include inline;
 
    display: inline-block;
 }

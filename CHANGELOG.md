@@ -5,7 +5,6 @@
 <details>
    <summary>Versions</summary>
 
--  [4.1.0](#410)
 -  [4.0.0](#400-•-use-•-2022-11-02)
 -  [3.5.0](#350-•-sasscript-•-2022-09-01)
 -  [3.0.0](#300-•-sasscript)
@@ -15,7 +14,11 @@
 
 <br>
 
-## 4.1.0
+## 4.0.2
+
+### Fixed
+
+- Not working compounds
 
 ## 4.0.1 • 2022-11-18
 
