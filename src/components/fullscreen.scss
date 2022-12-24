@@ -1,6 +1,8 @@
 @use './reset' as *;
+@use '../properties/shortcuts/position' as *;
 
 @mixin fullscreen {
+   @include position(absolute, $top: 0, $left: 0);
    @include reset('border');
 
    margin: 0;

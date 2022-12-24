@@ -1,11 +1,15 @@
-@use '../../box.scss';
+@use '../../box';
+@use '../../properties/displays/flex' as *;
 
 @use '../../elements/button';
 
-@mixin imgbutton($content: 45px, $padding: 2.5px) {
+@mixin imgbutton($content: 50px, $img: $content - 5px) {
    @extend button;
 
    @include box.model($content);
+   @include flex($justify-content: center, $align-items: center);
 
-   padding: $padding;
+   > img {
+      @include box.model($img);
+   }
 }

@@ -14,6 +14,13 @@
 
 <br>
 
+## 4.0.3
+
+### Fixed
+
+- ImgButton img dimensions
+- Fullscreen absolute position
+
 ## 4.0.2
 
 ### Fixed
