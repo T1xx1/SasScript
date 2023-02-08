@@ -1,0 +1,11 @@
+@mixin font($family: '', $size: '', $letter-spacing: '') {
+   @if $family != '' {
+      font-family: $family;
+   }
+   @if $size != '' {
+      font-size: $size;
+   }
+   @if $letter-spacing != '' {
+      letter-spacing: $letter-spacing;
+   }
+}
