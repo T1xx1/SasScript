@@ -3,7 +3,7 @@
 
 @use '../../elements/button';
 
-@mixin imgbutton($content: 50px, $img: $content - 5px) {
+@mixin imgbutton($content: 55px, $img: $content - 5px) {
    @extend button;
 
    @include box.model($content);

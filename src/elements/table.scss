@@ -5,6 +5,7 @@ table {
    @include block;
 
    border-collapse: collapse;
+   padding: 0.5em;
 
    tr:nth-child(odd) {
       background-color: lighten(colors.$gray-web, 25);

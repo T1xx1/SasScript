@@ -1,7 +1,7 @@
-@use '../properties/displays/inline' as *;
+@use '../properties/displays/block' as *;
 
 hr {
-   @include inline;
+   @include block;
 
    height: 15px;
 }
