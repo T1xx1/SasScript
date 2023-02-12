@@ -1,5 +1,4 @@
-@use '../properties/border' as *;
-
 tbody {
-   @include border;
+   border: none;
+   border-radius: inherit;
 }

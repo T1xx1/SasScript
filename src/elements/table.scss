@@ -1,17 +1,8 @@
-@use '../var/colors';
 @use '../properties/displays/block' as *;
 
 table {
    @include block;
 
    border-collapse: collapse;
-   padding: 0.5em;
-
-   tr:nth-child(odd) {
-      background-color: lighten(colors.$gray-web, 25);
-   }
-
-   tr:first-child {
-      background-color: colors.$gray-web;
-   }
+   padding: 0;
 }

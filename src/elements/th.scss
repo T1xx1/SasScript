@@ -4,4 +4,12 @@ th {
    @extend td;
 
    text-align: center;
+
+   &:first-child {
+      border-left: none;
+   }
+
+   &:last-child {
+      border-right: none;
+   }
 }
