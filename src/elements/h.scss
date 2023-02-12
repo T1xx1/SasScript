@@ -1,5 +1,5 @@
-@use '../properties/margin' as *;
-@use '../properties/shortcuts/font' as *;
+@use '../lib/shortcuts/font' as *;
+@use '../styles/margin' as *;
 
 h1,
 h2,

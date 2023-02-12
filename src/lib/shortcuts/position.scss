@@ -1,5 +1,5 @@
 @mixin position($position: static, $top: '', $right: '', $bottom: '', $left: '') {
-   @if $position != static and $position != '' {
+   @if $position != static {
       position: $position;
    }
    @if $bottom != '' {

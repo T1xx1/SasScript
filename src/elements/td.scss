@@ -1,5 +1,5 @@
-@use '../properties/border' as *;
-@use '../properties/padding' as *;
+@use '../styles/border' as *;
+@use '../styles/padding' as *;
 
 td {
    @include border;

@@ -1,17 +1,12 @@
-@use './index';
+@use './all';
+@use './root';
+
+@use './lib';
+
+@use './styles';
+
 @use './elements';
 
-@forward './elements/compounds';
-
-@forward './var';
-@forward './themes';
-@forward './breakpoints';
-
-@forward './properties';
-@forward './properties/shortcuts';
-
-@forward './box';
-
-@forward './components';
+@use './components';
 
 /* SasScript */

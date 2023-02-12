@@ -1,10 +1,10 @@
-@use '../var/colors';
-@use '../properties/border-radius' as *;
-@use '../properties/padding' as *;
+@use '../lib/var/colors' as *;
+@use '../styles/border-radius' as *;
+@use '../styles/padding' as *;
 
 @mixin highlight($type: '') {
    &:hover {
-      background-color: colors.$silver-chalice;
+      background-color: $silver-chalice;
 
       @if $type == 'bubble' {
          @include border-radius('inline');

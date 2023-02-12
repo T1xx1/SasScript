@@ -1,4 +1,4 @@
-@mixin theme($color) {
+@mixin theme-color($color) {
    :root:after {
       color: $color;
    }

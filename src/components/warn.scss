@@ -1,7 +1,7 @@
-@use '../var/colors';
+@use '../lib/var/colors' as *;
 
 @mixin warn {
-   color: colors.$yellow;
+   color: $yellow;
 
    &::before {
       content: '🟡 Warning: ';

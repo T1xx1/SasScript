@@ -1,31 +1,22 @@
-@use '../var/colors';
+@use '../lib/var/colors' as *;
 
 @mixin var($type) {
    @if $type == 'bool' {
-      color: colors.$violet-color-wheel;
+      color: $violet-color-wheel;
    }
    @if $type == 'char' {
-      color: colors.$yellow;
+      color: $yellow;
    }
    @if $type == 'double' {
-      color: colors.$ao-english;
+      color: $ao-english;
    }
    @if $type == 'float' {
-      color: colors.$chartreuse-web;
+      color: $chartreuse-web;
    }
    @if $type == 'int' {
-      color: colors.$green;
+      color: $green;
    }
    @if $type == 'string' {
-      color: colors.$orange;
-   }
-
-   //! deprecated 4.0.0
-   @if $type == 'number' {
-      color: colors.$green;
-
-      ::before {
-         content: '$number is deprecated since v4.0.0 use $int, $double or $float instead';
-      }
+      color: $orange;
    }
 }

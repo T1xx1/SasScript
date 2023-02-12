@@ -1,5 +1,5 @@
-@use '../properties/displays/block' as *;
 @use '../components/reset' as *;
+@use '../styles/block' as *;
 
 fieldset {
    @include block;

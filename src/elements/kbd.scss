@@ -1,4 +1,4 @@
-@use '../properties/displays/inline' as *;
+@use '../styles/inline' as *;
 
 kbd {
    @include inline;

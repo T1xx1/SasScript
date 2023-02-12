@@ -1,5 +1,5 @@
-@use '../var/fonts';
+@use '../lib/var/fonts' as *;
 
 time {
-   font-family: fonts.$roboto;
+   font-family: $roboto;
 }

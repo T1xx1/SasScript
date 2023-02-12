@@ -1,4 +1,4 @@
-@use '../displays/inline' as *;
+@use './inline' as *;
 
 @mixin inline-block {
    @include inline;

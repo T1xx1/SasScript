@@ -1,7 +1,7 @@
-@use '../var/colors';
+@use '../lib/var/colors' as *;
 
 @mixin error {
-   color: colors.$red;
+   color: $red;
 
    &::before {
       content: '🔴 Error: ';

@@ -1,15 +1,14 @@
 @forward './browsers';
 
-@use '../themes';
-@use '../var/colors';
+@use '../lib/var/colors' as *;
 
 @use './button';
 
 :any-link {
-   color: colors.$azure;
+   color: $azure;
 
    &:hover {
-      color: colors.$blue;
+      color: $blue;
    }
 }
 

@@ -1,5 +1,5 @@
-@use '../properties/border' as *;
-@use '../properties/displays/inline' as *;
+@use '../styles/border' as *;
+@use '../styles/inline' as *;
 
 @mixin input {
    @include border('inline');

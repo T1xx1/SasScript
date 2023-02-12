@@ -1,13 +1,13 @@
-@use '../var/colors';
-@use '../properties/border-radius' as *;
-@use '../properties/padding' as *;
-@use '../properties/displays/inline' as *;
+@use '../lib/var/colors' as *;
+@use '../styles/border-radius' as *;
+@use '../styles/padding' as *;
+@use '../styles/inline' as *;
 
 code {
    @include border-radius('inline');
    @include padding('inline');
 
-   background-color: colors.$gray-web;
+   background-color: $gray-web;
 
    > pre {
       @include inline;

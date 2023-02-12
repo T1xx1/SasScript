@@ -1,6 +1,6 @@
-@use '../../properties/displays/inline-block' as *;
+@use '../../styles/inline-block' as *;
 
-@use '../../elements/button';
+@use '../../elements/button' as *;
 
 @mixin abutton {
    @extend button;

@@ -1,4 +1,4 @@
-@use '../padding' as *;
+@use './padding' as *;
 
 @mixin inline {
    @include padding('inline');

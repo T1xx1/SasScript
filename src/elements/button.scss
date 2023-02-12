@@ -1,7 +1,7 @@
-@use '../var/colors';
-@use '../properties/shortcuts/font' as *;
 @use '../components/input' as *;
 @use '../components/highlight' as *;
+@use '../lib/var/colors';
+@use '../lib/shortcuts/font' as *;
 
 button {
    @include font($size: 14px);

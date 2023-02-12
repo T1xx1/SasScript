@@ -1,7 +1,7 @@
-@use '../border' as *;
-@use '../box-shadow' as *;
-@use '../margin' as *;
-@use '../padding' as *;
+@use './border' as *;
+@use './box-shadow' as *;
+@use './margin' as *;
+@use './padding' as *;
 
 @mixin block($type: '') {
    @include border($type: $type);

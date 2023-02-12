@@ -1,5 +1,5 @@
-@use '../../box';
-@use '../../properties/displays/flex' as *;
+@use '../../lib/shortcuts/box' as *;
+@use '../../lib/shortcuts/flex' as *;
 
 @use '../../elements/button';
 
@@ -10,6 +10,6 @@
    @include flex($justify-content: center, $align-items: center);
 
    > img {
-      @include box.model($img);
+      @include model($img);
    }
 }

@@ -1,4 +1,4 @@
-@use '../properties/displays/block' as *;
+@use '../styles/block' as *;
 
 hr {
    @include block;
