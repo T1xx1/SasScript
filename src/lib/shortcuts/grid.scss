@@ -5,7 +5,7 @@
    $justify-items: normal,
    $grid-template-columns: 1fr,
    $grid-template-rows: 1fr,
-   $gap: 0 0
+   $gap: 0
 ) {
    display: grid;
 
@@ -21,7 +21,7 @@
    @if $grid-template-rows != 1fr {
       grid-template-rows: $grid-template-rows;
    }
-   @if $gap != 0 0 {
+   @if $gap != 0 {
       gap: $gap;
    }
    @if $justify-items != normal {
