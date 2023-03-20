@@ -1,12 +1,12 @@
-@use './all';
-@use './root';
+@forward './all';
+@forward './root';
 
-@use './lib';
+@forward './lib';
 
-@use './styles';
+@forward './styles';
 
-@use './elements';
+@forward './elements';
 
-@use './components';
+@forward './components';
 
 /* SasScript */
