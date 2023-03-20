@@ -3,13 +3,15 @@
 
 @use '../../elements/button';
 
-@mixin imgbutton($content: 55px, $img: $content - 5px) {
+@mixin imgbutton($content: 45px, $padding: 5px) {
    @extend button;
 
-   @include box.model($content);
+   @include model($content + $padding * 2);
    @include flex($justify-content: center, $align-items: center);
 
+   padding: $padding;
+
    > img {
-      @include model($img);
+      @include model($content);
    }
 }
