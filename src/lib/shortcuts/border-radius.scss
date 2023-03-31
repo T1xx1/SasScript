@@ -1,0 +1,14 @@
+@mixin radius($top-right: '', $bottom-right: '', $bottom-left: '', $top-left: '') {
+   @if $top-right != '' {
+      border-top-right-radius: $top-right;
+   }
+   @if $bottom-right != '' {
+      border-bottom-right-radius: $bottom-right;
+   }
+   @if $bottom-left != '' {
+      border-bottom-left-radius: $bottom-left;
+   }
+   @if $top-left != '' {
+      border-top-left-radius: $top-left;
+   }
+}
