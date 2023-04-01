@@ -1,0 +1,10 @@
+@use '../lib/shortcuts/flex' as *;
+@use '../lib/breakpoints' as *;
+
+@mixin changeFlow {
+   @include flex($align-items: center);
+
+   @include mobile {
+      flex-direction: column;
+   }
+}
