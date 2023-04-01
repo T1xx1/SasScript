@@ -2,15 +2,19 @@
    @if $position != static {
       position: $position;
    }
+
    @if $bottom != '' {
       bottom: $bottom;
    }
+
    @if $left != '' {
       left: $left;
    }
+
    @if $right != '' {
       right: $right;
    }
+
    @if $top != '' {
       top: $top;
    }

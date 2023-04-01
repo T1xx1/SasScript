@@ -1,10 +1,13 @@
+// model
 @forward './block';
-@forward './border-radius';
 @forward './border';
-@forward './box-shadow';
-@forward './inline-block';
-@forward './inline';
+@forward './border-radius';
 @forward './margin';
 @forward './padding';
 
-@forward './themes';
+// inline
+@forward './inline';
+@forward './inline-block';
+
+// none
+@forward './box-shadow';

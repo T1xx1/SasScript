@@ -1,0 +1,9 @@
+@use '../../lib/shortcuts/box' as *;
+@use '../../styles/padding' as *;
+
+body {
+   @include model(100%);
+   @include padding('inline');
+
+   padding-bottom: 30px;
+}

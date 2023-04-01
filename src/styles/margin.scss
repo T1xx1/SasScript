@@ -2,6 +2,6 @@
    @if $model == 'inline' {
       margin: 10px 15px;
    } @else {
-      margin: clamp(5px, 0.5em, 15px);
+      margin: clamp(5px, .5em, 15px);
    }
 }

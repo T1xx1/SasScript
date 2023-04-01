@@ -1,9 +1,13 @@
-@mixin reset($type: '') {
-   border: 0;
-   box-shadow: none;
+@use '../lib/shortcuts/box' as *;
 
-   @if $type != 'border' {
-      margin: 0;
-      padding: 0;
+@mixin reset($type: '') {
+   @if ($type == 'model' or $type == 'all') {
+      @include model(0, $margin: 0, $padding: 0);
+   }
+
+   @if ($type == 'border' or $type== 'all') {
+      border: none;
+      border-radius: 0;
+      box-shadow: none;
    }
 }

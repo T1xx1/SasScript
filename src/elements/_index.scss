@@ -1,122 +1,14 @@
-// a
+@forward './universal';
+@forward './root';
 
-@forward './abbr';
-@forward './address';
+//
 
-// area
+@forward './basics';
 
-@forward './article';
-@forward './aside';
-
-// audio b base bdi bdo
-
-@forward './blockquote';
-@forward './body';
-
-// br
-
-@forward './button';
-
-// canvas caption cite
-
-@forward './code';
-
-// col colgroup data datalist dd
-
-@forward './del';
-
-// details dnf
-
-@forward './dialog';
-
-//  div dl dt em embed
-
-@forward './fieldset';
-
-// figcaption figure
-
-@forward './footer';
-@forward './form';
-@forward './h';
-
-// head
-
-@forward './header';
-
-// hgroup
-
-@forward './hr';
-@forward './html';
-
-// i
-
-@forward './iframe';
-
-// img
-
-@forward './input';
-
-// ins
-
-@forward './kbd';
-
-// label legend li link
-
-@forward './main';
-
-// map
-
-@forward './mark';
-
-// meta
-
-@forward './meter';
-@forward './nav';
-
-// noframes noscript object
-
-@forward './ol';
-
-// optgroup option output p param picture pre
-
-@forward './progress';
-
-// q rt rc rtc ruby s samp script section
-
-@forward './select';
-
-// slot small source span strong style sub
-
-@forward './summary';
-
-// sup
-
-@forward './table';
-@forward './tbody';
-@forward './td';
-
-// template
-
-@forward './textarea';
-
-// tfoot
-
-@forward './th';
-
-// thead
-
-@forward './time';
-
-// title
-@forward './tr';
-
-// track u
-
-@forward './ul';
-
-// var video wbr
+//
 
 @forward './svg';
 
-@forward './other';
+//
+
 @forward './compounds';

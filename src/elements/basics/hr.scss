@@ -1,0 +1,7 @@
+@use '../../styles/block' as *;
+
+hr {
+   @include block;
+
+   height: 15px;
+}

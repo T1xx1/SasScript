@@ -1,0 +1,19 @@
+@use '../lib/breakpoints' as *;
+@use '../lib/shortcuts/position' as *;
+
+:root {
+   color-scheme: light dark;
+   cursor: default;
+   scroll-behavior: smooth;
+
+   &:after {
+      @include position(fixed, $right: 0, $bottom: 0);
+
+      content: 'SasScript 4.1.1';
+      font-size: .5rem;
+   }
+
+   @include laptop {
+      background-size: 100% 100%;
+   }
+}

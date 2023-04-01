@@ -1,5 +1,0 @@
-@use '../styles/block' as *;
-
-dialog[open] {
-   @include block;
-}

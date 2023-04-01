@@ -1,12 +1,8 @@
 @use './border-radius' as *;
 @use './box-shadow' as *;
 
-@mixin border($model: 'block', $type: '') {
+@mixin border($model: 'block') {
    @include border-radius($model);
 
-   @if $type == 'blur' {
-      @include box-shadow('blur');
-   } @else {
-      border: 2.5px solid;
-   }
+   border: solid 2.5px;
 }

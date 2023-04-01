@@ -1,6 +1,6 @@
 @use '../lib/var/colors' as *;
 
-@mixin warn {
+@mixin success {
    color: $green;
 
    &::before {

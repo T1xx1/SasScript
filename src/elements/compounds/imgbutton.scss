@@ -1,7 +1,6 @@
 @use '../../lib/shortcuts/box' as *;
 @use '../../lib/shortcuts/flex' as *;
-
-@use '../../elements/button';
+@use '../basics/button';
 
 @mixin imgbutton($content: 45px, $padding: 5px) {
    @extend button;

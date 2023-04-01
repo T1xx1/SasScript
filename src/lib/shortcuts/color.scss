@@ -2,15 +2,19 @@
    @if $accent-color != '' {
       accent-color: $accent-color;
    }
+
    @if $bg-color != '' {
       background-color: $bg-color;
    }
+
    @if $border-color != '' {
       border-color: $border-color;
    }
+
    @if $box-shadow != '' {
       box-shadow: 1.5px 1.5px 0 $box-shadow;
    }
+
    @if $color != '' {
       color: $color;
    }

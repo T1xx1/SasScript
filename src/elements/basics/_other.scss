@@ -1,0 +1,15 @@
+@use '../../lib/var/colors' as *;
+
+@use './button';
+
+:any-link {
+   color: $azure;
+
+   &:hover {
+      color: $blue;
+   }
+}
+
+::file-selector-button {
+   @extend button;
+}

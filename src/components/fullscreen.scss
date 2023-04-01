@@ -1,11 +1,11 @@
 @use './reset' as *;
+@use '../lib/shortcuts/box' as *;
 @use '../lib/shortcuts/position' as *;
 
 @mixin fullscreen {
-   @include position(absolute, $top: 0, $left: 0);
    @include reset('border');
+   @include model(100vh, 100vw);
+   @include position(absolute, $top: 0, $left: 0);
 
    margin: 0;
-   min-height: 100vh;
-   min-width: 100vw;
 }

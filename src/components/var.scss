@@ -4,18 +4,23 @@
    @if $type == 'bool' {
       color: $violet-color-wheel;
    }
+
    @if $type == 'char' {
       color: $yellow;
    }
+
    @if $type == 'double' {
       color: $ao-english;
    }
+
    @if $type == 'float' {
       color: $chartreuse-web;
    }
+
    @if $type == 'int' {
       color: $green;
    }
+
    @if $type == 'string' {
       color: $orange;
    }

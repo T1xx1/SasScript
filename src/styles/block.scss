@@ -3,20 +3,16 @@
 @use './margin' as *;
 @use './padding' as *;
 
-@mixin block($type: '') {
-   @include border($type: $type);
+@mixin block {
+   @include border;
    @include margin;
    @include padding;
 
    display: block;
 
-   @if $type != 'blur' {
-      @include box-shadow;
-   }
-
-   > h1,
-   > h2,
-   > h3 {
+   >h1,
+   >h2,
+   >h3 {
       margin: 0;
    }
 }

@@ -1,8 +1,0 @@
-@use '../styles/margin' as *;
-
-aside {
-   @include margin;
-
-   float: right;
-   width: fit-content;
-}

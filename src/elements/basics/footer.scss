@@ -1,0 +1,8 @@
+@use '../../styles/margin' as *;
+
+footer {
+   @include margin;
+
+   margin-left: 0;
+   margin-right: 0;
+}

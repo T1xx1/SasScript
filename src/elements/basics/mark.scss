@@ -1,0 +1,9 @@
+@use '../../lib/var/colors' as *;
+
+@use './code';
+
+mark {
+   @extend code;
+
+   background-color: $yellow;
+}

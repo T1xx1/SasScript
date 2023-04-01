@@ -1,0 +1,10 @@
+@use '../../components/reset' as *;
+@use '../../styles/block' as *;
+
+fieldset {
+   @include block;
+
+   > form:only-child {
+      @include reset;
+   }
+}

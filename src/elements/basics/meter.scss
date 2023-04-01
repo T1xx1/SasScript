@@ -1,0 +1,5 @@
+@use '../../lib/shortcuts/box' as *;
+
+meter {
+   @include model(40px, 200px);
+}

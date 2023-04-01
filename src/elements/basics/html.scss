@@ -1,0 +1,5 @@
+@use '../../lib/shortcuts/box' as *;
+
+html {
+   @include model(100%);
+}

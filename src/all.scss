@@ -1,8 +1,0 @@
-@use './lib/var/fonts' as *;
-
-* {
-   box-sizing: border-box;
-   font-family: $montserrat;
-   scroll-behavior: smooth;
-   transition: all 0.3s, background 0s, color 0s;
-}

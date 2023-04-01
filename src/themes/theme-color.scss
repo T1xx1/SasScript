@@ -1,0 +1,36 @@
+@mixin theme-color($color) {
+   :root:after {
+      color: $color;
+   }
+
+   b {
+      color: $color;
+   }
+
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   h6 {
+      color: $color;
+   }
+
+   input {
+      &[type='checkbox'],
+      &[type='radio'],
+      &[type='range'] {
+         accent-color: $color;
+      }
+   }
+
+   table {
+      tr:nth-child(odd) {
+         background-color: lighten($color, 25);
+      }
+
+      tr:first-child {
+         background-color: $color;
+      }
+   }
+}

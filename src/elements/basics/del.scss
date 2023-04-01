@@ -1,0 +1,11 @@
+@use '../../lib/var/colors' as *;
+
+@use './code';
+
+del {
+   @extend code;
+
+   background-color: $red;
+   color: $white;
+   text-decoration: none;
+}

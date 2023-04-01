@@ -2,15 +2,19 @@
    @if $height != '' {
       height: $height;
    }
+
    @if $width != '' {
       width: $width;
    }
+
    @if $border != '' {
       border: $border;
    }
+
    @if $margin != '' {
       margin: $margin;
    }
+
    @if $padding != '' {
       padding: $padding;
    }
