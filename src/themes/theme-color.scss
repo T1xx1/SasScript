@@ -3,6 +3,10 @@
       color: $color;
    }
 
+   ::placeholder {
+      color: $color;
+   }
+
    b {
       color: $color;
    }
@@ -16,12 +20,9 @@
       color: $color;
    }
 
-   input {
-      &[type='checkbox'],
-      &[type='radio'],
-      &[type='range'] {
-         accent-color: $color;
-      }
+   input,
+   progress {
+      accent-color: $color;
    }
 
    table {
