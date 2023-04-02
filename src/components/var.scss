@@ -5,8 +5,22 @@
       color: $violet-color-wheel;
    }
 
+   @if $type == 'null' {
+      color: $navy-blue;
+   }
+
+   // text
    @if $type == 'char' {
       color: $yellow;
+   }
+
+   @if $type == 'string' {
+      color: $orange;
+   }
+
+   // num
+   @if $type == 'num' {
+      color: $green;
    }
 
    @if $type == 'double' {
@@ -21,7 +35,16 @@
       color: $green;
    }
 
-   @if $type == 'string' {
-      color: $orange;
+   // num base
+   @if $type == 'dec' {
+      color: $smoky-black;
+   }
+
+   @if $type == 'hex' {
+      color: $eerie-black
+   }
+
+   @if $type == 'oct' {
+      color: $silver-chalice;
    }
 }
