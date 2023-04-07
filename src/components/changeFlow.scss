@@ -4,7 +4,7 @@
 @mixin changeFlow {
    @include flex($align-items: center);
 
-   @include mobile {
+   @include breakpoint('mobile') {
       flex-direction: column;
    }
 }
