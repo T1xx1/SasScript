@@ -1,0 +1,13 @@
+@mixin border($border: '', $border-radius: '', $box-shadow: '') {
+   @if ($border != '') {
+      border: $border;
+   }
+
+   @if ($border-radius != '') {
+      border-radius: $border-radius;
+   }
+
+   @if ($box-shadow != '') {
+      box-shadow: $box-shadow;
+   }
+}
