@@ -2,22 +2,7 @@
    "name": "sasscript",
    "version": "4.1.0",
    "description": "SasScript is a Sass library with default and custom styles",
-   "main": "style.scss",
-   "scripts": {},
-   "repository": {
-      "type": "git",
-      "url": "git+https://github.com/T1xx1/Sasscript.git"
-   },
+   "main": "./src/_ss.scss",
    "author": "T1xx1",
-   "license": "MIT",
-   "bugs": {
-      "url": "https://github.com/T1xx1/Sasscript/issues"
-   },
-   "homepage": "https://github.com/T1xx1/Sasscript#readme",
-   "keywords": [
-      "library",
-      "sass",
-      "scss",
-      "styles"
-   ]
+   "license": "MIT"
 }
