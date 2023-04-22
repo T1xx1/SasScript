@@ -1,7 +1,7 @@
 @use '../lib/shortcuts/flex' as *;
 @use '../lib/breakpoints' as *;
 
-@mixin changeFlow {
+@mixin wrap {
    @include flex($align-items: center);
 
    @include breakpoint('mobile') {
