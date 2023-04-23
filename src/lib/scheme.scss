@@ -1,11 +1,12 @@
-@mixin dark {
-   @media (prefers-color-scheme: dark) {
-      @content;
+@mixin schema($schema: '') {
+   @if ($schema == 'light') {
+      @media (prefers-color-scheme: light) {
+         @content;
+      }
    }
-}
-
-@mixin light {
-   @media (prefers-color-scheme: light) {
-      @content;
+   @else if ($schema == 'dark') {
+      @media (prefers-color-scheme: dark) {
+         @content;
+      }
    }
 }
