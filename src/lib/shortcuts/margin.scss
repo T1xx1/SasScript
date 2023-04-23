@@ -1,6 +1,17 @@
 @mixin margin($top: '', $right: '', $bottom: '', $left: '') {
-   margin-top: $top;
-   margin-right: $right;
-   margin-bottom: $bottom;
-   margin-left: $left;
+   @if ($top != '') {
+      margin-top: $top;
+   }
+
+   @if ($right != '') {
+      margin-right: $right;
+   }
+
+   @if ($bottom != '') {
+      margin-bottom: $bottom;
+   }
+
+   @if ($left != '') {
+      margin-left: $left;
+   }
 }
