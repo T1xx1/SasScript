@@ -1,0 +1,17 @@
+@mixin padding($top: '', $right: '', $bottom: '', $left: '') {
+   @if ($top !='') {
+      padding-top: $top;
+   }
+
+   @if ($right !='') {
+      padding-right: $right;
+   }
+
+   @if ($bottom !='') {
+      padding-bottom: $bottom;
+   }
+
+   @if ($left !='') {
+      padding-left: $left;
+   }
+}
