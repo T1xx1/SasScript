@@ -1,18 +1,14 @@
-@mixin color($color: '', $border-color: '', $box-shadow: $border-color, $bg-color: '', $accent-color: '') {
-   @if $accent-color != '' {
-      accent-color: $accent-color;
+@mixin color($accent: '', $bg: '', $border: '', $color: '') {
+   @if $accent != '' {
+      accent-color: $accent;
    }
 
-   @if $bg-color != '' {
-      background-color: $bg-color;
+   @if $bg != '' {
+      background-color: $bg;
    }
 
-   @if $border-color != '' {
-      border-color: $border-color;
-   }
-
-   @if $box-shadow != '' {
-      box-shadow: 1.5px 1.5px 0 $box-shadow;
+   @if $border- != '' {
+      border-color: $border;
    }
 
    @if $color != '' {
