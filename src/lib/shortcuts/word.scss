@@ -1,0 +1,9 @@
+@mixin word($break: '', $spacing: '') {
+   @if $break != '' {
+      word-break: $break;
+   }
+
+   @if $spacing != '' {
+      word-spacing: $spacing;
+   }
+}

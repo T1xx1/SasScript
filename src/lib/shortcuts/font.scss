@@ -1,13 +1,21 @@
-@mixin font($family: '', $size: '', $letter-spacing: '') {
-   @if $family != '' {
+@mixin font($family: '', $size: '', $style: '', $variant: '', $weight: '') {
+   @if ($family != '') {
       font-family: $family;
    }
 
-   @if $size != '' {
+   @if ($family != '') {
       font-size: $size;
    }
 
-   @if $letter-spacing != '' {
-      letter-spacing: $letter-spacing;
+   @if ($style != '') {
+      font-style: $style;
+   }
+
+   @if ($variant-numeric != '') {
+      font-variant: $variant;
+   }
+
+   @if ($weight != '') {
+      font-weight: $weight;
    }
 }

@@ -1,0 +1,15 @@
+@use './font' as *;
+@use './line' as *;
+@use './text' as *;
+@use './word' as *;
+
+@mixin typography($letter-spacing: '', $word-break, $word-spacing, $line-clamp, $line-height, $color, $text-align, $text-decoration, $text-indent, $text-overflow, $text-shadow, $text-transform, $font-family, $font-size, $font-style, $font-variant, $font-weight) {
+   @if $letter-spacing != '' {
+      letter-spacing: $letter-spacing;
+   }
+
+   @include word($word-break, $word-spacing);
+   @include line($line-clamp, $line-height);
+   @include text($color, $text-align, $text-decoration, $text-indent, $text-overflow, $text-shadow, $text-transform);
+   @include font($font-family, $font-size, $font-smoothing, $font-style, $font-variant, $font-weight)
+}

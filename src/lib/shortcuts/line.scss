@@ -1,0 +1,9 @@
+@mixin line($clamp: '', $height: '') {
+   @if ($clamp != '') {
+      line-clamp: $clamp;
+   }
+
+   @if ($height != '') {
+      line-height: $height;
+   }
+}

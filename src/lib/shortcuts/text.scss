@@ -1,0 +1,29 @@
+@mixin text($color: '', $align: '', $decoration: '', $indent: '', $overflow: '', $shadow: '', $transform: '') {
+   @if $color != '' {
+      color: $color;
+   }
+
+   @if $align != '' {
+      text-align: $align;
+   }
+
+   @if $decoration != '' {
+      text-decoration: $decoration;
+   }
+
+   @if $indent != '' {
+      text-indent: $indent;
+   }
+
+   @if $overflow != '' {
+      text-overflow: $overflow;
+   }
+
+   @if $shadow != '' {
+      text-shadow: $shadow;
+   }
+
+   @if $transform != '' {
+      text-transform: $transform;
+   }
+}
