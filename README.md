@@ -1,3 +1,3 @@
 # SasScript
 
-SasScript is a Sass library with default and custom styles
+The Sass library to write short Scss
