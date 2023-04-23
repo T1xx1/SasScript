@@ -11,7 +11,7 @@
       font-style: $style;
    }
 
-   @if ($variant-numeric != '') {
+   @if ($variant != '') {
       font-variant: $variant;
    }
 
